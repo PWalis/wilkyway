@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import localFont from "next/font/local"
+import "./globals.css";
+import { Header } from "@/ui/Header"
+
+
+const nobelUno = localFont({
+  src: "../public/fonts/NobelUno-Regular.otf",
+  variable: "--font-nobel-uno",
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={nobelUno.className}><Header />{children}</body>
     </html>
   );
 }
