@@ -40,11 +40,11 @@ export const PainPoints: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-start w-full max-w-[86.375rem] min-h-[30rem] items-start mt-0 lg1/2:mt-[36rem] xl3/4:mt-[13.5rem]">
-        <h2 className="font-charcoalDance mb-3 mt-10">
+      <div className="flex flex-col justify-start w-full max-w-[100rem] min-h-[30rem] items-center mt-0 lg1/2:mt-[36rem] xl3/4:mt-[13.5rem]">
+        <h2 className="font-charcoalDance w-full lg:text-left text-center mb-3 mt-10">
           does this hit <span className="text-sun-orange">home?</span>
         </h2>
-        <div className="w-full flex flex-row justify-center flex-wrap gap-5">
+        <div className="w-full max-w-[86.375rem] flex flex-row justify-center flex-wrap gap-5">
           <PainPoint>
             <img src="https://placehold.co/106" />
             <h4 className="font-gunterz">ERROR 404</h4>

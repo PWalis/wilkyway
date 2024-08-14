@@ -7,7 +7,7 @@ function useParallax(value: MotionValue<number>, distance: number) {
 
 export const SnapContainer: React.FC<PropsWithChildren> = () => {
     const ref = useRef(null)
-    const { scrollYProgress } = useScroll({ target: ref })
+    const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] })
     const y = useParallax(scrollYProgress, 300)
     return (
         <div ref={ref}>

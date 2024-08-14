@@ -9,6 +9,8 @@ import { LandingPagePackage } from "@/ui/sections/LandingPagePackage";
 import { Testimonials } from "@/ui/sections/Testimonials";
 import { Process } from "@/ui/sections/Process";
 import { OurValues } from "@/ui/sections/OurValues";
+import { FAQ } from "@/ui/sections/FAQ";
+import { Footer } from "@/ui/Footer";
 
 const charcoalDance = localFont({
   src: "../public/fonts/Charcoal Dance-SVG.otf",
@@ -37,6 +39,7 @@ export default function Home() {
         <Testimonials />
         <Process /> 
         <OurValues />
+        <FAQ />
     </main>
   );
 }

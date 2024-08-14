@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local"
 import "./globals.css";
 import { Header } from "@/ui/Header"
+import { Footer } from "@/ui/Footer";
 
 
 const nobelUno = localFont({
@@ -22,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={nobelUno.className}><Header />{children}</body>
+      <body className={nobelUno.className}><Header />{children}<Footer /></body>
     </html>
   );
 }
