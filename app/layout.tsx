@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" class="dark">
+    <html lang="en" className="dark">
       <body
         className={`${nobelUno.className} ${charcoalDance.variable} ${gunterz.variable} ${gunterzBold.variable} ${gunterzBoldItalic.variable}`}
       >
