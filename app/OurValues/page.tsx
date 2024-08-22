@@ -48,7 +48,7 @@ export default function OutValues() {
           <div className="flex flex-col justify-center max-w-[24rem]">
             <h4 className="font-gunterz">GENUINE CONNECTION</h4>
             <p>
-              We love creating connections with those striving for big dreams just like we do. We can't wait to get to know you.
+              We love creating connections with those striving for big dreams just like we do. We can&apos;t wait to get to know you.
             </p>
           </div>
         </div>

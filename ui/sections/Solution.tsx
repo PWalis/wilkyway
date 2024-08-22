@@ -74,7 +74,7 @@ export const Solution: React.FC = () => {
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
             <SolutionContainer>
               <h3 className="font-gunterz">
-                DON'T LET YOUR LEADS LEAVE YOU ON READ.
+                DON&apos;T LET YOUR LEADS LEAVE YOU ON READ.
               </h3>
               <p className="max-w-[26.25rem]">
                 Your landing page should turn casual visitors into loyal clients

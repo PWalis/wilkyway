@@ -7,7 +7,7 @@ export const Process: React.FC = () => {
     <section className="min-h-[60rem] flex flex-col items-center bg-storm-black">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
         <h2 className="font-charcoalDance text-left px-5 md:px-0 w-full leading-8">
-          Let's create something <span className="text-sun-orange">great</span>{" "}
+          Let&apos;s create something <span className="text-sun-orange">great</span>{" "}
           together
         </h2>
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[98rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative">

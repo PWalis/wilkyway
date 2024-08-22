@@ -49,7 +49,7 @@ export const PainPoints: React.FC = () => {
             <img src="https://placehold.co/106" />
             <h4 className="font-gunterz">ERROR 404</h4>
             <p>
-              Starting to feel like a broken record because you don't have a
+              Starting to feel like a broken record because you don&apos;t have a
               website that sells for you?
             </p>
           </PainPoint>
@@ -64,14 +64,14 @@ export const PainPoints: React.FC = () => {
             <img src="https://placehold.co/106" />
             <h4 className="font-gunterz">TUTORIAL HELL</h4>
             <p>
-              Avoiding another hour spent learning how to make a website that leaves you feeling 'meh'?
+              Avoiding another hour spent learning how to make a website that leaves you feeling &apos;meh&apos;?
             </p>
           </PainPoint>
           <PainPoint>
             <img src="https://placehold.co/106" />
             <h4 className="font-gunterz">NOT QUITE RIGHT</h4>
             <p>
-              Do you enter the uncanny valley when you look at your design and can't quite put your finger on why?
+              Do you enter the uncanny valley when you look at your design and can&apos;t quite put your finger on why?
             </p>
           </PainPoint>
           <PainPoint>
@@ -98,7 +98,7 @@ export const PainPoints: React.FC = () => {
         </div>
         <div className="w-full flex flex-col justify-center items-center mt-10 text-center sm:text-left">
           <h3 className="font-charcoalDance leading-8 mb-3">Are you ready to take <span className="text-sun-orange">action?</span></h3>
-          <CTA>LET'S DO THIS!</CTA>
+          <CTA>LET&apos;S DO THIS!</CTA>
         </div>
       </div>
     </section>

@@ -27,7 +27,7 @@ export const OurValues: React.FC = () => {
             QUICK TURNAROUND TIME
           </h4>
           <p className="max-w-[28rem]">
-            We understand that time is your most valuable asset. That's why We
+            We understand that time is your most valuable asset. That&apos;s why We
             will work as fast as we can to deliver on our promises
           </p>
           <button

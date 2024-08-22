@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 import useWindowDimensions from "@/lib/UseWindowDimensions";
 
-function Icon({ id, open }: any) {
+function Icon({ id, open }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -114,11 +114,11 @@ export function FAQ() {
   const [open, setOpen] = useState(-1);
   const { width } = useWindowDimensions();
 
-  const handleOpen = (value: number) => {
+  const handleOpen = (value) => {
     setOpen(open === value ? -1 : value);
   };
 
-  const handleTopicClick = (topic: string) => {
+  const handleTopicClick = (topic) => {
     setTopic(topic);
     setOpen(-1);
     if (width < 1024) {
@@ -128,7 +128,7 @@ export function FAQ() {
     }
   };
 
-  const faqs: Record<string, any> = {
+  const faqs = {
     topic1: [
       [
         "What payment options are available?",
@@ -171,7 +171,7 @@ export function FAQ() {
     ],
   };
 
-  const topicTitles: Record<string, string> = {
+  const topicTitles = {
     topic1: "Price",
     topic2: "Time",
     topic3: "Technology",
@@ -214,7 +214,7 @@ export function FAQ() {
             {topicTitles[topic]}{" "}
           </h3>
           {topic &&
-            faqs[topic].map((faq: any, index: any) => {
+            faqs[topic].map((faq, index) => {
               return (
                 <Accordion
                   open={open === index}
