@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/ui/Header";
-import { Footer } from "../ui/Footer";
+import { Footer } from "@/ui/Footer";
 import Provider from "./providers";
 import { Form } from "@/ui/form/Form";
 
