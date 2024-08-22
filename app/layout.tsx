@@ -1,15 +1,33 @@
 import type { Metadata } from "next";
 
-import localFont from "next/font/local"
+import localFont from "next/font/local";
 import "./globals.css";
-import { Header } from "@/ui/Header"
+import { Header } from "@/ui/Header";
 import { Footer } from "@/ui/Footer";
-
+import Provider from "./providers";
+import { Form } from "@/ui/form/Form";
 
 const nobelUno = localFont({
   src: "../public/fonts/NobelUno-Regular.otf",
   variable: "--font-nobel-uno",
-})
+});
+
+const charcoalDance = localFont({
+  src: "../public/fonts/Charcoal Dance-SVG.otf",
+  variable: "--font-charcoal-dance",
+});
+const gunterz = localFont({
+  src: "../public/fonts/Gunterz-Regular.otf",
+  variable: "--font-gunterz",
+});
+const gunterzBoldItalic = localFont({
+  src: "../public/fonts/Gunterz-BoldItalic.otf",
+  variable: "--font-gunterz-bold-italic",
+});
+const gunterzBold = localFont({
+  src: "../public/fonts/Gunterz-Bold.otf",
+  variable: "--font-gunterz-bold",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,8 +40,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={nobelUno.className}><Header />{children}<Footer /></body>
+    <html lang="en" class="dark">
+      <body
+        className={`${nobelUno.className} ${charcoalDance.variable} ${gunterz.variable} ${gunterzBold.variable} ${gunterzBoldItalic.variable}`}
+      >
+        <Provider>
+          <Form />
+          <Header />
+          {children}
+          <Footer />
+        </Provider>
+      </body>
     </html>
   );
 }

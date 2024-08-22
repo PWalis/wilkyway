@@ -180,17 +180,17 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="min-h-[60rem] bg-storm-black flex flex-col justify-center items-center w-full"
+      className="min-h-[60rem] bg-storm-black flex flex-col items-center w-full"
     >
       <div className="w-full max-w-[100rem]">
-        <h2 className="text-center sm:text-left px-3 font-charcoalDance tracking-wider mb-5">
+        <h2 className="text-center sm:text-left px-3 font-charcoalDance tracking-wider">
           Any{" "}
           <span className="text-sun-orange">Questions?</span>
         </h2>
       </div>
 
       <div className="flex flex-col lg:flex-row w-full lg:gap-10 md:max-w-full justify-center items-center lg:h-[600px]">
-        <div className="faq-bg bg-fill bg-no-repeat w-full min-h-[520px] lg:w-fit sm:p-20 items-center justify-center flex">
+        <div className="faq-bg bg-fill bg-no-repeat w-full lg:w-fit sm:p-20 items-center justify-center flex">
           <div className="sm:w-[500px] m-3 sm:min-w-[400px] max-h-[406px] w-full rounded-tr-[20px] px-6 py-6 flex flex-col justify-center gap-3 drop-shadow-md bg-storm-gray">
             {Object.keys(topicTitles).map((key, index) => (
               <button
@@ -201,7 +201,7 @@ export function FAQ() {
                 }`}
               >
                 <div className="w-12 h-12 ml-5"></div>
-                <p className="font-semibold pl-2">{topicTitles[key]}</p>
+                <p className="font-nobelUno pl-2 md:text-[1.25rem] text-[1rem]">{topicTitles[key]}</p>
               </button>
             ))}
           </div>
@@ -223,11 +223,11 @@ export function FAQ() {
                 >
                   <AccordionHeader
                     onClick={() => handleOpen(index)}
-                    className={open === index ? "text-sun-orange" : ""}
+                    className={open === index ? "text-sun-orange text-[1rem] md:text-[1.25rem] tracking-wide" : "text-[1rem] md:text-[1.25rem] tracking-wide"}
                   >
                     {faq[0]}
                   </AccordionHeader>
-                  <AccordionBody className="text-md">{faq[1]}</AccordionBody>
+                  <AccordionBody className="text-[1rem] md:text-[1.25rem]">{faq[1]}</AccordionBody>
                   <svg
                     className=" mb-2"
                     width="100%"

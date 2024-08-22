@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Turn as Hamburger } from "hamburger-react";
 import clsx from "clsx";
-import { motion } from "framer-motion";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import useWindowDimensions from "../lib/UseWindowDimensions";
 import { CTA } from "@/ui/buttons";
 // import logo from "@/public/assets/logo.png";
@@ -11,10 +11,21 @@ import { CTA } from "@/ui/buttons";
 export const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const { width } = useWindowDimensions();
+  const [hidden, setHidden] = useState(false)
+  const { scrollY } = useScroll()
 
   const handleToggle = () => {
     setMenuIsOpen(!menuIsOpen);
   };
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if ( latest > previous! && latest > 150) {
+      setHidden(true)
+    } else {
+      setHidden(false)
+    }
+  })
 
   const mobileMenuVariant = {
     opened: {
@@ -38,7 +49,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="w-full flex-col flex items-center z-30 fixed top-0 px-10">
+    <motion.header variants={{visible: {y: 0}, hidden: {y: "-100%"}}} animate={hidden ? "hidden" : "visible"} className="w-full flex-col flex items-center z-30 fixed top-0 px-10">
       <div className="w-full flex justify-between max-w-[96rem] h-24 transparent text-white mx-3 relative">
         <a className="w-full max-w-[8rem] flex items-center">
           <div className="h-16 w-16 bg-gray-100 rounded-full items-center flex justify-center text-white mr-3 ml-3">
@@ -51,7 +62,7 @@ export const Header = () => {
             initial="closed"
             animate={width >= 964 || menuIsOpen ? "opened" : "closed"}
             className={clsx(
-              "h-[calc(110dvh)] w-[calc(111dvw)] absolute bg-[#181818] lg1/2:bg-transparent lg1/2:pr-5 lg1/2:flex lg1/2:h-auto lg1/2:w-auto lg1/2:top-auto",
+              "h-[calc(110dvh)] w-[calc(111dvw)] absolute bg-storm-black lg1/2:bg-transparent lg1/2:pr-5 lg1/2:flex lg1/2:h-auto lg1/2:w-auto lg1/2:top-auto",
               menuIsOpen
                 ? "lg1/2:top-auto lg1/2:right-auto -top-3 -right-7 lg1/2:pt-0 pt-[calc(15dvh)]"
                 : "hidden"
@@ -91,6 +102,6 @@ export const Header = () => {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };

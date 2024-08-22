@@ -5,10 +5,10 @@ import { PainPoint } from "../containers/PaintPoint";
 export const PainPoints: React.FC = () => {
   return (
     <section className="flex flex-col relative justify-center items-center min-h-[60rem] px-5 bg-storm-black">
-      <div className="flex gap-[1.5rem] md:gap-[3.5313rem] flex-row flex-wrap justify-center lg1/2:absolute lg1/2:-top-[9rem] mx-5">
-        <div className="h-[19.9375rem] min-w-[21rem] max-w-[26.4375rem] rounded-tr-[96px] bg-storm-gray px-[3rem] pt-[3rem] pb-[4rem] flex">
+      <div className="flex gap-[1.5rem] md:gap-[3.5313rem] flex-row flex-wrap justify-center lg1/2:absolute lg1/2:-top-[9rem]">
+        <div className="min-h-[19.9375rem]  max-w-[26.4375rem] rounded-tr-[96px] bg-storm-gray px-[3rem] pt-[3rem] pb-[4rem] flex">
           <div className="container">
-            <img className="mb-3" src="https://placehold.co/85" />
+            <img className="mb-3" src="https://placehold.co/85"/>
             <h4 className="font-gunterz">
               BRAND <br /> CENTERED
             </h4>
@@ -17,7 +17,7 @@ export const PainPoints: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="h-[19.9375rem] min-w-[21rem] max-w-[26.4375rem] rounded-tr-[96px] bg-sun-orange px-[3rem] pt-[3rem] pb-[4rem]">
+        <div className="min-h-[19.9375rem]  max-w-[26.4375rem] rounded-tr-[96px] bg-sun-orange px-[3rem] pt-[3rem] pb-[4rem]">
           <div className="container">
             <img className="mb-3" src="https://placehold.co/85" />
             <h4 className="font-gunterz">
@@ -28,7 +28,7 @@ export const PainPoints: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="h-[19.9375rem] min-w-[21rem] max-w-[26.4375rem] rounded-tr-[96px] bg-storm-gray px-[3rem] pt-[3rem] pb-[4rem]">
+        <div className="min-h-[19.9375rem]  max-w-[26.4375rem] rounded-tr-[96px] bg-storm-gray px-[3rem] pt-[3rem] pb-[4rem]">
           <div className="container">
             <img className="mb-3" src="https://placehold.co/85" />
             <h4 className="font-gunterz">
@@ -41,7 +41,7 @@ export const PainPoints: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col justify-start w-full max-w-[100rem] min-h-[30rem] items-center mt-0 lg1/2:mt-[36rem] xl3/4:mt-[13.5rem]">
-        <h2 className="font-charcoalDance w-full lg:text-left text-center mb-3 mt-10">
+        <h2 className="font-charcoalDance w-full text-left mb-3 mt-10">
           does this hit <span className="text-sun-orange">home?</span>
         </h2>
         <div className="w-full max-w-[86.375rem] flex flex-row justify-center flex-wrap gap-5">
@@ -97,7 +97,7 @@ export const PainPoints: React.FC = () => {
           </PainPoint>
         </div>
         <div className="w-full flex flex-col justify-center items-center mt-10 text-center sm:text-left">
-          <h3 className="font-charcoalDance">Are you ready to take <span className="text-sun-orange">action?</span></h3>
+          <h3 className="font-charcoalDance leading-8 mb-3">Are you ready to take <span className="text-sun-orange">action?</span></h3>
           <CTA>LET'S DO THIS!</CTA>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { TestimonialContainer } from "../containers/TestimonialContainer";
 export const Testimonials: React.FC = () => {
   return (
     <section className="min-h-[60rem] bg-storm-black flex flex-col px-5 items-center gap-10">
-      <h2 className="font-charcoalDance max-w-[100rem] w-full lg:text-left text-center">
+      <h2 className="font-charcoalDance max-w-[100rem] w-full text-left leading-8">
         The <span className="text-sun-orange">results</span> speak for
         themselves
       </h2>
@@ -12,7 +12,7 @@ export const Testimonials: React.FC = () => {
         <h4 className="font-gunterz lg:text-left text-center">
           "My conversion rate has never been higher..."
         </h4>
-        <div className="flex flex-row flex-wrap gap-10 px-5">
+        <div className="flex flex-row justify-center flex-wrap gap-10">
           <TestimonialContainer>
             <div className="font-gunterzBold text-[10rem] h-[4rem] leading-[8rem]">
               "

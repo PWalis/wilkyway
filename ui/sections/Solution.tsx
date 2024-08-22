@@ -1,18 +1,77 @@
 "use client";
-import React from "react";
+import React, { useRef, useState } from "react";
 import { SolutionContainer } from "../containers/SolutionContainer";
+import {
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+  AnimatePresence,
+} from "framer-motion";
+import { SolutionAnimation } from "../animated/SolutionAnimation";
+import { SolutionAnimation2 } from "../animated/SolutionAnimation2";
+import { SolutionAnimation3 } from "../animated/SolutionAnimation3";
+import { SolutionAnimation4 } from "../animated/SolutionAnimation4";
 
 export const Solution: React.FC = () => {
+  const ref = useRef(null);
+  const [frame, setFrame] = useState(0);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end center"],
+  });
+  const progress = useTransform(
+    scrollYProgress,
+    [0, 0.2, 0.4, 0.6, 0.8],
+    [1, 2, 3, 4, 5]
+  );
+
+  const renderComponent = () => {
+    switch (frame) {
+      case 0:
+        return <SolutionAnimation key="1" />;
+      case 1:
+        return <SolutionAnimation2 key="2" />;
+      case 2:
+        return <SolutionAnimation3 key="3" />;
+      case 3:
+        return <SolutionAnimation4 key="4" />;
+    }
+  };
+
+  useMotionValueEvent(progress, "change", () => {
+    const p = progress.get();
+    // console.log(p);
+    if (p < 1.2 && frame != 0) {
+      setFrame(0);
+      console.log("frame set");
+    } else if (p > 1.5 && p < 2 && frame != 1) {
+      setFrame(1);
+      console.log("frame set");
+    } else if (p > 2.5 && p < 3 && frame != 2) {
+      setFrame(2);
+      console.log("frame set");
+    } else if (p > 3.7 && p < 4 && frame != 3) {
+      setFrame(3);
+      console.log("frame set");
+    } else if (p > 4.65 && p < 5 && frame != 4) {
+      setFrame(4);
+      console.log("frame set");
+    }
+  });
+
   return (
     <section className="min-h-[60rem] flex flex-col items-center bg-storm-black">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
-        <h2 className="font-charcoalDance px-10 lg:text-left text-center w-full">
+        <h2 className="font-charcoalDance px-5 text-left w-full leading-8">
           your landing page = your{" "}
           <span className="text-sun-orange">conversions</span>
         </h2>
 
-        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center h-[120rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
-          <div className="flex flex-col gap-[5rem] lg:gap-[20rem] lg:mt-[15rem] max-w-[30rem] absolute lg:relative top-10">
+        <div
+          ref={ref}
+          className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[165rem] md:min-h-[140rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative"
+        >
+          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
             <SolutionContainer>
               <h3 className="font-gunterz">
                 DON'T LET YOUR LEADS LEAVE YOU ON READ.
@@ -23,9 +82,25 @@ export const Solution: React.FC = () => {
                 your covered.
               </p>
             </SolutionContainer>
+            <div>
+              <SolutionContainer>
+                <h3 className="font-gunterz">
+                  <span className="text-sun-orange">BOOST SALES</span> AND
+                  MAXIMIZE CLICKS.
+                </h3>
+                <p className="max-w-[26.25rem]">
+                  Tap into the behavior of your visitors. Some are ready to buy
+                  the second they land on your site, most need to be persuaded
+                  to take the leap, and everyone just want some information.
+                  Give them what they want so you can give them what they need,
+                  a COACH!
+                </p>
+              </SolutionContainer>
+            </div>
             <SolutionContainer>
               <h3 className="font-gunterz">
-                BUILD TRUST THROUGH PROFESSIONAL DESIGN.
+                <span className="text-sun-orange">BUILD TRUST</span> THROUGH
+                PROFESSIONAL DESIGN.
               </h3>
               <p className="max-w-[29rem]">
                 We make sure that first impression is a great one. Website
@@ -37,7 +112,8 @@ export const Solution: React.FC = () => {
             </SolutionContainer>
             <SolutionContainer>
               <h3 className="font-gunterz">
-                CAPTIVATE YOUR MARKET WITH TARGETED COPYWRITING.
+                <span className="text-sun-orange">CAPTIVATE YOUR MARKET</span>{" "}
+                WITH TARGETED COPYWRITING.
               </h3>
               <p className="max-w-[26.25rem]">
                 Your target audience speaks a certain way, has certain pain
@@ -47,7 +123,10 @@ export const Solution: React.FC = () => {
               </p>
             </SolutionContainer>
             <SolutionContainer>
-              <h3 className="font-gunterz">SO FAST YOU WON'T MISS IT.</h3>
+              <h3 className="font-gunterz">
+                SO <span className="text-sun-orange">FAST</span> YOU WON'T MISS
+                IT.
+              </h3>
               <p className="max-w-[26.25rem]">
                 Our websites load fast even on a slow network. Don’t let a slow
                 website bring your conversion to a screeching halt. With peak
@@ -55,7 +134,13 @@ export const Solution: React.FC = () => {
               </p>
             </SolutionContainer>
           </div>
-          <div className="h-[20rem] max-w-[23rem] w-full bg-storm-gray mt-[20rem] lg:mt-[15rem] sticky top-[60vh] lg:top-[20rem]"></div>
+          <div className="flex justify-center w-full lg:max-w-[30rem] h-[24rem] bg-storm-black mt-[20rem] lg:mt-[15rem] sticky top-[60vh] lg:top-[20rem]">
+            <div className="h-[30rem] max-w-[30rem] w-full">
+              <AnimatePresence mode="popLayout">
+                {renderComponent()}
+              </AnimatePresence>
+            </div>
+          </div>
         </div>
       </div>
     </section>

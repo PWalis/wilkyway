@@ -7,6 +7,6 @@ export const SolutionContainer: React.FC<PropsWithChildren> = ({ children }) => 
     const { scrollYProgress } = useScroll({ target: ref, offset: ["center end", "end start"] })
     const opacity = useTransform(scrollYProgress, [0, 0.5, 1], ["0","1","0"])
     return (
-        <motion.div style={{opacity: opacity}} ref={ref} className='max-w-[20rem] lg:max-w-[38rem] overflow-hidden'>{children}</motion.div>
+        <motion.div style={{opacity: opacity}} ref={ref} className='max-w-[30rem] lg:max-w-[38rem]'>{children}</motion.div>
     )
 }

@@ -3,8 +3,8 @@ import { LandingPagePackageContainer } from "../containers/LandingPagePackageCon
 
 export const LandingPagePackage: React.FC = () => {
   return (
-    <section className="min-h-[60rem] bg-storm-black px-10 py-24 flex flex-col items-center">
-      <h2 className="font-charcoalDance max-w-[100rem] w-full">
+    <section className="min-h-[60rem] bg-storm-black px-10 pb-24 flex flex-col items-center">
+      <h2 className="font-charcoalDance max-w-[100rem] mb-5 sm:mb-12 w-full leading-8">
         Our landing page <span className="text-sun-orange">package</span>
       </h2>
       <div className="flex flex-row flex-wrap justify-center items-center gap-5 max-w-[100rem]">

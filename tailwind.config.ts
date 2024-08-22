@@ -1,3 +1,4 @@
+import { nextui } from "@nextui-org/theme";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -6,6 +7,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./ui/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/(calendar|input|button|ripple|spinner).js",
   ],
   theme: {
     extend: {
@@ -34,9 +36,24 @@ const config: Config = {
         gunterzBold: ["var(--font-gunterz-bold)"],
         nobelUno: ["var(--font-nobel-uno)"],
         charcoalDance: ["var(--font-charcoal-dance)"],
-      }
+      },
     },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          // ...
+          colors: {primary: "#FF9900"},
+        },
+        dark: {
+          // ...
+          colors: {primary: "#FF9900"},
+        },
+        // ... custom themes
+      },
+    }),
+  ],
 };
 export default config;

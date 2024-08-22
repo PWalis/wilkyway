@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 873 795.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a3b1d1;
+      }
+
+      .cls-2 {
+        fill: #c1c6d3;
+      }
+
+      .cls-3 {
+        fill: #c4c4c4;
+      }
+
+      .cls-4 {
+        fill: #d2d6db;
+      }
+
+      .cls-5 {
+        fill: #aaa;
+      }
+
+      .cls-6 {
+        fill: #e6e6e8;
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-8 {
+        fill: #e6e7e8;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" x="10.41" y="10.23" width="851.55" height="785.18" rx="56.84" ry="56.84"/>
+    </clipPath>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1"/>
+      <feGaussianBlur result="blur" stdDeviation="3"/>
+      <feFlood flood-color="#7f7f7f" flood-opacity=".17"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <g id="_x33_">
+      <g>
+        <rect class="cls-3" x="10.41" y="10.23" width="851.55" height="785.18" rx="56.84" ry="56.84"/>
+        <g class="cls-7">
+          <rect class="cls-8" x="8.06" y="8.34" width="856.42" height="787.07"/>
+          <rect class="cls-6" x="8.06" y="8.34" width="854.91" height="76.93"/>
+        </g>
+      </g>
+      <rect class="cls-4" x="429.03" y="195.54" width="382.19" height="272.84"/>
+      <rect class="cls-2" x="86.13" y="525.07" width="224.77" height="158.06"/>
+      <rect class="cls-2" x="321.24" y="525.07" width="224.77" height="158.06"/>
+      <rect class="cls-2" x="555.43" y="525.07" width="224.77" height="158.06"/>
+      <rect class="cls-4" x="61.14" y="214.48" width="313.77" height="63.66"/>
+      <rect class="cls-4" x="61.14" y="294.06" width="313.77" height="34.11"/>
+      <rect class="cls-4" x="61.14" y="344.08" width="217.06" height="34.11"/>
+      <rect class="cls-1" x="61.14" y="394.11" width="105.65" height="34.11"/>
+      <rect class="cls-2" x="174.83" y="394.11" width="105.65" height="34.11"/>
+      <rect class="cls-5" x="59.47" y="127.34" width="45.78" height="34.11"/>
+      <rect class="cls-1" x="705.57" y="127.34" width="105.65" height="34.11"/>
+      <rect class="cls-4" x="82.36" y="37.89" width="676.9" height="27.28" rx="13.64" ry="13.64"/>
+      <rect class="cls-4" x="776.59" y="37.89" width="27.28" height="27.28" rx="13.64" ry="13.64"/>
+    </g>
+  </g>
+</svg>
