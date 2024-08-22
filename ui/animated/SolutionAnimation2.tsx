@@ -17,7 +17,7 @@ export const SolutionAnimation2: React.FC = () => {
         await animate(scope.current, { scale: 1 });
         setToggle(false);
         await animate(scope.current, { y: "0%", x: "0%" }, { delay: 0.8 });
-        animation();
+        // animation();
       } catch (error) {
         const typedError = error as { message: string }; // Type assertion
         if (typedError.message === "No valid element provided.") {
