@@ -16,44 +16,80 @@ export const SolutionAnimation: React.FC = () => {
   const pointerMotionValue = useMotionValue(0);
 
   useEffect(() => {
-    animate(
-      [
-        [
-          scope.current,
-          { x: "250%", y: "-115%" },
-          { duration: 0.25, ease: "easeIn", delay: 1.5 },
-        ],
-        [pointerMotionValue, 1, { duration: 0.001 }],
-        [
-          scope.current,
-          { x: "320%", y: "-150%" },
-          { duration: 0.1, ease: "easeOut" },
-        ],
-        [
-          scope.current,
-          { x: "310%", y: "-140%" },
-          { duration: 0.1, ease: "easeOut" },
-        ],
-        [
-          scope.current,
-          { x: "250%", y: "-115%" },
-          { duration: 0.1, ease: "easeIn", delay: 1 },
-        ],
-        [pointerMotionValue, 0, { duration: 0 }],
-        [
-          scope.current,
-          { x: "-10%", y: "10%" },
-          { duration: 0.2, ease: "easeOut" },
-        ],
-        [
-          scope.current,
-          { x: "0%", y: "0%" },
-          { duration: 0.2, ease: "easeOut" },
-        ],
-      ],
-      { repeat: Infinity }
-    );
+    // animate(
+    //   [
+    //     [
+    //       scope.current,
+    //       { x: "250%", y: "-115%" },
+    //       { duration: 0.25, ease: "easeIn", delay: 1.5 },
+    //     ],
+    //     [pointerMotionValue, 1, { duration: 0.001 }],
+    //     [
+    //       scope.current,
+    //       { x: "320%", y: "-150%" },
+    //       { duration: 0.1, ease: "easeOut" },
+    //     ],
+    //     [
+    //       scope.current,
+    //       { x: "310%", y: "-140%" },
+    //       { duration: 0.1, ease: "easeOut" },
+    //     ],
+    //     [
+    //       scope.current,
+    //       { x: "250%", y: "-115%" },
+    //       { duration: 0.1, ease: "easeIn", delay: 1 },
+    //     ],
+    //     [pointerMotionValue, 0, { duration: 0 }],
+    //     [
+    //       scope.current,
+    //       { x: "-10%", y: "10%" },
+    //       { duration: 0.2, ease: "easeOut" },
+    //     ],
+    //     [
+    //       scope.current,
+    //       { x: "0%", y: "0%" },
+    //       { duration: 0.2, ease: "easeOut" },
+    //     ],
+    //   ],
+    //   { repeat: Infinity }
+    // );
 
+    const animation = async () => {
+      await animate(
+        scope.current,
+        { x: "250%", y: "-115%" },
+        { duration: 0.25, ease: "easeIn", delay: 1.5 }
+      );
+      setToggle(false);
+      await animate(
+        scope.current,
+        { x: "320%", y: "-150%" },
+        { duration: 0.1, ease: "easeOut" }
+      );
+      await animate(
+        scope.current,
+        { x: "310%", y: "-140%" },
+        { duration: 0.1, ease: "easeOut" }
+      );
+      await animate(
+        scope.current,
+        { x: "250%", y: "-115%" },
+        { duration: 0.1, ease: "easeIn", delay: 1 }
+      );
+      setToggle(true);
+      await animate(
+        scope.current,
+        { x: "-10%", y: "10%" },
+        { duration: 0.2, ease: "easeOut" }
+      );
+      await animate(
+        scope.current,
+        { x: "0%", y: "0%" },
+        { duration: 0.2, ease: "easeOut" }
+      );
+    };
+
+    animation()
     if (isPresent) {
       const enterAnimation = async () => {
         await animate2(scope2.current, { opacity: 1, duration: 1 });
