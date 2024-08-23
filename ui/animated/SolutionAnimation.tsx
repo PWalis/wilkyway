@@ -11,7 +11,7 @@ import {
 export const SolutionAnimation: React.FC = () => {
   const [scope, animate] = useAnimate();
   const [scope2, animate2] = useAnimate();
-  // const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(true);
   const [isPresent, safeToRemove] = usePresence();
   const pointerMotionValue = useMotionValue(0);
 
