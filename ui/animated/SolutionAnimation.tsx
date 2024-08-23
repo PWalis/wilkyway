@@ -69,7 +69,7 @@ export const SolutionAnimation: React.FC = () => {
   }, [isPresent]);
 
   useMotionValueEvent(pointerMotionValue, "change", () => {
-    console.log(pointerMotionValue.get(), "POINTER MOTION VALUE");
+    // console.log(pointerMotionValue.get(), "POINTER MOTION VALUE");
     if (pointerMotionValue.get() > 0) {
       setToggle(false);
     } else {
