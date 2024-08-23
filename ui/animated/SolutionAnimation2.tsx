@@ -1,32 +1,28 @@
 "use client";
 import react, { useState, useEffect } from "react";
-import { useAnimate, usePresence } from "framer-motion";
+import {
+  useAnimate,
+  usePresence,
+  useMotionValue,
+  useMotionValueEvent,
+} from "framer-motion";
 
 export const SolutionAnimation2: React.FC = () => {
   const [scope, animate] = useAnimate();
   const [scope2, animate2] = useAnimate();
   const [toggle, setToggle] = useState(false);
   const [isPresent, safeToRemove] = usePresence();
+  const pointerMotionValue = useMotionValue(0);
 
   useEffect(() => {
-    const animation = async () => {
-      try {
-        await animate(scope.current, { y: "-40%", x: "30%" }, { delay: 0.5 });
-        await animate(scope.current, { scale: 0.9 }, { duration: 0.1 });
-        setToggle(true);
-        await animate(scope.current, { scale: 1 });
-        setToggle(false);
-        await animate(scope.current, { y: "0%", x: "0%" }, { delay: 0.8 });
-        
-      } catch (error) {
-        const typedError = error as { message: string }; // Type assertion
-        if (typedError.message === "No valid element provided.") {
-          return;
-        }
-      }
-      // animation();
-    };
-    animation();
+    animate([
+      [scope.current, { y: "-40%", x: "30%" }, { delay: 0.5 }],
+      [scope.current, { scale: 0.9 }, { duration: 0.1 }],
+      [pointerMotionValue, 1, { duration: 0.001 }],
+      [scope.current, { scale: 1 }],
+      [pointerMotionValue, 0, { duration: 0 }],
+      [scope.current, { y: "0%", x: "0%" }, { delay: 0.8 }],
+    ], {repeat: Infinity});
 
     if (isPresent) {
       const enterAnimation = async () => {
@@ -41,6 +37,14 @@ export const SolutionAnimation2: React.FC = () => {
       exitAnimation();
     }
   }, [isPresent]);
+
+  useMotionValueEvent(pointerMotionValue, "change", () => {
+    if (pointerMotionValue.get() > 0) {
+      setToggle(true);
+    } else if (pointerMotionValue.get() === 0) {
+      setToggle(false);
+    }
+  });
 
   return (
     <div ref={scope2} style={{ opacity: 0 }} className="relative w-full h-full">

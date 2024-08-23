@@ -1,58 +1,58 @@
 "use client";
 import react, { useState, useEffect } from "react";
-import { useAnimate, usePresence } from "framer-motion";
+import {
+  useAnimate,
+  usePresence,
+  useMotionValue,
+  motion,
+  useMotionValueEvent,
+} from "framer-motion";
 
 export const SolutionAnimation: React.FC = () => {
   const [scope, animate] = useAnimate();
   const [scope2, animate2] = useAnimate();
   const [toggle, setToggle] = useState(true);
   const [isPresent, safeToRemove] = usePresence();
+  const pointerMotionValue = useMotionValue(0);
 
   useEffect(() => {
-    const animation = async () => {
-      // Try catch for a tower of awaits is the way
-      try {
-        await animate(
+    animate(
+      [
+        [
           scope.current,
           { x: "250%", y: "-115%" },
-          { duration: 0.25, ease: "easeIn", delay: 1.5 }
-        );
-        setToggle(false);
-        await animate(
+          { duration: 0.25, ease: "easeIn", delay: 1.5 },
+        ],
+        [pointerMotionValue, 1, { duration: 0.001 }],
+        [
           scope.current,
           { x: "320%", y: "-150%" },
-          { duration: 0.1, ease: "easeOut" }
-        );
-        await animate(
+          { duration: 0.1, ease: "easeOut" },
+        ],
+        [
           scope.current,
           { x: "310%", y: "-140%" },
-          { duration: 0.1, ease: "easeOut" }
-        );
-        await animate(
+          { duration: 0.1, ease: "easeOut" },
+        ],
+        [
           scope.current,
           { x: "250%", y: "-115%" },
-          { duration: 0.1, ease: "easeIn", delay: 1 }
-        );
-        setToggle(true);
-        await animate(
+          { duration: 0.1, ease: "easeIn", delay: 1 },
+        ],
+        [pointerMotionValue, 0, { duration: 0 }],
+        [
           scope.current,
           { x: "-10%", y: "10%" },
-          { duration: 0.2, ease: "easeOut" }
-        );
-        await animate(
+          { duration: 0.2, ease: "easeOut" },
+        ],
+        [
           scope.current,
           { x: "0%", y: "0%" },
-          { duration: 0.2, ease: "easeOut" }
-        );
-      } catch (error) {
-        const typedError = error as { message: string }; // Type assertion
-        if (typedError.message === "No valid element provided.") {
-          return;
-        }
-      }
-      // animation();
-    };
-    animation();
+          { duration: 0.2, ease: "easeOut" },
+        ],
+      ],
+      { repeat: Infinity }
+    );
 
     if (isPresent) {
       const enterAnimation = async () => {
@@ -68,9 +68,18 @@ export const SolutionAnimation: React.FC = () => {
     }
   }, [isPresent]);
 
+  useMotionValueEvent(pointerMotionValue, "change", () => {
+    console.log(pointerMotionValue.get(), "POINTER MOTION VALUE");
+    if (pointerMotionValue.get() > 0) {
+      setToggle(false);
+    } else {
+      setToggle(true);
+    }
+  });
+
   return (
     <div ref={scope2} style={{ opacity: 0 }} className="relative w-full">
-      <div
+      <motion.div
         ref={scope}
         className="w-[3rem] sm:w-[4rem] absolute top-[50%] left-[40%] z-10"
       >
@@ -99,7 +108,7 @@ export const SolutionAnimation: React.FC = () => {
             />
           </g>
         </svg>
-      </div>
+      </motion.div>
 
       <div className="w-full sm:w-[30rem]">
         {toggle ? (
