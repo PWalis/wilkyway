@@ -13,7 +13,7 @@ export const SolutionAnimation: React.FC = () => {
   const [scope2, animate2] = useAnimate();
   const [toggle, setToggle] = useState(true);
   const [isPresent, safeToRemove] = usePresence();
-  const pointerMotionValue = useMotionValue(0);
+  // const pointerMotionValue = useMotionValue(0);
 
   useEffect(() => {
     // animate(
@@ -104,14 +104,14 @@ export const SolutionAnimation: React.FC = () => {
     }
   }, [isPresent]);
 
-  useMotionValueEvent(pointerMotionValue, "change", () => {
-    // console.log(pointerMotionValue.get(), "POINTER MOTION VALUE");
-    if (pointerMotionValue.get() > 0) {
-      setToggle(false);
-    } else {
-      setToggle(true);
-    }
-  });
+  // useMotionValueEvent(pointerMotionValue, "change", () => {
+  //   // console.log(pointerMotionValue.get(), "POINTER MOTION VALUE");
+  //   if (pointerMotionValue.get() > 0) {
+  //     setToggle(false);
+  //   } else {
+  //     setToggle(true);
+  //   }
+  // });
 
   return (
     <div ref={scope2} style={{ opacity: 0 }} className="relative w-full">
