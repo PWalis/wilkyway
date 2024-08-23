@@ -50,7 +50,7 @@ export const SolutionAnimation: React.FC = () => {
           return;
         }
       }
-      animation();
+      // animation();
     };
     animation();
 

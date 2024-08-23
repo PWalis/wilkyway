@@ -24,7 +24,7 @@ export const SolutionAnimation2: React.FC = () => {
           return;
         }
       }
-      animation();
+      // animation();
     };
     animation();
 

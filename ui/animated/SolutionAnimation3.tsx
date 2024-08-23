@@ -21,7 +21,7 @@ export const SolutionAnimation3: React.FC = () => {
           return;
         }
       }
-        animation();
+        // animation();
     };
     animation();
 
