@@ -15,13 +15,13 @@ export const SolutionAnimation4: React.FC = () => {
         setToggle(true);
         await animate(scope.current, { x: "0%" }, { delay: 2 });
         setToggle(false);
-        // animation();
       } catch (error) {
         const typedError = error as { message: string }; // Type assertion
         if (typedError.message === "No valid element provided.") {
           return;
         }
       }
+      animation();
     };
     animation();
 

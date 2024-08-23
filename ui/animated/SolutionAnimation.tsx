@@ -44,13 +44,13 @@ export const SolutionAnimation: React.FC = () => {
           { x: "0%", y: "0%" },
           { duration: 0.2, ease: "easeOut" }
         );
-        // animation();
       } catch (error) {
         const typedError = error as { message: string }; // Type assertion
         if (typedError.message === "No valid element provided.") {
           return;
         }
       }
+      animation();
     };
     animation();
 
