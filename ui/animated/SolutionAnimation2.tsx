@@ -88,7 +88,7 @@ export const SolutionAnimation2: React.FC = () => {
             <defs>
               <style>
                 {`
-      .cls-1 {
+      .cls-19 {
         fill: #5c6fff;
       }
 
@@ -108,7 +108,7 @@ export const SolutionAnimation2: React.FC = () => {
                   ry="56.84"
                 />
                 <rect
-                  className="cls-1"
+                  className="cls-19"
                   x="68.05"
                   y="269.33"
                   width="715.45"
@@ -139,7 +139,7 @@ export const SolutionAnimation2: React.FC = () => {
             <defs>
               <style>
                 {`
-      .cls-1 {
+      .cls-19 {
         fill: #718cff;
       }
 
@@ -159,7 +159,7 @@ export const SolutionAnimation2: React.FC = () => {
                   ry="56.84"
                 />
                 <rect
-                  className="cls-1"
+                  className="cls-19"
                   x="68.05"
                   y="269.33"
                   width="715.45"
