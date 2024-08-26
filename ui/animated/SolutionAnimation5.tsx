@@ -33,12 +33,12 @@ export const SolutionAnimation5: React.FC = () => {
 
   return (
     <div ref={scope2} className="relative w-full h-full">
-      <div ref={scope} className="w-full flex items-center justify-center">
+      <div ref={scope} className="w-full">
         <svg
-          id="Layer_2"
+          id="Layer_rocket"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 600 580"
+          viewBox="-142 0 600 580"
         >
           <defs>
             <style>
