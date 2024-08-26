@@ -44,19 +44,19 @@ export const Solution: React.FC = () => {
   useMotionValueEvent(progress, "change", () => {
     const p = progress.get();
     console.log(p);
-    if (p < 1.7 && frame != 0) {
+    if (p < 1.6 && frame != 0) {
       setFrame(0);
       console.log("frame set");
-    } else if (p > 1.7 && p < 2.9 && frame != 1) {
+    } else if (p > 1.6 && p < 2.67 && frame != 1) {
       setFrame(1);
       console.log("frame set");
-    } else if (p > 2.9 && p < 4.1 && frame != 2) {
+    } else if (p > 2.68 && p < 3.8 && frame != 2) {
       setFrame(2);
       console.log("frame set");
-    } else if (p > 4.1 && p < 4.9 && frame != 3) {
+    } else if (p > 3.8 && p < 4.6 && frame != 3) {
       setFrame(3);
       console.log("frame set");
-    } else if (p > 4.9 && p < 5 && frame != 4) {
+    } else if (p > 4.6 && p < 5 && frame != 4) {
       setFrame(4);
       console.log("frame set");
     }
