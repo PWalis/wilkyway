@@ -32,13 +32,13 @@ export const SolutionAnimation5: React.FC = () => {
   }, [isPresent]);
 
   return (
-    <div ref={scope2}  className="relative w-full h-full">
-      <div ref={scope}  className="w-full flex items-center justify-center">
+    <div ref={scope2} className="relative w-full h-full">
+      <div ref={scope} className="w-full flex items-center justify-center">
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
-          viewBox="-142 0 600 580"
+          viewBox="0 0 600 580"
         >
           <defs>
             <style>
@@ -246,8 +246,18 @@ export const SolutionAnimation5: React.FC = () => {
                 height="196.23"
               />
             </g>
-            <circle className="cls-1rocket6" cx="146.22" cy="133.88" r="42.44" />
-            <circle className="cls-1rocket0" cx="146.22" cy="133.88" r="31.07" />
+            <circle
+              className="cls-1rocket6"
+              cx="146.22"
+              cy="133.88"
+              r="42.44"
+            />
+            <circle
+              className="cls-1rocket0"
+              cx="146.22"
+              cy="133.88"
+              r="31.07"
+            />
             <path
               className="cls-4rocket"
               d="M146.07,91.44v84.89c-23.38-.08-42.3-19.06-42.3-42.45s18.92-42.36,42.3-42.44Z"
