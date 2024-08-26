@@ -16,7 +16,7 @@ export const SolutionAnimation2: React.FC = () => {
 
   useEffect(() => {
     animate([
-      [scope.current, { y: "-40%", x: "30%" }, { delay: 0.5 }],
+      [scope.current, { y: "-55%", x: "30%" }, { delay: 0.5 }],
       [scope.current, { scale: 0.9 }, { duration: 0.1 }],
       [pointerMotionValue, 1, { duration: 0.001 }],
       [scope.current, { scale: 1 }],
@@ -78,7 +78,7 @@ export const SolutionAnimation2: React.FC = () => {
         </svg>
       </div>
 
-      <div className="w-full sm:w-[30rem]">
+      <div className="w-full sm:w-[30rem] px-3">
         {toggle ? (
           <svg
             id="Layer_2"

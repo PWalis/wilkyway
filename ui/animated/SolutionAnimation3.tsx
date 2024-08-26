@@ -40,7 +40,7 @@ export const SolutionAnimation3: React.FC = () => {
     <div ref={scope2} style={{ opacity: 0 }} className="relative w-full h-full">
       
 
-      <div className="w-full sm:w-[30rem] relative">
+      <div className="w-ful sm:w-[30rem] relative">
         <AnimatePresence>
           {toggle ? (
             <motion.svg
@@ -52,7 +52,7 @@ export const SolutionAnimation3: React.FC = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               key="graphic 1"
-              className="absolute top-0 left-0"
+              className="absolute top-0 left-0 px-2"
             >
               <defs>
                 <style>
@@ -246,6 +246,7 @@ export const SolutionAnimation3: React.FC = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               key="graphic 2"
+              className="absolute top-0 left-0 px-2"
             >
               <defs>
                 <style>
