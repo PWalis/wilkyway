@@ -70,7 +70,6 @@ export const SolutionAnimation: React.FC = () => {
   }, [isPresent]);
 
   const color = useTransform(pointerMotionValue, [0,1], ["#c1c6d3", "#ba3e38"])
-  console.log(color.get(), "this is the color")
 
   return (
     <div ref={scope2} style={{ opacity: 0 }} className="relative w-full">

@@ -9,7 +9,6 @@ export const LandingPagePackage: React.FC = () => {
       </h2>
       <div className="flex flex-row flex-wrap justify-center items-center gap-5 max-w-[100rem]">
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             BRAND IDENTITY CREATION
           </h5>
@@ -19,7 +18,6 @@ export const LandingPagePackage: React.FC = () => {
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             TARGETED COPYWRITING
           </h5>
@@ -28,7 +26,6 @@ export const LandingPagePackage: React.FC = () => {
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             ONSITE SEO
           </h5>
@@ -37,7 +34,6 @@ export const LandingPagePackage: React.FC = () => {
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             A/B TESTING
           </h5>
@@ -46,7 +42,6 @@ export const LandingPagePackage: React.FC = () => {
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">HOSTING</h5>
           <p className="text-center">
             Advanced hosting techniques ensure wherever your audience is your
@@ -54,7 +49,6 @@ export const LandingPagePackage: React.FC = () => {
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             LOGO DESIGN
           </h5>
@@ -64,7 +58,6 @@ export const LandingPagePackage: React.FC = () => {
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             CUSTOM FORMS
           </h5>
@@ -73,7 +66,6 @@ export const LandingPagePackage: React.FC = () => {
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             LANDING PAGE DESIGN
           </h5>
@@ -82,14 +74,12 @@ export const LandingPagePackage: React.FC = () => {
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             DEVELOPMENT
           </h5>
           <p className="text-center">Hand coded with blood, sweat, and tears</p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             PROJECT DASHBOARD ACCESS
           </h5>
@@ -99,7 +89,6 @@ export const LandingPagePackage: React.FC = () => {
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             CUSTOM GRAPHICS
           </h5>
@@ -108,7 +97,6 @@ export const LandingPagePackage: React.FC = () => {
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             ANIMATIONS
           </h5>
@@ -117,14 +105,12 @@ export const LandingPagePackage: React.FC = () => {
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">ANALYTICS</h5>
           <p className="text-center">
             Gain insight into how your page is performing 24/7
           </p>
         </LandingPagePackageContainer>
         <LandingPagePackageContainer>
-          <img src="https://placehold.co/58" />
           <h5 className="font-gunterz text-[1.25rem] text-center">
             OPTIMIZED FOR MOBILE
           </h5>
