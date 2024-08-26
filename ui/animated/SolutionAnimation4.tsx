@@ -1,27 +1,24 @@
 "use client";
 import react, { useState, useEffect } from "react";
-import { useAnimate, usePresence } from "framer-motion";
+import { useAnimate, usePresence, motion } from "framer-motion";
 
 export const SolutionAnimation4: React.FC = () => {
   const [scope, animate] = useAnimate();
   const [scope2, animate2] = useAnimate();
-  const [toggle, setToggle] = useState(false);
+  const [scope3, animate3] = useAnimate()
   const [isPresent, safeToRemove] = usePresence();
 
   useEffect(() => {
     const animation = async () => {
       try {
-        await animate(scope.current, { x: "100%" }, { delay: 2 });
-        setToggle(true);
-        await animate(scope.current, { x: "0%" }, { delay: 2 });
-        setToggle(false);
+        await animate(scope.current, { opacity: 1 }, { delay: 2 });
+        await animate(scope3.current, { opacity: 1}, { delay: 2 });
       } catch (error) {
         const typedError = error as { message: string }; // Type assertion
         if (typedError.message === "No valid element provided.") {
           return;
         }
       }
-    //   animation();
     };
     animation();
 
@@ -41,612 +38,411 @@ export const SolutionAnimation4: React.FC = () => {
 
   return (
     <div ref={scope2} style={{ opacity: 0 }} className="relative w-full h-full">
-      <div
-        ref={scope}
-        className="w-[3rem] sm:w-[4rem] absolute top-[53%] sm:top-[64%] left-[50%] z-10"
-      >
+      <div className="w-full sm:w-[30rem]">
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 185.29 242.41"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          viewBox="-160 -50 480 438"
         >
           <defs>
             <style>
               {`
       .cls-1 {
-        fill: #f2f2f2;
-        stroke: #333;
-        stroke-linecap: round;
+        fill: #454f60;
+      }
+
+      .cls-2 {
+        fill: #d18179;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-6 {
+        fill: #1e1c1c;
+      }
+
+      .cls-7 {
+        fill: #5c8fff;
+      }
+
+      .cls-8 {
+        fill: #d2d6db;
+      }
+
+      .cls-9 {
+        fill: #333;
+      }
+
+      .cls-10 {
+        fill: #999;
+      }
+
+      .cls-11 {
+        fill: #6a7a91;
+      }
+
+      .cls-4 {
+        stroke: #5c8fff;
         stroke-miterlimit: 10;
+      }
+
+      .cls-12 {
+        fill: #9db8ea;
+      }
+
+      .cls-13 {
+        fill: #c65c52;
+      }
+
+      .cls-14 {
+        fill: #e5917f;
+      }
+
+      .cls-15 {
+        clip-path: url(#clippath);
+      }`}
+            </style>
+            <clipPath id="clippath">
+              <path
+                className="cls-3"
+                d="M162.92,226.06h-55.07c2.03-11.2,3.53-25.06,3.01-40.89,0-.17-.01-.34-.01-.34-.45-13.2-1.74-22.03-3-27.95h55.07v69.19Z"
+              />
+            </clipPath>
+            <clipPath id="clippath-1">
+              <path
+                className="cls-3"
+                d="M15.36,284.62c-2.41,2.68,2.74,15.11,5.68,19.92,1.36,2.22,5.39,8.49,12.88,15.16,4.32,3.84,8.37,6.54,11.37,8.34,8.97.76,19.94,2.52,28.91,3.27l12.64-23.01-2.65-26.69c-4.18-6.95-15.92-10.43-16.19-7.58-.27,2.93-.52,5.84-.76,8.72-13.56,9.66-24.33,11.41-32.59,10.23-9.73-1.39-16.93-10.97-19.3-8.35Z"
+              />
+            </clipPath>
+          </defs>
+          <g id="Layer_1-2" data-name="Layer_1">
+            <g>
+              <path
+                className="cls-11"
+                d="M126.78,181.77H47.2v-73.52h52.99c-1.03,1.05-1.99,2.39-3.35,4.55-4.57,7.25-17.8,21.25,29.94,68.97Z"
+              />
+              <g className="cls-15">
+                <path
+                  className="cls-14"
+                  d="M162.92,226.06h-55.07c2.03-11.2,3.53-25.06,3.01-40.89,0-.17-.01-.34-.01-.34-.45-13.2-1.74-22.03-3-27.95h55.07v69.19Z"
+                />
+                <path
+                  className="cls-13"
+                  d="M152.52,183.65c-2.76,8.51-31.47,18.53-42.95,12.44-.13-3.16-1.17-9.28-1.29-12.44"
+                />
+              </g>
+              <path
+                className="cls-14"
+                d="M199.84,89.67c10.96,38.42-17.71,97.18-65.11,98-22.34.39-46.35-11.06-55.56-28.33-1.37-2.57-8.1-30.98-6.66-58.29,1.55-29.45,28.51-66.2,64.12-68.59,36.51-2.45,53.43,22.94,63.21,57.21Z"
+              />
+              <path
+                className="cls-1"
+                d="M162.92,77.24c-5.15,8.49-25.17,25.51-41.98,31.95-24.88,9.53-64.7,3.75-76.07,5.09,1.1-4.8,2.33-20.84,2.33-23.07,0-5.29.74-49.85,35.62-74.65,2.18-1.56,38.22-26.45,68.97-12.13,4.74,2.21,8.28,4.85,10.61,6.82,1.6-.14,4.29-.29,7.58,0,27.39,2.41,43.25,30.59,44.33,32.59,2.32,4.27,5.59,11.41,7.2,21.22.13,38.91.26,77.81.38,116.72-19.7-.26-39.41-.51-59.11-.76v-85.31"
+              />
+              <path
+                className="cls-12"
+                d="M274.06,329.1c-2.22,34.2-11.65,58.42-20.92,75.03-2.22,3.99-4.7,7.86-4.7,7.86-4.44,7.01-8.69,12.58-11.97,16.6h-4.04c-8.58,1.6-19.66,2.75-32.46,1.8-4.99-.37-9.62-1.02-13.85-1.81-19.06-.02-38.11-.01-57.17.04-35.91.09-71.81.19-107.52.02,2.35-35.47,7.18-75.61,16.17-119.18,6.76-32.75,14.89-62.68,23.48-89.55.84-2.63,2.3-5,4.24-6.95l2.1-2.1c1.96-1.96,4.36-3.42,7-4.26,11.55-3.68,24.73-7.12,36.16-9.88,3.18,10.41,8.13,12.74,21.53,12.74,17.97,0,30.86-5.78,30.89-20.83,14.64-2.38,32.37-5.88,47-2.62,3.59.8,6.72,1.69,9.28,2.51,2.13.67,4.04,1.86,5.63,3.43,1.02,1.02,2.08,2.11,3.17,3.26,50.2,52.96,46.38,127.71,45.98,133.89Z"
+              />
+              <polyline
+                className="cls-7"
+                points="198.44 250.5 188.34 325.44 127.94 302.76 129.07 300.74 173.7 306.28"
+              />
+              <path
+                className="cls-4"
+                d="M129.33,301.2c-15.33,28.13-30.65,56.25-45.98,84.38,13.05,9.15,40.52,28.35,74.63,37.45s63.64,8.76,79.13,4.85"
+              />
+              <polyline
+                className="cls-14"
+                points="118.94 319.38 86.23 307.57 73.34 331.07 99.45 354.82"
+              />
+              <path
+                className="cls-7"
+                d="M71.42,427.77l-1.41-136.69c-6.19,5.59-9.84,117.74-10.86,137.56h12.26"
+              />
+              <g>
+                <rect
+                  className="cls-9"
+                  x="-3.01"
+                  y="254.11"
+                  width="90.44"
+                  height="48.83"
+                  rx="7.21"
+                  ry="7.21"
+                  transform="translate(253.89 92.64) rotate(57.33)"
+                />
+                <path
+                  className="cls-6"
+                  d="M80.44,307.92c-15.57-24.28-31.14-48.55-46.7-72.83l-2.2-3.43s.04-.03.06-.04c3.73-2.39,8.7-1.31,11.1,2.43l40.23,62.74c2.39,3.73,1.31,8.7-2.43,11.1l-.06.04Z"
+                />
+                <ellipse
+                  className="cls-9"
+                  cx="35.83"
+                  cy="274.93"
+                  rx="7.77"
+                  ry="10.23"
+                  transform="translate(-145.4 65.11) rotate(-33.39)"
+                />
+                <rect
+                  className="cls-10"
+                  x="7.04"
+                  y="249.4"
+                  width="13.76"
+                  height="20.27"
+                  rx="5.11"
+                  ry="5.11"
+                  transform="translate(-137.9 48.58) rotate(-32.67)"
+                />
+                <ellipse
+                  className="cls-9"
+                  cx="9.26"
+                  cy="257.29"
+                  rx="3.2"
+                  ry="4.22"
+                  transform="translate(-140.08 47.58) rotate(-33.39)"
+                />
+                <ellipse
+                  className="cls-9"
+                  cx="17.26"
+                  cy="261.29"
+                  rx="3.2"
+                  ry="4.22"
+                  transform="translate(-140.96 52.64) rotate(-33.39)"
+                />
+                <path
+                  className="cls-6"
+                  d="M35.92,237.08c-2.53-3.1-6.86-1.8-8.38-2.69.49-.61,4.09-2.71,4.75-3.22l3.63,5.91Z"
+                />
+                <path
+                  className="cls-6"
+                  d="M75.53,310.65c3.1-2.53,1.8-6.86,2.69-8.38.61.49,2.71,4.09,3.22,4.75l-5.91,3.63Z"
+                />
+              </g>
+              <g className="cls-5">
+                <path
+                  className="cls-14"
+                  d="M15.36,284.62c-2.41,2.68,2.74,15.11,5.68,19.92,1.36,2.22,5.39,8.49,12.88,15.16,4.32,3.84,8.37,6.54,11.37,8.34,8.97.76,19.94,2.52,28.91,3.27l12.64-23.01-2.65-26.69c-4.18-6.95-15.92-10.43-16.19-7.58-.27,2.93-.52,5.84-.76,8.72-13.56,9.66-24.33,11.41-32.59,10.23-9.73-1.39-16.93-10.97-19.3-8.35Z"
+                />
+                <polygon
+                  className="cls-2"
+                  points="67.38 281.73 47.62 272.84 55.9 256.08 76.28 266.14 67.38 281.73"
+                />
+                <path
+                  className="cls-2"
+                  d="M37.23,310.24l-26.55-19.98,20.82,49.32,8.23-20.31c1.31-3.23.28-6.94-2.5-9.03Z"
+                />
+              </g>
+              <path
+                className="cls-8"
+                d="M144.37,153.87c0,11.52-9.33,20.84-20.84,20.84s-20.84-9.33-20.84-20.84h41.69Z"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div ref={scope} style={{opacity: 0}} className="absolute top-[5%] left-[2%] z-40 w-full max-w-[10rem] sm:max-w-[12rem]">
+        <svg
+          id="Layer_2"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 124.01 152.05"
+        >
+          <defs>
+            <style>
+              {`
+      .cls-1b {
+        fill: #5c8fff;
+      }
+
+      .cls-2b {
+        fill: #d2d6db;
       }`}
             </style>
           </defs>
           <g id="Layer_1-2" data-name="Layer_1">
-            <path
-              style={{ fill: "#f2f2f2", strokeWidth: "20px" }}
-              className="cls-1"
-              d="M171.32,151.57l-61.41,4.3,20.99,56.22c1.2,3.21-.04,6.62-2.74,7.63l-33.19,12.39c-2.72,1.02-5.89-.75-7.09-3.96l-20.99-56.22-49.21,37c-3.31,2.49-8.1-1.11-7.65-5.73L28.9,13.17c.29-3.03,3.45-4.21,5.68-2.12l138.77,131.18c3.39,3.18,2.13,9.03-2.02,9.34Z"
-            />
+            <g>
+              <g>
+                <circle className="cls-2b" cx="106.87" cy="146.75" r="5.3" />
+                <circle className="cls-2b" cx="100.87" cy="128.42" r="6.71" />
+                <circle className="cls-2b" cx="98.39" cy="106.56" r="8.83" />
+              </g>
+              <circle className="cls-2b" cx="49.31" cy="31.87" r="31.87" />
+              <circle className="cls-2b" cx="82.61" cy="45.38" r="31.25" />
+              <circle className="cls-2b" cx="31.87" cy="61.93" r="31.87" />
+              <circle className="cls-2b" cx="64.22" cy="61.93" r="31.87" />
+              <circle className="cls-2b" cx="92.75" cy="61.32" r="31.25" />
+              <g>
+                <path
+                  className="cls-1b"
+                  d="M39.73,40.19h-3.95v-2.26h10.48v2.26h-3.95v9.84h-2.58v-9.84Z"
+                />
+                <path
+                  className="cls-1b"
+                  d="M57.24,45.11h-6.45v4.92h-2.58v-12.1h2.58v4.92h6.45v-4.92h2.58v12.1h-2.58v-4.92Z"
+                />
+                <path
+                  className="cls-1b"
+                  d="M62.42,37.93h9.9v2.26h-7.32v2.66h6.58v2.26h-6.58v2.66h7.32v2.26h-9.9v-12.1Z"
+                />
+                <path
+                  className="cls-1b"
+                  d="M78.86,46.16l-4.76-8.23h2.74l3.05,5.74h.52l3.05-5.74h2.74l-4.76,8.24v3.85h-2.58v-3.87Z"
+                />
+                <path
+                  className="cls-1b"
+                  d="M35.92,62.94h7.69v6.45h-2.11v-1.29c-.84.94-2.13,1.61-4.26,1.61-4.06,0-6.58-2.18-6.58-6.37s2.52-6.37,6.58-6.37c2.95,0,5.08,1.15,6.03,3.39l-2.45.89c-.6-1.32-1.82-2.03-3.58-2.03-2.52,0-3.97,1.52-3.97,4.13s1.45,4.13,3.97,4.13c1.97,0,3.29-.94,3.77-2.58h-5.1v-1.95Z"
+                />
+                <path
+                  className="cls-1b"
+                  d="M46.22,57.3h9.9v2.26h-7.32v2.66h6.58v2.26h-6.58v2.66h7.32v2.26h-9.9v-12.1Z"
+                />
+                <path
+                  className="cls-1b"
+                  d="M62.02,59.56h-3.95v-2.26h10.48v2.26h-3.95v9.84h-2.58v-9.84Z"
+                />
+                <path
+                  className="cls-1b"
+                  d="M76.31,57.3h2.58v12.1h-2.58v-12.1Z"
+                />
+                <path
+                  className="cls-1b"
+                  d="M84.94,59.56h-3.95v-2.26h10.48v2.26h-3.95v9.84h-2.58v-9.84Z"
+                />
+                <path
+                  className="cls-1b"
+                  d="M94.95,66.65c.92,0,1.52.58,1.52,1.45s-.6,1.44-1.52,1.44-1.52-.58-1.52-1.44.61-1.45,1.52-1.45ZM93.66,60.18v-2.89h2.58v2.89l-.42,5.18h-1.76l-.4-5.18Z"
+                />
+              </g>
+            </g>
           </g>
         </svg>
       </div>
+      <div ref={scope3}  style={{opacity: 0}} className="absolute -top-[13%] right-[5%] w-full max-w-[10rem] sm:max-w-[12rem]">
+        <svg
+          id="Layer_2"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 232.55 245.86"
+        >
+          <defs>
+            <style>
+              {`
+      .cls-1n {
+        fill: #5c8fff;
+      }
 
-      <div className="w-full sm:w-[30rem]">
-        {toggle ? (
-          <svg
-            id="Layer_2"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 880 796.81"
-          >
-            <defs>
-              <style>
-                {`
-              .cls-1 {
-                letter-spacing: -.01em;
-              }
-        
-              .cls-2 {
-                letter-spacing: -.03em;
-              }
-        
-              .cls-3 {
-                letter-spacing: 0em;
-              }
-        
-              .cls-4 {
-                letter-spacing: 0em;
-              }
-        
-              .cls-5, .cls-6 {
-                letter-spacing: 0em;
-              }
-        
-              .cls-7, .cls-8, .cls-6, .cls-9 {
-                fill: #5c8fff;
-              }
-        
-              .cls-7, .cls-10 {
-                letter-spacing: -.05em;
-              }
-        
-              .cls-11 {
-                letter-spacing: 0em;
-              }
-        
-              .cls-12, .cls-13 {
-                fill: #606060;
-              }
-        
-              .cls-13 {
-                font-size: 21px;
-              }
-        
-              .cls-13, .cls-14 {
-                font-family: Gunterz-Bold, Gunterz;
-                font-weight: 700;
-              }
-        
-              .cls-15 {
-                letter-spacing: -.01em;
-              }
-        
-              .cls-16 {
-                letter-spacing: -.01em;
-              }
-        
-              .cls-17 {
-                fill: #c4c4c4;
-              }
-        
-              .cls-14 {
-                font-size: 45px;
-              }
-        
-              .cls-18 {
-                fill: #d2d6db;
-              }
-        
-              .cls-19 {
-                letter-spacing: -.05em;
-              }
-        
-              .cls-20 {
-                letter-spacing: -.13em;
-              }
-        
-              .cls-21, .cls-9 {
-                letter-spacing: -.03em;
-              }
-        
-              .cls-22 {
-                letter-spacing: 0em;
-              }
-        
-              .cls-23 {
-                clip-path: url(#clippath);
-              }
-        
-              .cls-24 {
-                fill: #e6e7e8;
-              }
-        
-              .cls-25 {
-                fill: #e8e8e8;
-                filter: url(#drop-shadow-1);
-              }`}
-              </style>
-              <clipPath id="clippath">
-                <rect
-                  className="cls-17"
-                  x="15.35"
-                  y="11.63"
-                  width="851.55"
-                  height="785.18"
-                  rx="56.84"
-                  ry="56.84"
-                />
-              </clipPath>
-              <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
-                <feOffset dx="1" dy="1" />
-                <feGaussianBlur result="blur" stdDeviation="3" />
-                <feFlood flood-color="#7f7f7f" flood-opacity=".17" />
-                <feComposite in2="blur" operator="in" />
-                <feComposite in="SourceGraphic" />
-              </filter>
-            </defs>
-            <g id="Layer_1-2" data-name="Layer_1">
+      .cls-2n {
+        fill: #d2d6db;
+      }`}
+            </style>
+          </defs>
+          <g id="Layer_1-2" data-name="Layer_1">
+            <g>
               <g>
-                <g>
-                  <rect
-                    className="cls-17"
-                    x="15.35"
-                    y="11.63"
-                    width="851.55"
-                    height="785.18"
-                    rx="56.84"
-                    ry="56.84"
-                  />
-                  <g className="cls-23">
-                    <rect
-                      className="cls-24"
-                      x="15.35"
-                      y="11.63"
-                      width="851.17"
-                      height="785.18"
-                    />
-                    <rect
-                      className="cls-25"
-                      x="8.59"
-                      y="8.6"
-                      width="860.97"
-                      height="78.06"
-                    />
-                  </g>
-                </g>
-                <rect
-                  className="cls-18"
-                  x="96.48"
-                  y="38.54"
-                  width="676.9"
-                  height="27.28"
-                  rx="13.64"
-                  ry="13.64"
+                <circle className="cls-2n" cx="48.42" cy="238.5" r="7.36" />
+                <circle className="cls-2n" cx="56.76" cy="213.06" r="9.32" />
+                <circle className="cls-2n" cx="60.19" cy="182.71" r="12.26" />
+              </g>
+              <g>
+                <circle className="cls-2n" cx="143.17" cy="57.7" r="57.7" />
+                <circle className="cls-2n" cx="85.46" cy="57.7" r="57.7" />
+                <circle className="cls-2n" cx="57.7" cy="100.8" r="57.7" />
+                <circle className="cls-2n" cx="116.28" cy="100.8" r="57.7" />
+                <circle className="cls-2n" cx="174.85" cy="100.8" r="57.7" />
+              </g>
+              <g>
+                <path
+                  className="cls-1n"
+                  d="M42.57,74.46h-4.96v-2.84h13.17v2.84h-4.96v12.36h-3.24v-12.36Z"
                 />
-                <rect
-                  className="cls-18"
-                  x="790.71"
-                  y="38.54"
-                  width="27.28"
-                  height="27.28"
-                  rx="13.64"
-                  ry="13.64"
+                <path
+                  className="cls-1n"
+                  d="M64.55,80.64h-8.11v6.18h-3.24v-15.2h3.24v6.18h8.11v-6.18h3.24v15.2h-3.24v-6.18Z"
                 />
-                <text className="cls-14" transform="translate(57.98 273.07)">
-                  <tspan className="cls-12">
-                    <tspan x="0" y="0">
-                      Un
-                    </tspan>
-                    <tspan className="cls-15" x="76.77" y="0">
-                      l
-                    </tspan>
-                    <tspan x="108.94" y="0">
-                      ock{" "}
-                    </tspan>
-                    <tspan className="cls-10" x="242.73" y="0">
-                      y
-                    </tspan>
-                    <tspan className="cls-5" x="279.67" y="0">
-                      our potential
-                    </tspan>
-                  </tspan>
-                  <tspan className="cls-12">
-                    <tspan x="0" y="54">
-                      with{" "}
-                    </tspan>
-                    <tspan className="cls-20" x="157.36" y="54">
-                      t
-                    </tspan>
-                    <tspan x="185.85" y="54">
-                      ai
-                    </tspan>
-                    <tspan className="cls-15" x="243.36" y="54">
-                      l
-                    </tspan>
-                    <tspan className="cls-22" x="275.53" y="54">
-                      o
-                    </tspan>
-                    <tspan x="316.8" y="54">
-                      red c
-                    </tspan>
-                    <tspan className="cls-21" x="480.55" y="54">
-                      o
-                    </tspan>
-                    <tspan className="cls-2" x="520.38" y="54">
-                      a
-                    </tspan>
-                    <tspan x="560.29" y="54">
-                      ching,{" "}
-                    </tspan>
-                  </tspan>
-                  <tspan className="cls-12">
-                    <tspan x="0" y="108">
-                      designed{" "}
-                    </tspan>
-                    <tspan className="cls-1" x="291.28" y="108">
-                      t
-                    </tspan>
-                    <tspan className="cls-5" x="325.21" y="108">
-                      o help{" "}
-                    </tspan>
-                    <tspan className="cls-19" x="536.8" y="108">
-                      y
-                    </tspan>
-                    <tspan x="573.74" y="108">
-                      ou{" "}
-                    </tspan>
-                  </tspan>
-                  <tspan className="cls-8" x="0" y="162">
-                    crush{" "}
-                  </tspan>
-                  <tspan className="cls-7" x="207" y="162">
-                    y
-                  </tspan>
-                  <tspan className="cls-6" x="243.94" y="162">
-                    our g
-                  </tspan>
-                  <tspan className="cls-9" x="415.08" y="162">
-                    o
-                  </tspan>
-                  <tspan className="cls-6" x="454.9" y="162">
-                    als{" "}
-                  </tspan>
-                  <tspan className="cls-12" x="579.82" y="162">
-                    AND
-                  </tspan>
-                  <tspan className="cls-8">
-                    <tspan className="cls-2" x="0" y="216">
-                      A
-                    </tspan>
-                    <tspan className="cls-11" x="39.92" y="216">
-                      CHIEVE SUCCESS.
-                    </tspan>
-                  </tspan>
-                </text>
-                <rect
-                  className="cls-8"
-                  x="255.14"
-                  y="555.47"
-                  width="365.17"
-                  height="114.84"
+                <path
+                  className="cls-1n"
+                  d="M71.26,71.62h3.24v15.2h-3.24v-15.2Z"
                 />
-                <text className="cls-13" transform="translate(288.12 618.29)">
-                  <tspan x="0" y="0">
-                    get my cus
-                  </tspan>
-                  <tspan className="cls-16" x="158" y="0">
-                    t
-                  </tspan>
-                  <tspan className="cls-4" x="173.84" y="0">
-                    o
-                  </tspan>
-                  <tspan className="cls-3" x="193.09" y="0">
-                    m PLAN!
-                  </tspan>
-                </text>
+                <path
+                  className="cls-1n"
+                  d="M78.7,82.5c1.88,1.11,4.28,1.88,6.81,1.88,2.15,0,3.32-.59,3.32-1.36,0-2.13-10.82-2.03-10.82-7.38,0-2.65,2.55-4.44,7.01-4.44,4.13,0,6.52,1.99,6.52,1.99l-1.5,2.53c-1.2-.91-3.42-1.62-5.17-1.62-2.13,0-3.59.65-3.59,1.68,0,2.39,10.86,2.03,10.86,7.25,0,2.01-2.05,4.28-6.77,4.28s-7.82-1.95-7.82-1.95l1.13-2.88Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M102.31,71.62h3.24v15.2h-3.24v-15.2Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M109.75,82.5c1.88,1.11,4.28,1.88,6.81,1.88,2.15,0,3.32-.59,3.32-1.36,0-2.13-10.82-2.03-10.82-7.38,0-2.65,2.55-4.44,7.01-4.44,4.13,0,6.52,1.99,6.52,1.99l-1.5,2.53c-1.2-.91-3.42-1.62-5.17-1.62-2.13,0-3.59.65-3.59,1.68,0,2.39,10.86,2.03,10.86,7.25,0,2.01-2.05,4.28-6.77,4.28s-7.82-1.95-7.82-1.95l1.13-2.88Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M135.56,80.6c0,2.25.99,3.77,3.42,3.77s3.22-1.24,3.22-3.51v-9.24h3.24v8.98c0,4.03-1.82,6.63-6.57,6.63-4.15,0-6.46-2.47-6.57-6.63h3.24Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M148.7,71.62h3.24v9.4c0,2.41,1.72,3.36,3.51,3.36s3.5-.95,3.5-3.36v-9.4h3.24v8.98c0,4.28-2.49,6.63-6.85,6.63s-6.65-2.35-6.65-6.63v-8.98Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M166.19,82.5c1.88,1.11,4.28,1.88,6.81,1.88,2.15,0,3.32-.59,3.32-1.36,0-2.13-10.82-2.03-10.82-7.38,0-2.65,2.55-4.44,7.01-4.44,4.13,0,6.52,1.99,6.52,1.99l-1.5,2.53c-1.2-.91-3.42-1.62-5.17-1.62-2.13,0-3.59.65-3.59,1.68,0,2.39,10.86,2.03,10.86,7.25,0,2.01-2.05,4.28-6.77,4.28s-7.82-1.95-7.82-1.95l1.13-2.88Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M186.63,74.46h-4.96v-2.84h13.17v2.84h-4.96v12.36h-3.24v-12.36Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M38.39,95.94l2.74,10.94,2.61-10.94h3.38l2.61,10.94,2.74-10.94h3.49l-4.36,15.2h-3.63l-2.55-9.14-2.53,9.14h-3.63l-4.36-15.2h3.49Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M69.54,104.96h-8.11v6.18h-3.24v-15.2h3.24v6.18h8.11v-6.18h3.24v15.2h-3.24v-6.18Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M80.54,95.94h5.21l5.51,15.2h-3.45l-.99-2.96h-7.36l-.99,2.96h-3.45l5.51-15.2ZM85.93,105.55l-2.27-6.77h-1.03l-2.29,6.77h5.59Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M94.95,98.78h-4.96v-2.84h13.17v2.84h-4.96v12.36h-3.24v-12.36Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M112.91,95.94h3.24v15.2h-3.24v-15.2Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M126.71,95.94h3.24l7.7,10.17v-10.17h3.24v15.2h-3.24l-7.7-10.15v10.15h-3.24v-15.2Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M144.16,95.94h12.44v2.84h-9.2v3.34h8.27v2.84h-8.27v3.34h9.2v2.84h-12.44v-15.2Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M159.86,95.94h12.44v2.84h-9.2v3.34h8.27v2.84h-8.27v3.34h9.2v2.84h-12.44v-15.2Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M175.57,95.94h6.75c4.52,0,7.52,2.59,7.52,7.68s-3,7.52-7.52,7.52h-6.75v-15.2ZM178.81,98.78v9.52h4.01c2.03,0,3.77-1.56,3.77-4.8s-1.74-4.72-3.77-4.72h-4.01Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M194.62,107.69c1.16,0,1.91.73,1.91,1.82s-.75,1.8-1.91,1.8-1.9-.73-1.9-1.8.77-1.82,1.9-1.82Z"
+                />
+                <path
+                  className="cls-1n"
+                  d="M201.71,107.69c1.16,0,1.91.73,1.91,1.82s-.75,1.8-1.91,1.8-1.9-.73-1.9-1.8.77-1.82,1.9-1.82Z"
+                />
               </g>
             </g>
-          </svg>
-        ) : (
-          <svg
-            id="Layer_2"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 880 796.81"
-          >
-            <defs>
-              <style>
-                {`
-                .cls-1 {
-                  letter-spacing: -.01em;
-                }
-          
-                .cls-2 {
-                  letter-spacing: -.03em;
-                }
-          
-                .cls-3 {
-                  fill: #91b7f9;
-                }
-          
-                .cls-4 {
-                  letter-spacing: 0em;
-                }
-          
-                .cls-5 {
-                  letter-spacing: 0em;
-                }
-          
-                .cls-6, .cls-7 {
-                  letter-spacing: 0em;
-                }
-          
-                .cls-8, .cls-9, .cls-7, .cls-10 {
-                  fill: #5c8fff;
-                }
-          
-                .cls-8, .cls-11 {
-                  letter-spacing: -.05em;
-                }
-          
-                .cls-12 {
-                  letter-spacing: 0em;
-                }
-          
-                .cls-13, .cls-14 {
-                  fill: #606060;
-                }
-          
-                .cls-14 {
-                  font-size: 21px;
-                }
-          
-                .cls-14, .cls-15 {
-                  font-family: Gunterz-Bold, Gunterz;
-                  font-weight: 700;
-                }
-          
-                .cls-16 {
-                  letter-spacing: -.01em;
-                }
-          
-                .cls-17 {
-                  letter-spacing: -.01em;
-                }
-          
-                .cls-18 {
-                  fill: #c4c4c4;
-                }
-          
-                .cls-15 {
-                  font-size: 45px;
-                }
-          
-                .cls-19 {
-                  fill: #d2d6db;
-                }
-          
-                .cls-20 {
-                  letter-spacing: -.05em;
-                }
-          
-                .cls-21 {
-                  letter-spacing: -.13em;
-                }
-          
-                .cls-22, .cls-10 {
-                  letter-spacing: -.03em;
-                }
-          
-                .cls-23 {
-                  letter-spacing: 0em;
-                }
-          
-                .cls-24 {
-                  clip-path: url(#clippath);
-                }
-          
-                .cls-25 {
-                  fill: #e6e7e8;
-                }
-          
-                .cls-26 {
-                  fill: #e8e8e8;
-                  filter: url(#drop-shadow-1);
-                }`}
-              </style>
-              <clipPath id="clippath">
-                <rect
-                  className="cls-18"
-                  x="15.35"
-                  y="11.63"
-                  width="851.55"
-                  height="785.18"
-                  rx="56.84"
-                  ry="56.84"
-                />
-              </clipPath>
-              <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
-                <feOffset dx="1" dy="1" />
-                <feGaussianBlur result="blur" stdDeviation="3" />
-                <feFlood flood-color="#7f7f7f" flood-opacity=".17" />
-                <feComposite in2="blur" operator="in" />
-                <feComposite in="SourceGraphic" />
-              </filter>
-            </defs>
-            <g id="Layer_1-2" data-name="Layer_1">
-              <g>
-                <g>
-                  <rect
-                    className="cls-18"
-                    x="15.35"
-                    y="11.63"
-                    width="851.55"
-                    height="785.18"
-                    rx="56.84"
-                    ry="56.84"
-                  />
-                  <g className="cls-24">
-                    <rect
-                      className="cls-25"
-                      x="15.35"
-                      y="11.63"
-                      width="851.17"
-                      height="785.18"
-                    />
-                    <rect
-                      className="cls-26"
-                      x="8.59"
-                      y="8.6"
-                      width="860.97"
-                      height="78.06"
-                    />
-                  </g>
-                </g>
-                <rect
-                  className="cls-19"
-                  x="96.48"
-                  y="38.54"
-                  width="676.9"
-                  height="27.28"
-                  rx="13.64"
-                  ry="13.64"
-                />
-                <rect
-                  className="cls-19"
-                  x="790.71"
-                  y="38.54"
-                  width="27.28"
-                  height="27.28"
-                  rx="13.64"
-                  ry="13.64"
-                />
-                <text className="cls-15" transform="translate(57.98 273.07)">
-                  <tspan className="cls-13">
-                    <tspan x="0" y="0">
-                      Un
-                    </tspan>
-                    <tspan className="cls-16" x="76.77" y="0">
-                      l
-                    </tspan>
-                    <tspan x="108.94" y="0">
-                      ock{" "}
-                    </tspan>
-                    <tspan className="cls-11" x="242.73" y="0">
-                      y
-                    </tspan>
-                    <tspan className="cls-6" x="279.67" y="0">
-                      our potential
-                    </tspan>
-                  </tspan>
-                  <tspan className="cls-13">
-                    <tspan x="0" y="54">
-                      with{" "}
-                    </tspan>
-                    <tspan className="cls-21" x="157.36" y="54">
-                      t
-                    </tspan>
-                    <tspan x="185.85" y="54">
-                      ai
-                    </tspan>
-                    <tspan className="cls-16" x="243.36" y="54">
-                      l
-                    </tspan>
-                    <tspan className="cls-23" x="275.53" y="54">
-                      o
-                    </tspan>
-                    <tspan x="316.8" y="54">
-                      red c
-                    </tspan>
-                    <tspan className="cls-22" x="480.55" y="54">
-                      o
-                    </tspan>
-                    <tspan className="cls-2" x="520.38" y="54">
-                      a
-                    </tspan>
-                    <tspan x="560.29" y="54">
-                      ching,{" "}
-                    </tspan>
-                  </tspan>
-                  <tspan className="cls-13">
-                    <tspan x="0" y="108">
-                      designed{" "}
-                    </tspan>
-                    <tspan className="cls-1" x="291.28" y="108">
-                      t
-                    </tspan>
-                    <tspan className="cls-6" x="325.21" y="108">
-                      o help{" "}
-                    </tspan>
-                    <tspan className="cls-20" x="536.8" y="108">
-                      y
-                    </tspan>
-                    <tspan x="573.74" y="108">
-                      ou{" "}
-                    </tspan>
-                  </tspan>
-                  <tspan className="cls-9" x="0" y="162">
-                    crush{" "}
-                  </tspan>
-                  <tspan className="cls-8" x="207" y="162">
-                    y
-                  </tspan>
-                  <tspan className="cls-7" x="243.94" y="162">
-                    our g
-                  </tspan>
-                  <tspan className="cls-10" x="415.08" y="162">
-                    o
-                  </tspan>
-                  <tspan className="cls-7" x="454.9" y="162">
-                    als{" "}
-                  </tspan>
-                  <tspan className="cls-13" x="579.82" y="162">
-                    AND
-                  </tspan>
-                  <tspan className="cls-9">
-                    <tspan className="cls-2" x="0" y="216">
-                      A
-                    </tspan>
-                    <tspan className="cls-12" x="39.92" y="216">
-                      CHIEVE SUCCESS.
-                    </tspan>
-                  </tspan>
-                </text>
-                <rect
-                  className="cls-3"
-                  x="255.14"
-                  y="555.47"
-                  width="365.17"
-                  height="114.84"
-                />
-                <text className="cls-14" transform="translate(288.12 618.29)">
-                  <tspan x="0" y="0">
-                    get my cus
-                  </tspan>
-                  <tspan className="cls-17" x="158" y="0">
-                    t
-                  </tspan>
-                  <tspan className="cls-5" x="173.84" y="0">
-                    o
-                  </tspan>
-                  <tspan className="cls-4" x="193.09" y="0">
-                    m PLAN!
-                  </tspan>
-                </text>
-              </g>
-            </g>
-          </svg>
-        )}
+          </g>
+        </svg>
       </div>
     </div>
   );

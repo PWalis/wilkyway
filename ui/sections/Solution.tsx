@@ -11,6 +11,7 @@ import { SolutionAnimation } from "../animated/SolutionAnimation";
 import { SolutionAnimation2 } from "../animated/SolutionAnimation2";
 import { SolutionAnimation3 } from "../animated/SolutionAnimation3";
 import { SolutionAnimation4 } from "../animated/SolutionAnimation4";
+import { SolutionAnimation5 } from "../animated/SolutionAnimation5";
 
 export const Solution: React.FC = () => {
   const ref = useRef(null);
@@ -35,6 +36,8 @@ export const Solution: React.FC = () => {
         return <SolutionAnimation3 key="3" />;
       case 3:
         return <SolutionAnimation4 key="4" />;
+      case 4:
+        return <SolutionAnimation5 key="5" />;
     }
   };
 
