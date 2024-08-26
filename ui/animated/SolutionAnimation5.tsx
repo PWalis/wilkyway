@@ -14,7 +14,18 @@ export const SolutionAnimation5: React.FC = () => {
         [scope.current, { rotate: "2deg" }],
         [scope.current, { rotate: "0deg" }],
       ],
-      { repeat: Infinity, duration: 0.1}
+      { repeat: Infinity, duration: 0.4 }
+    );
+
+    animate(
+      [
+        [scope.current, { x: "5%", y: "5%" }, {type: "tween"}],
+        [scope.current, { x: "-5%", y: "5%" }, {type: "tween"}],
+        [scope.current, { x: "5%", y: "0%" }, {type: "tween"}],
+        [scope.current, { x: "-5%", y: "0%" }, {type: "tween"}],
+        [scope.current, { x: "0%", y: "0%" }, {type: "tween"}]
+      ],
+      { repeat: Infinity, duration: 2 }
     );
 
     if (isPresent) {
@@ -33,7 +44,7 @@ export const SolutionAnimation5: React.FC = () => {
 
   return (
     <div ref={scope2} className="relative w-full h-full">
-      <div ref={scope} style={{rotate: "-1deg"}} className="w-full">
+      <div ref={scope} style={{ rotate: "-1deg" }} className="w-full">
         <svg
           id="Layer_rocket"
           xmlns="http://www.w3.org/2000/svg"
