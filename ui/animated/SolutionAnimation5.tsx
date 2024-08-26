@@ -9,13 +9,13 @@ export const SolutionAnimation5: React.FC = () => {
   const [isPresent, safeToRemove] = usePresence();
 
   useEffect(() => {
-    animate(
-      [
-        [scope.current, { rotate: "2deg" }],
-        [scope.current, { rotate: "0deg" }],
-      ],
-      { repeat: Infinity, duration: 0.1}
-    );
+    // animate(
+    //   [
+    //     [scope.current, { rotate: "2deg" }],
+    //     [scope.current, { rotate: "0deg" }],
+    //   ],
+    //   { repeat: Infinity, duration: 0.1}
+    // );
 
     if (isPresent) {
       const enterAnimation = async () => {
@@ -32,8 +32,8 @@ export const SolutionAnimation5: React.FC = () => {
   }, [isPresent]);
 
   return (
-    <div ref={scope2} style={{ opacity: 0 }} className="relative w-full h-full">
-      <div ref={scope} style={{rotate: "-1deg"}} className="w-full flex items-center justify-center">
+    <div ref={scope2}  className="relative w-full h-full">
+      <div ref={scope}  className="w-full flex items-center justify-center">
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
