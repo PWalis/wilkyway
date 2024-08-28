@@ -43,7 +43,7 @@ export const SolutionAnimation5: React.FC = () => {
   }, [isPresent]);
 
   return (
-    <div ref={scope2} className="relative w-full h-full overflow-hidden">
+    <div ref={scope2} style={{opacity: 0}} className="relative w-full h-full overflow-hidden">
       <div ref={scope} style={{ rotate: "-1deg" }} className="w-full">
         <svg
           id="Layer_rocket"

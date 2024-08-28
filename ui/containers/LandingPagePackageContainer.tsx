@@ -1,8 +1,37 @@
-import react, { PropsWithChildren } from 'react';
+"use client";
+import Link from "next/link";
+import react, { PropsWithChildren, ReactNode, useState } from "react";
+import { motion } from "framer-motion";
 
-export const LandingPagePackageContainer: React.FC<PropsWithChildren> = ({ children }) => {
-    return (
-        <div className='w-[17rem] h-[19.5rem] bg-storm-gray py-10 px-5 flex flex-col items-center gap-3'><div className="w-full max-w-[4rem]">
+interface LandingPagePackageContainerProps extends PropsWithChildren {
+  title: string;
+}
+
+export const LandingPagePackageContainer: React.FC<
+  LandingPagePackageContainerProps
+> = ({ children, title }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const linkVariants = { hidden: { opacity: 0 }, visible: { opacity: 1 } };
+  const colorVariants = {
+    hover: { color: "#FF9900" },
+    noHover: { color: "#FFF" },
+  };
+  const svgVariants = { hover: { fill: "#FF9900" }, noHover: { fill: "#FFF" } };
+
+  return (
+    <div
+      onMouseLeave={() => handleMouseLeave()}
+      onMouseEnter={() => handleMouseEnter()}
+      className="w-[17rem] h-[19.5rem] bg-storm-gray py-10 px-5 flex flex-col items-center gap-3 relative"
+    >
+      <div className="w-full max-w-[4rem] ">
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
@@ -12,16 +41,12 @@ export const LandingPagePackageContainer: React.FC<PropsWithChildren> = ({ child
           <defs>
             <style>
               {`
-  .cls-1check {
-    fill: #fff;
-  }
-
   .cls-2check {
     fill: #303030;
-    filter: url(#drop-shadow-1);
+    filter: url(#drop-shadow-1check);
   }`}
             </style>
-            <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+            <filter id="drop-shadow-1check" filterUnits="userSpaceOnUse">
               <feOffset dx="1" dy="3" />
               <feGaussianBlur result="blur" stdDeviation="2" />
               <feFlood flood-color="#000" flood-opacity=".5" />
@@ -40,16 +65,20 @@ export const LandingPagePackageContainer: React.FC<PropsWithChildren> = ({ child
               ry="8.5"
             />
             <g>
-              <rect
-                className="cls-1check"
+              <motion.rect
+                variants={svgVariants}
+                initial="noHover"
+                animate={isHovered ? "hover" : "noHover"}
                 x="12.56"
                 y="33.88"
                 width="29.27"
                 height="16.59"
                 transform="translate(37.79 -6.88) rotate(45)"
               />
-              <rect
-                className="cls-1check"
+              <motion.rect
+                variants={svgVariants}
+                initial="noHover"
+                animate={isHovered ? "hover" : "noHover"}
                 x="18.97"
                 y="27.68"
                 width="46.81"
@@ -59,6 +88,31 @@ export const LandingPagePackageContainer: React.FC<PropsWithChildren> = ({ child
             </g>
           </g>
         </svg>
-      </div>{children}</div>
-    )
-}
+      </div>
+      <motion.h5
+        variants={colorVariants}
+        animate={isHovered ? "hover" : "noHover"}
+        className="font-gunterz text-[1.25rem] text-center mt-2"
+      >
+        {title}
+      </motion.h5>
+      {children}
+      <motion.div
+        className="flex justify-center"
+        variants={linkVariants}
+        animate={isHovered ? "visible" : "hidden"}
+        initial="hidden"
+      >
+        <Link
+          style={{
+            color: "#FF9900",
+          }}
+          className="absolute bottom-4 font-nobelUno text-[1.1rem]"
+          href="/LandingPagePackage"
+        >
+          Learn More
+        </Link>
+      </motion.div>
+    </div>
+  );
+};

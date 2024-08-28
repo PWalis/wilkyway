@@ -11,8 +11,8 @@ export const SolutionAnimation4: React.FC = () => {
   useEffect(() => {
     const animation = async () => {
       try {
-        await animate(scope.current, { opacity: 1 }, { delay: 2 });
-        await animate(scope3.current, { opacity: 1}, { delay: 2 });
+        await animate(scope.current, { opacity: 1 }, { delay: 0.5 });
+        await animate(scope3.current, { opacity: 1}, { delay: 1 });
       } catch (error) {
         const typedError = error as { message: string }; // Type assertion
         if (typedError.message === "No valid element provided.") {
@@ -43,7 +43,7 @@ export const SolutionAnimation4: React.FC = () => {
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
-          viewBox="-160 -50 480 438"
+          viewBox="-120 -50 480 438"
         >
           <defs>
             <style>
@@ -246,7 +246,7 @@ export const SolutionAnimation4: React.FC = () => {
           </g>
         </svg>
       </div>
-      <div ref={scope} style={{opacity: 0}} className="absolute top-[5%] left-[2%] z-40 w-full max-w-[10rem] sm:max-w-[12rem]">
+      <div ref={scope} style={{opacity: 0}} className="absolute top-[13%] left-[4%] z-40 w-full max-w-[8rem] sm:max-w-[9rem]">
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
@@ -322,7 +322,7 @@ export const SolutionAnimation4: React.FC = () => {
           </g>
         </svg>
       </div>
-      <div ref={scope3}  style={{opacity: 0}} className="absolute -top-[13%] right-[5%] w-full max-w-[10rem] sm:max-w-[12rem]">
+      <div ref={scope3}  style={{opacity: 0}} className="absolute -top-[2%] right-[2%] w-full max-w-[10rem] sm:max-w-[12rem]">
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"

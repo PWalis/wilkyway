@@ -1,8 +1,55 @@
 "use client";
-import React from "react";
-import { SolutionContainer } from "../containers/SolutionContainer";
+import React, { useState, useEffect } from "react";
+import { ProcessContainer } from "../containers/ProcessContainer";
+import { AnimatePresence } from "framer-motion";
+import { ProcessAnimation } from "../animated/ProcessAnimation";
 
 export const Process: React.FC = () => {
+  const [frame, setFrame] = useState(0);
+
+  const renderComponent = () => {
+    switch (frame) {
+      case 0:
+      return <ProcessAnimation key="1" />;
+      case 1:
+      // return <SolutionAnimation2 key="2" />;
+      case 2:
+      // return <SolutionAnimation3 key="3" />;
+    }
+  };
+
+  const options = {
+    root: null,
+    rootMargin: "-45%",
+    threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+  };
+
+  const callBackFunction = (entries: any, frame: number) => {
+    if (entries[0].isIntersecting) {
+      setFrame(frame);
+    }
+  };
+
+  useEffect(() => {
+    const observer1 = new IntersectionObserver((entries) => {
+      callBackFunction(entries, 0);
+    }, options);
+    const observer2 = new IntersectionObserver((entries) => {
+      callBackFunction(entries, 1);
+    }, options);
+    const observer3 = new IntersectionObserver((entries) => {
+      callBackFunction(entries, 2);
+    }, options);
+
+    const process1 = document.getElementById("process1");
+    const process2 = document.getElementById("process2");
+    const process3 = document.getElementById("process3");
+
+    observer1.observe(process1!);
+    observer2.observe(process2!);
+    observer3.observe(process3!);
+  }, []);
+
   return (
     <section className="min-h-[60rem] flex flex-col items-center bg-storm-black">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
@@ -12,7 +59,7 @@ export const Process: React.FC = () => {
         </h2>
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[98rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
           <div className="flex flex-col gap-[5rem] lg:gap-[20rem] lg:mt-[15rem] max-w-[30rem] absolute lg:relative top-10 px-5 mb-16">
-            <SolutionContainer id="process1">
+            <ProcessContainer id="process1">
               <h3 className="font-gunterz leading-[3.4rem]">
                 FILL OUT A <span className="text-sun-orange">FREE</span> REQUEST
                 GET A{" "}
@@ -28,8 +75,8 @@ export const Process: React.FC = () => {
                 </span>
               </h3>
               <p className="text-[#9B9B9B]">(We value your time)</p>
-            </SolutionContainer>
-            <SolutionContainer id="process2">
+            </ProcessContainer>
+            <ProcessContainer id="process2">
               <h3 className="font-gunterz leading-[3.4rem]">
                 <span className="text-sun-orange">STRATEGY</span> CALL. WHERE WE
                 PLAN OUT{" "}
@@ -44,8 +91,8 @@ export const Process: React.FC = () => {
                   THE DIRECTION FOR YOUR LANDING PAGE
                 </span>
               </h3>
-            </SolutionContainer>
-            <SolutionContainer id="process3">
+            </ProcessContainer>
+            <ProcessContainer id="process3">
               <h3 className="font-gunterz leading-[3.4rem]">
                 SIGN OFF ON THE <span className="text-sun-orange">DESIGN</span>{" "}
                 AND WE{" "}
@@ -60,10 +107,14 @@ export const Process: React.FC = () => {
                   LAUNCH
                 </span>
               </h3>
-            </SolutionContainer>
+            </ProcessContainer>
           </div>
-          <div className="flex justify-center w-full lg:max-w-[23rem] h-[24rem] bg-storm-black mt-[20rem] lg:mt-[15rem] sticky top-[60vh] lg:top-[20rem]">
-            <div className="h-[20rem] max-w-[23rem] w-full bg-storm-gray"></div>
+          <div className="flex justify-center w-full lg:max-w-[30rem] h-[24rem] bg-storm-black mb-20 mt-[20rem] lg:mt-[15rem] sticky top-[58vh] lg:top-[20rem]">
+            <div className="h-[30rem] max-w-[30rem] w-full">
+              <AnimatePresence mode="popLayout">
+                {renderComponent()}
+              </AnimatePresence>
+            </div>
           </div>
         </div>
       </div>

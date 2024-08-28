@@ -12,11 +12,17 @@ export const SolutionAnimation3: React.FC = () => {
   const [scope2, animate2] = useAnimate();
   const [toggle, setToggle] = useState(true);
   const [isPresent, safeToRemove] = usePresence();
+  const [delay, setDelay] = useState(1000)
 
   useEffect(() => {
     const toggleState = setInterval(() => {
       setToggle(!toggle);
-    }, 2500);
+      if (delay != 4000) {
+        setDelay(4000)
+      } else {
+        setDelay(1000)
+      }
+    }, delay);
 
     if (isPresent) {
       const enterAnimation = async () => {
