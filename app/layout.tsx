@@ -13,7 +13,7 @@ const nobelUno = localFont({
 });
 
 const charcoalDance = localFont({
-  src: "../public/fonts/Charcoal Dance-SVG.otf",
+  src: "../public/fonts/CharcoalDance-Regular.otf",
   variable: "--font-charcoal-dance",
 });
 const gunterz = localFont({
