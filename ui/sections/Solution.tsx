@@ -147,7 +147,7 @@ export const Solution: React.FC = () => {
               </p>
             </SolutionContainer>
           </div>
-          <div className="flex justify-center w-full lg:max-w-[30rem] h-[24rem] bg-storm-black mt-[20rem] lg:mt-[15rem] sticky top-[59vh] lg:top-[20rem]">
+          <div className="flex justify-center w-full lg:max-w-[30rem] h-[24rem] bg-storm-black mb-20 mt-[20rem] lg:mt-[15rem] sticky top-[58vh] lg:top-[20rem]">
             <div className="h-[30rem] max-w-[30rem] w-full">
               <AnimatePresence mode="popLayout">
                 {renderComponent()}
