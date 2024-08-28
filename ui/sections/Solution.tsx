@@ -14,18 +14,8 @@ import { SolutionAnimation4 } from "../animated/SolutionAnimation4";
 import { SolutionAnimation5 } from "../animated/SolutionAnimation5";
 
 export const Solution: React.FC = () => {
-  const ref = useRef(null);
   const [frame, setFrame] = useState(0);
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  //   offset: ["start start", "end center"],
-  // });
-  // const progress = useTransform(
-  //   scrollYProgress,
-  //   [0, 0.2, 0.4, 0.6, 0.8],
-  //   [1, 2, 3, 4, 5]
-  // );
-
+  
   const options = {
     root: null,
     rootMargin: "-45%",
@@ -83,22 +73,6 @@ export const Solution: React.FC = () => {
     }
   };
 
-  // useMotionValueEvent(progress, "change", () => {
-  //   const p = progress.get();
-  //   console.log(p);
-  //   if (p < 1.6 && frame != 0) {
-  //     setFrame(0);
-  //   } else if (p > 1.6 && p < 2.67 && frame != 1) {
-  //     setFrame(1);
-  //   } else if (p > 2.68 && p < 3.8 && frame != 2) {
-  //     setFrame(2);
-  //   } else if (p > 3.8 && p < 4.6 && frame != 3) {
-  //     setFrame(3);
-  //   } else if (p > 4.6 && p < 5 && frame != 4) {
-  //     setFrame(4);
-  //   }
-  // });
-
   return (
     <section className="min-h-[60rem] flex flex-col items-center bg-storm-black">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
@@ -108,7 +82,6 @@ export const Solution: React.FC = () => {
         </h2>
 
         <div
-          // ref={ref}
           className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[165rem] md:min-h-[140rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative"
         >
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
@@ -175,7 +148,7 @@ export const Solution: React.FC = () => {
             </SolutionContainer>
           </div>
           <div className="flex justify-center w-full lg:max-w-[30rem] h-[24rem] bg-storm-black mt-[20rem] lg:mt-[15rem] sticky top-[59vh] lg:top-[20rem]">
-            <div className="h-[30rem] max-w-[30rem] w-full overflow-hidden">
+            <div className="h-[30rem] max-w-[30rem] w-full">
               <AnimatePresence mode="popLayout">
                 {renderComponent()}
               </AnimatePresence>

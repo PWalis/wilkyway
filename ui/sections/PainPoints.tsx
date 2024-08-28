@@ -127,9 +127,9 @@ export const PainPoints: React.FC = () => {
         <h2 className="font-charcoalDance w-full text-left mb-3 mt-10">
           does this hit <span className="text-sun-orange">home?</span>
         </h2>
-        <div className="w-full max-w-[86.375rem] flex flex-row justify-center flex-wrap gap-5">
+        <div className="w-full max-w-[86.375rem] flex flex-row justify-center flex-wrap gap-8">
           <PainPoint>
-            <div className=" w-full max-w-[10rem]">
+            <div className="w-full max-w-[8rem] mt-7 mb-9">
               <svg
                 id="Layer_2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -178,13 +178,13 @@ export const PainPoints: React.FC = () => {
               </svg>
             </div>
             <h4 className="font-gunterz">ERROR 404</h4>
-            <p>
+            <p className="px-5">
               Starting to feel like a broken record because you don&apos;t have
               a website that sells for you?
             </p>
           </PainPoint>
           <PainPoint>
-            <div className="w-full max-w-[10rem]">
+            <div className="w-full max-w-[6rem] mt-4 mb-5">
               <svg
                 id="Layer_2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -229,12 +229,12 @@ export const PainPoints: React.FC = () => {
               </svg>
             </div>
             <h4 className="font-gunterz">WORD MYSTERY</h4>
-            <p>
+            <p className="px-4">
               Does your website lack the silver tongue of a seasoned salesman?
             </p>
           </PainPoint>
           <PainPoint>
-            <div className="w-full max-w-[8rem]">
+            <div className="w-full max-w-[5rem] mt-4 mb-5">
               <svg
                 id="Layer_2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -267,13 +267,13 @@ export const PainPoints: React.FC = () => {
               </svg>
             </div>
             <h4 className="font-gunterz">TUTORIAL HELL</h4>
-            <p>
+            <p className="px-3">
               Avoiding another hour spent learning how to make a website that
               leaves you feeling &apos;meh&apos;?
             </p>
           </PainPoint>
           <PainPoint>
-            <div className="w-full max-w-[8rem]">
+            <div className="w-full max-w-[5rem] mt-6 mb-7">
               <svg
                 id="Layer_2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -308,7 +308,7 @@ export const PainPoints: React.FC = () => {
             </p>
           </PainPoint>
           <PainPoint>
-            <div className="w-full max-w-[10rem]">
+            <div className="w-full max-w-[6rem] mt-6 mb-7">
               <svg
                 id="Layer_2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -331,13 +331,13 @@ export const PainPoints: React.FC = () => {
               </svg>
             </div>
             <h4 className="font-gunterz">THE TRENCHES</h4>
-            <p>
+            <p className="px-4">
               Stuck in the mud with your lack of consistent coaching clients
               every month?
             </p>
           </PainPoint>
           <PainPoint>
-            <div className="w-full max-w-[10rem]">
+            <div className="w-full max-w-[5rem] mt-7 mb-7">
               <svg
                 id="Layer_2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -366,7 +366,7 @@ export const PainPoints: React.FC = () => {
             </p>
           </PainPoint>
           <PainPoint>
-            <div className="w-full max-w-[10rem]">
+            <div className="w-full max-w-[5rem] mt-7 mb-7">
               <svg
                 id="Layer_2"
                 xmlns="http://www.w3.org/2000/svg"
