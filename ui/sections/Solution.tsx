@@ -28,7 +28,7 @@ export const Solution: React.FC = () => {
 
   const options = {
     root: null,
-    rootMargin: "-50%",
+    rootMargin: "-45%",
     threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
   };
 
@@ -113,8 +113,8 @@ export const Solution: React.FC = () => {
         >
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
             <div>
-              <SolutionContainer>
-                <h3 className="font-gunterz" id="title1">
+              <SolutionContainer id="title1">
+                <h3 className="font-gunterz" >
                   DON&apos;T LET YOUR LEADS LEAVE YOU ON READ.
                 </h3>
                 <p className="max-w-[26.25rem]">
@@ -124,8 +124,8 @@ export const Solution: React.FC = () => {
                 </p>
               </SolutionContainer>
             </div>
-              <SolutionContainer>
-                <h3 className="font-gunterz" id="title2">
+              <SolutionContainer id="title2">
+                <h3 className="font-gunterz" >
                   <span className="text-sun-orange">BOOST SALES</span> AND
                   MAXIMIZE CLICKS.
                 </h3>
@@ -137,8 +137,8 @@ export const Solution: React.FC = () => {
                   a COACH!
                 </p>
               </SolutionContainer>
-            <SolutionContainer>
-              <h3 className="font-gunterz" id="title3">
+            <SolutionContainer id="title3">
+              <h3 className="font-gunterz" >
                 <span className="text-sun-orange">BUILD TRUST</span> THROUGH
                 PROFESSIONAL DESIGN.
               </h3>
@@ -150,8 +150,8 @@ export const Solution: React.FC = () => {
                 what kind of impression does that leave?
               </p>
             </SolutionContainer>
-            <SolutionContainer>
-              <h3 className="font-gunterz" id="title4">
+            <SolutionContainer id="title4">
+              <h3 className="font-gunterz" >
                 <span className="text-sun-orange">CAPTIVATE YOUR MARKET</span>{" "}
                 WITH TARGETED COPYWRITING.
               </h3>
@@ -162,8 +162,8 @@ export const Solution: React.FC = () => {
                 like it was made for them, because it was.
               </p>
             </SolutionContainer>
-            <SolutionContainer>
-              <h3 className="font-gunterz" id="title5">
+            <SolutionContainer id="title5">
+              <h3 className="font-gunterz" >
                 SO <span className="text-sun-orange">FAST</span> YOU WON'T MISS
                 IT.
               </h3>

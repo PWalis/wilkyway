@@ -7,12 +7,12 @@ export const Process: React.FC = () => {
     <section className="min-h-[60rem] flex flex-col items-center bg-storm-black">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
         <h2 className="font-charcoalDance text-left px-5 md:px-0 w-full leading-8">
-          Let&apos;s create something <span className="text-sun-orange">great</span>{" "}
-          together
+          Let&apos;s create something{" "}
+          <span className="text-sun-orange">great</span> together
         </h2>
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[98rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
           <div className="flex flex-col gap-[5rem] lg:gap-[20rem] lg:mt-[15rem] max-w-[30rem] absolute lg:relative top-10 px-5 mb-16">
-            <SolutionContainer>
+            <SolutionContainer id="process1">
               <h3 className="font-gunterz leading-[3.4rem]">
                 FILL OUT A <span className="text-sun-orange">FREE</span> REQUEST
                 GET A{" "}
@@ -29,7 +29,7 @@ export const Process: React.FC = () => {
               </h3>
               <p className="text-[#9B9B9B]">(We value your time)</p>
             </SolutionContainer>
-            <SolutionContainer>
+            <SolutionContainer id="process2">
               <h3 className="font-gunterz leading-[3.4rem]">
                 <span className="text-sun-orange">STRATEGY</span> CALL. WHERE WE
                 PLAN OUT{" "}
@@ -45,7 +45,7 @@ export const Process: React.FC = () => {
                 </span>
               </h3>
             </SolutionContainer>
-            <SolutionContainer>
+            <SolutionContainer id="process3">
               <h3 className="font-gunterz leading-[3.4rem]">
                 SIGN OFF ON THE <span className="text-sun-orange">DESIGN</span>{" "}
                 AND WE{" "}
