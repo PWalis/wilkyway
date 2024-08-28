@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { SolutionContainer } from "../containers/SolutionContainer";
 import {
   useScroll,
@@ -16,15 +16,57 @@ import { SolutionAnimation5 } from "../animated/SolutionAnimation5";
 export const Solution: React.FC = () => {
   const ref = useRef(null);
   const [frame, setFrame] = useState(0);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end center"],
-  });
-  const progress = useTransform(
-    scrollYProgress,
-    [0, 0.2, 0.4, 0.6, 0.8],
-    [1, 2, 3, 4, 5]
-  );
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["start start", "end center"],
+  // });
+  // const progress = useTransform(
+  //   scrollYProgress,
+  //   [0, 0.2, 0.4, 0.6, 0.8],
+  //   [1, 2, 3, 4, 5]
+  // );
+
+  const options = {
+    root: null,
+    rootMargin: "-50%",
+    threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+  };
+
+  const callBackFunction = (entries: any, frame: number) => {
+    if (entries[0].isIntersecting) {
+      setFrame(frame);
+    }
+  };
+
+  useEffect(() => {
+    const observer1 = new IntersectionObserver((entries) => {
+      callBackFunction(entries, 0);
+    }, options);
+    const observer2 = new IntersectionObserver((entries) => {
+      callBackFunction(entries, 1);
+    }, options);
+    const observer3 = new IntersectionObserver((entries) => {
+      callBackFunction(entries, 2);
+    }, options);
+    const observer4 = new IntersectionObserver((entries) => {
+      callBackFunction(entries, 3);
+    }, options);
+    const observer5 = new IntersectionObserver((entries) => {
+      callBackFunction(entries, 4);
+    }, options);
+
+    const title1 = document.getElementById("title1");
+    const title2 = document.getElementById("title2");
+    const title3 = document.getElementById("title3");
+    const title4 = document.getElementById("title4");
+    const title5 = document.getElementById("title5");
+
+    observer1.observe(title1!);
+    observer2.observe(title2!);
+    observer3.observe(title3!);
+    observer4.observe(title4!);
+    observer5.observe(title5!);
+  }, []);
 
   const renderComponent = () => {
     switch (frame) {
@@ -41,26 +83,21 @@ export const Solution: React.FC = () => {
     }
   };
 
-  useMotionValueEvent(progress, "change", () => {
-    const p = progress.get();
-    console.log(p);
-    if (p < 1.6 && frame != 0) {
-      setFrame(0);
-      console.log("frame set");
-    } else if (p > 1.6 && p < 2.67 && frame != 1) {
-      setFrame(1);
-      console.log("frame set");
-    } else if (p > 2.68 && p < 3.8 && frame != 2) {
-      setFrame(2);
-      console.log("frame set");
-    } else if (p > 3.8 && p < 4.6 && frame != 3) {
-      setFrame(3);
-      console.log("frame set");
-    } else if (p > 4.6 && p < 5 && frame != 4) {
-      setFrame(4);
-      console.log("frame set");
-    }
-  });
+  // useMotionValueEvent(progress, "change", () => {
+  //   const p = progress.get();
+  //   console.log(p);
+  //   if (p < 1.6 && frame != 0) {
+  //     setFrame(0);
+  //   } else if (p > 1.6 && p < 2.67 && frame != 1) {
+  //     setFrame(1);
+  //   } else if (p > 2.68 && p < 3.8 && frame != 2) {
+  //     setFrame(2);
+  //   } else if (p > 3.8 && p < 4.6 && frame != 3) {
+  //     setFrame(3);
+  //   } else if (p > 4.6 && p < 5 && frame != 4) {
+  //     setFrame(4);
+  //   }
+  // });
 
   return (
     <section className="min-h-[60rem] flex flex-col items-center bg-storm-black">
@@ -71,23 +108,24 @@ export const Solution: React.FC = () => {
         </h2>
 
         <div
-          ref={ref}
+          // ref={ref}
           className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[165rem] md:min-h-[140rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative"
         >
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
-            <SolutionContainer>
-              <h3 className="font-gunterz">
-                DON&apos;T LET YOUR LEADS LEAVE YOU ON READ.
-              </h3>
-              <p className="max-w-[26.25rem]">
-                Your landing page should turn casual visitors into loyal clients
-                and keep your audience engaged from the first click. We’ve got
-                your covered.
-              </p>
-            </SolutionContainer>
             <div>
               <SolutionContainer>
-                <h3 className="font-gunterz">
+                <h3 className="font-gunterz" id="title1">
+                  DON&apos;T LET YOUR LEADS LEAVE YOU ON READ.
+                </h3>
+                <p className="max-w-[26.25rem]">
+                  Your landing page should turn casual visitors into loyal
+                  clients and keep your audience engaged from the first click.
+                  We’ve got your covered.
+                </p>
+              </SolutionContainer>
+            </div>
+              <SolutionContainer>
+                <h3 className="font-gunterz" id="title2">
                   <span className="text-sun-orange">BOOST SALES</span> AND
                   MAXIMIZE CLICKS.
                 </h3>
@@ -99,9 +137,8 @@ export const Solution: React.FC = () => {
                   a COACH!
                 </p>
               </SolutionContainer>
-            </div>
             <SolutionContainer>
-              <h3 className="font-gunterz">
+              <h3 className="font-gunterz" id="title3">
                 <span className="text-sun-orange">BUILD TRUST</span> THROUGH
                 PROFESSIONAL DESIGN.
               </h3>
@@ -114,7 +151,7 @@ export const Solution: React.FC = () => {
               </p>
             </SolutionContainer>
             <SolutionContainer>
-              <h3 className="font-gunterz">
+              <h3 className="font-gunterz" id="title4">
                 <span className="text-sun-orange">CAPTIVATE YOUR MARKET</span>{" "}
                 WITH TARGETED COPYWRITING.
               </h3>
@@ -126,7 +163,7 @@ export const Solution: React.FC = () => {
               </p>
             </SolutionContainer>
             <SolutionContainer>
-              <h3 className="font-gunterz">
+              <h3 className="font-gunterz" id="title5">
                 SO <span className="text-sun-orange">FAST</span> YOU WON'T MISS
                 IT.
               </h3>
