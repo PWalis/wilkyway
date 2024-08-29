@@ -47,15 +47,13 @@ export const LandingPagePackageContainer: React.FC<
       options
     );
     const painPoint = document.getElementById(id);
-    if (width < 640) {
       observer.observe(painPoint!);
-    }
-  }, [width]);
+  }, []);
 
   return (
     <div
-      onTouchMove={() => handleMouseEnter()}
-      onTouchStart={() => handleMouseEnter()}
+      // onTouchMove={() => handleMouseEnter()}
+      // onTouchStart={() => handleMouseEnter()}
       onMouseLeave={() => handleMouseLeave()}
       onMouseEnter={() => handleMouseEnter()}
       className="w-[17rem] h-[19.5rem] bg-storm-gray py-10 px-5 flex flex-col items-center gap-3 relative"
