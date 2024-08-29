@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
-import react, { PropsWithChildren, ReactNode, useState } from "react";
-import { motion } from "framer-motion";
+import react, { PropsWithChildren, useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import useWindowDimensions from "@/lib/UseWindowDimensions";
 
 interface LandingPagePackageContainerProps extends PropsWithChildren {
   title: string;
@@ -17,6 +18,10 @@ export const LandingPagePackageContainer: React.FC<
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+  const { width } = useWindowDimensions()
+  const ref = useRef(null)
+  const {scrollYProgress} = useScroll({target: ref, offset: ["end end", "start start"]})
+  const color = useTransform(scrollYProgress, [0, 0.5, 1], ["#FFF", "#FF9900", "#FFF"]) 
 
   const linkVariants = { hidden: { opacity: 0 }, visible: { opacity: 1 } };
   const colorVariants = {
@@ -26,9 +31,8 @@ export const LandingPagePackageContainer: React.FC<
   const svgVariants = { hover: { fill: "#FF9900" }, noHover: { fill: "#FFF" } };
 
   return (
-    <div
-      onTouchStart={() => handleMouseEnter()}
-      onTouchMove={() => handleMouseEnter()}
+    <div 
+      ref={ref}
       onMouseLeave={() => handleMouseLeave()}
       onMouseEnter={() => handleMouseEnter()}
       className="w-[17rem] h-[19.5rem] bg-storm-gray py-10 px-5 flex flex-col items-center gap-3 relative"
@@ -71,6 +75,7 @@ export const LandingPagePackageContainer: React.FC<
                 variants={svgVariants}
                 initial="noHover"
                 animate={isHovered ? "hover" : "noHover"}
+                style={{fill: width < 640 ? color : "#FF9900"}}
                 x="12.56"
                 y="33.88"
                 width="29.27"
@@ -81,6 +86,7 @@ export const LandingPagePackageContainer: React.FC<
                 variants={svgVariants}
                 initial="noHover"
                 animate={isHovered ? "hover" : "noHover"}
+                style={{fill: width < 640 ? color : "#FF9900"}}
                 x="18.97"
                 y="27.68"
                 width="46.81"
@@ -94,6 +100,7 @@ export const LandingPagePackageContainer: React.FC<
       <motion.h5
         variants={colorVariants}
         animate={isHovered ? "hover" : "noHover"}
+        style={{color: width < 640 ? color : "#FFF"}}
         className="font-gunterz text-[1.25rem] text-center mt-2"
       >
         {title}
