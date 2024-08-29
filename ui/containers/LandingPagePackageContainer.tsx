@@ -34,20 +34,21 @@ export const LandingPagePackageContainer: React.FC<
     threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
   };
 
+  const callBackFunction = (entries: any) => {
+    if (entries[0].isIntersecting) {
+      setIsHovered(true);
+    } else {
+      setIsHovered(false);
+    }
+  };
+
   useEffect(() => {
-    const callBackFunction = (entries: any) => {
-      if (entries[0].isIntersecting) {
-        setIsHovered(true);
-      } else {
-        setIsHovered(false);
-      }
-    };
     const observer = new IntersectionObserver(
       (entires) => callBackFunction(entires),
       options
     );
     const painPoint = document.getElementById(`${id}`);
-      observer.observe(painPoint!);
+    observer.observe(painPoint!);
   }, []);
 
   return (
