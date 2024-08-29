@@ -52,7 +52,7 @@ export const ProcessAnimation: React.FC = () => {
     <div ref={scope2} style={{ opacity: 0 }} className="relative w-full h-full">
       <div
         ref={scope}
-        className="w-[2rem] sm:w-[2rem] absolute top-[60%] sm:top-[68%] left-[50%] z-10"
+        className="w-[2rem] absolute bottom-[25%] left-[50%] z-10 hidden lg:flex"
       >
         <svg
           id="Layer_2"
