@@ -18,7 +18,7 @@ const config: Config = {
       },
       screens: {
         "xs": "375px",
-        "iphone14max": "429px",
+        "iphone14max": "415px",
         "iphone12pro": "389px", 
         "lg1/2": "964px",
         "lg3/4": "1155px",

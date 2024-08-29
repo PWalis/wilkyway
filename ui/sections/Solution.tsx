@@ -81,7 +81,7 @@ export const Solution: React.FC = () => {
           <span className="text-sun-orange">conversions</span>
         </h2>
 
-        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[168rem] iphone12pro:min-h-[165rem] iphone14max:min-h-[155rem] sm:min-h-[185rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[168rem] iphone12pro:min-h-[164rem] iphone14max:min-h-[155rem] sm:min-h-[185rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
             <SolutionContainer id="title1">
               <h3 className="font-gunterz">
