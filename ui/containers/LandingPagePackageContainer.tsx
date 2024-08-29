@@ -29,8 +29,8 @@ export const LandingPagePackageContainer: React.FC<
 
   return (
     <div
-      onTouchMove={() => handleMouseLeave()}
-      onTouchStart={() => handleMouseLeave()}
+      onTouchMove={() => handleMouseEnter()}
+      onTouchStart={() => handleMouseEnter()}
       onMouseLeave={() => handleMouseLeave()}
       onMouseEnter={() => handleMouseEnter()}
       className="w-[17rem] h-[19.5rem] bg-storm-gray py-10 px-5 flex flex-col items-center gap-3 relative"
