@@ -46,7 +46,7 @@ export const LandingPagePackageContainer: React.FC<
       (entires) => callBackFunction(entires),
       options
     );
-    const painPoint = document.getElementById(id);
+    const painPoint = document.getElementById(`${id}`);
       observer.observe(painPoint!);
   }, []);
 
