@@ -36,12 +36,10 @@ export const LandingPagePackageContainer: React.FC<
 
   useEffect(() => {
     const callBackFunction = (entries: any) => {
-      if (width < 640) {
-        if (entries[0].isIntersecting) {
-          setIsHovered(true);
-        } else {
-          setIsHovered(false);
-        }
+      if (entries[0].isIntersecting) {
+        setIsHovered(true);
+      } else {
+        setIsHovered(false);
       }
     };
     const observer = new IntersectionObserver(
@@ -49,7 +47,9 @@ export const LandingPagePackageContainer: React.FC<
       options
     );
     const painPoint = document.getElementById(id);
-    observer.observe(painPoint!);
+    if (width < 640) {
+      observer.observe(painPoint!);
+    }
   }, [width]);
 
   return (
