@@ -15,7 +15,7 @@ import { SolutionAnimation5 } from "../animated/SolutionAnimation5";
 
 export const Solution: React.FC = () => {
   const [frame, setFrame] = useState(0);
-  
+
   const options = {
     root: null,
     rootMargin: "-45%",
@@ -81,37 +81,33 @@ export const Solution: React.FC = () => {
           <span className="text-sun-orange">conversions</span>
         </h2>
 
-        <div
-          className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[165rem] md:min-h-[140rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative"
-        >
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[168rem] iphone12pro:min-h-[165rem] iphone14max:min-h-[155rem] sm:min-h-[185rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
-            <div>
-              <SolutionContainer id="title1">
-                <h3 className="font-gunterz" >
-                  DON&apos;T LET YOUR LEADS LEAVE YOU ON READ.
-                </h3>
-                <p className="max-w-[26.25rem]">
-                  Your landing page should turn casual visitors into loyal
-                  clients and keep your audience engaged from the first click.
-                  We’ve got your covered.
-                </p>
-              </SolutionContainer>
-            </div>
-              <SolutionContainer id="title2">
-                <h3 className="font-gunterz" >
-                  <span className="text-sun-orange">BOOST SALES</span> AND
-                  MAXIMIZE CLICKS.
-                </h3>
-                <p className="max-w-[26.25rem]">
-                  Tap into the behavior of your visitors. Some are ready to buy
-                  the second they land on your site, most need to be persuaded
-                  to take the leap, and everyone just want some information.
-                  Give them what they want so you can give them what they need,
-                  a COACH!
-                </p>
-              </SolutionContainer>
+            <SolutionContainer id="title1">
+              <h3 className="font-gunterz">
+                DON&apos;T LET YOUR LEADS LEAVE YOU ON READ.
+              </h3>
+              <p className="max-w-[26.25rem]">
+                Your landing page should turn casual visitors into loyal clients
+                and keep your audience engaged from the first click. We’ve got
+                your covered.
+              </p>
+            </SolutionContainer>
+            <SolutionContainer id="title2">
+              <h3 className="font-gunterz">
+                <span className="text-sun-orange">BOOST SALES</span> AND
+                MAXIMIZE CLICKS.
+              </h3>
+              <p className="max-w-[26.25rem]">
+                Tap into the behavior of your visitors. Some are ready to buy
+                the second they land on your site, most need to be persuaded to
+                take the leap, and everyone just want some information. Give
+                them what they want so you can give them what they need, a
+                COACH!
+              </p>
+            </SolutionContainer>
             <SolutionContainer id="title3">
-              <h3 className="font-gunterz" >
+              <h3 className="font-gunterz">
                 <span className="text-sun-orange">BUILD TRUST</span> THROUGH
                 PROFESSIONAL DESIGN.
               </h3>
@@ -124,7 +120,7 @@ export const Solution: React.FC = () => {
               </p>
             </SolutionContainer>
             <SolutionContainer id="title4">
-              <h3 className="font-gunterz" >
+              <h3 className="font-gunterz">
                 <span className="text-sun-orange">CAPTIVATE YOUR MARKET</span>{" "}
                 WITH TARGETED COPYWRITING.
               </h3>
@@ -136,7 +132,7 @@ export const Solution: React.FC = () => {
               </p>
             </SolutionContainer>
             <SolutionContainer id="title5">
-              <h3 className="font-gunterz" >
+              <h3 className="font-gunterz">
                 SO <span className="text-sun-orange">FAST</span> YOU WON'T MISS
                 IT.
               </h3>

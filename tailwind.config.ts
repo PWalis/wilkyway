@@ -17,7 +17,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       screens: {
-        xs: "375px",
+        "xs": "375px",
+        "iphone14max": "429px",
+        "iphone12pro": "389px", 
         "lg1/2": "964px",
         "lg3/4": "1155px",
         "xl1/2": "1355px",
