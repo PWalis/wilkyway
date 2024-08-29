@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import { ProcessContainer } from "../containers/ProcessContainer";
 import { AnimatePresence } from "framer-motion";
 import { ProcessAnimation } from "../animated/ProcessAnimation";
+import { ProcessAnimation2 } from "../animated/ProcessAnimation2";
+import { ProcessAnimation3 } from "../animated/ProcessAnimation3";
 
 export const Process: React.FC = () => {
   const [frame, setFrame] = useState(0);
@@ -10,11 +12,11 @@ export const Process: React.FC = () => {
   const renderComponent = () => {
     switch (frame) {
       case 0:
-      return <ProcessAnimation key="1" />;
+        return <ProcessAnimation key="1" />;
       case 1:
-      // return <SolutionAnimation2 key="2" />;
+        return <ProcessAnimation2 key="2" />;
       case 2:
-      // return <SolutionAnimation3 key="3" />;
+        return <ProcessAnimation3 key="3" />;
     }
   };
 
@@ -57,8 +59,11 @@ export const Process: React.FC = () => {
           Let&apos;s create something{" "}
           <span className="text-sun-orange">great</span> together
         </h2>
-        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[98rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
-          <div className="flex flex-col gap-[5rem] lg:gap-[20rem] lg:mt-[15rem] max-w-[30rem] absolute lg:relative top-10 px-5 mb-16">
+        <div
+          style={{ contain: "paint" }}
+          className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[98rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative"
+        >
+          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] max-w-[30rem] absolute lg:relative top-10 px-5 mb-[10rem]">
             <ProcessContainer id="process1">
               <h3 className="font-gunterz leading-[3.4rem]">
                 FILL OUT A <span className="text-sun-orange">FREE</span> REQUEST

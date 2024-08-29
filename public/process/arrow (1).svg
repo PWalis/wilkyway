@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.84 513.92">
+  <defs>
+    <style>
+      .clas-1stratArrow {
+        fill: #f7931e;
+      }
+
+      .clas-1stratArrow, .clas-2stratArrow {
+        stroke-width: 12px;
+      }
+
+      .clas-1stratArrow, .clas-2stratArrow, .clas-3stratArrow {
+        stroke: #7496af;
+        stroke-miterlimit: 10;
+      }
+
+      .clas-2stratArrow {
+        fill: #b3b3b3;
+        stroke-linecap: round;
+      }
+
+      .clas-3stratArrow {
+        fill: #d2d6db;
+        stroke-width: 15px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <g>
+      <polygon className="clas-1stratArrow" points="497.01 61.72 502.89 63.05 436.99 128.95 433.53 128.22 394.81 120.02 386.62 81.3 385.89 77.85 451.79 11.95 453.12 17.83 460.14 48.94 460.84 52.06 461.2 53.64 462.78 54 465.9 54.7 497.01 61.72"/>
+      <circle className="clas-3stratArrow" cx="197.29" cy="316.63" r="189.79"/>
+      <circle className="clas-3stratArrow" cx="197.29" cy="316.63" r="112.78"/>
+      <circle className="clas-1stratArrow" cx="197.29" cy="316.63" r="41.26"/>
+      <line className="clas-2stratArrow" x1="198.21" y1="316.63" x2="444.39" y2="70.45"/>
+    </g>
+  </g>
+</svg>
