@@ -77,6 +77,7 @@ export const Form: React.FC = () => {
           name="website-request"
           onSubmit={handleFormSubmit}
         >
+          <input type="hidden" name="form-name" value="website-request" />
           <div className="flex flex-col justify-center">
             <div className="flex flex-col max-w-[35rem]">
               <div className="flex flex-row flex-wrap gap-5 mb-5">
