@@ -1,17 +1,16 @@
 "use client";
 import Link from "next/link";
-import react, { PropsWithChildren, useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import react, { PropsWithChildren, useRef, useState } from "react";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import useWindowDimensions from "@/lib/UseWindowDimensions";
 
 interface LandingPagePackageContainerProps extends PropsWithChildren {
   title: string;
-  id: string;
 }
 
 export const LandingPagePackageContainer: React.FC<
   LandingPagePackageContainerProps
-> = ({ children, title, id }) => {
+> = ({ children, title }) => {
   const [isHovered, setIsHovered] = useState(false);
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -19,7 +18,22 @@ export const LandingPagePackageContainer: React.FC<
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+  const ref = useRef(null);
   const { width } = useWindowDimensions();
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  useMotionValueEvent(scrollYProgress, "change", () => {
+    if (width < 640) {
+      if (scrollYProgress.get() > 0.3 && scrollYProgress.get() < 0.6) {
+        setIsHovered(true);
+      } else {
+        setIsHovered(false);
+      }
+    }
+  });
 
   const linkVariants = { hidden: { opacity: 0 }, visible: { opacity: 1 } };
   const colorVariants = {
@@ -28,29 +42,6 @@ export const LandingPagePackageContainer: React.FC<
   };
   const svgVariants = { hover: { fill: "#FF9900" }, noHover: { fill: "#FFF" } };
 
-  const options = {
-    root: null,
-    rootMargin: "-55%",
-    threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-  };
-
-  const callBackFunction = (entries: any) => {
-    if (entries[0].isIntersecting) {
-      setIsHovered(true);
-    } else {
-      setIsHovered(false);
-    }
-  };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entires) => callBackFunction(entires),
-      options
-    );
-    const painPoint = document.getElementById(`${id}`);
-    observer.observe(painPoint!);
-  }, []);
-
   return (
     <div
       // onTouchMove={() => handleMouseEnter()}
@@ -58,7 +49,7 @@ export const LandingPagePackageContainer: React.FC<
       onMouseLeave={() => handleMouseLeave()}
       onMouseEnter={() => handleMouseEnter()}
       className="w-[17rem] h-[19.5rem] bg-storm-gray py-10 px-5 flex flex-col items-center gap-3 relative"
-      id={`${id}`}
+      ref={ref}
     >
       <div className="w-full max-w-[4rem] ">
         <svg
