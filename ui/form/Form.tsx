@@ -41,7 +41,7 @@ export const Form: React.FC = () => {
         >
           x        </button>
         <h2 className="font-gunterz text-left w-full max-w-[57rem]">LET'S GET STARTED...</h2>
-        <form className="flex flex-col gap-5 sm:gap-0 sm:flex-row max-w-[100rem]">
+        <form className="flex flex-col gap-5 sm:gap-0 sm:flex-row max-w-[100rem]" data-netlify="true" name="website-request">
           <div className="flex flex-col justify-center">
             <div className="flex flex-col max-w-[35rem]">
               <div className="flex flex-row flex-wrap gap-5 mb-5">
