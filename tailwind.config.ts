@@ -47,11 +47,11 @@ const config: Config = {
       themes: {
         light: {
           // ...
-          colors: {primary: "#FF9900"},
+          colors: {primary: "#FF9900", danger: "#310413"},
         },
         dark: {
           // ...
-          colors: {primary: "#FF9900"},
+          colors: {primary: "#FF9900", danger: "#310413"},
         },
         // ... custom themes
       },
