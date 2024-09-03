@@ -18,6 +18,8 @@ export const Header = () => {
 
   const router = useRouter()
 
+  // when nav link is clicked on mobile nav should go away 
+
   const handleToggle = () => {
     setMenuIsOpen(!menuIsOpen);
   };
@@ -84,14 +86,30 @@ export const Header = () => {
                   : "flex flex-col lg1/2:text-base text-2xl lg1/2:flex-row items-center"
               )}
             >
-              <Link href="/">Home</Link>
-              <Link href="/LandingPagePackage">Website Package</Link>
-              <Link href="/AboutUs" className="">
+              <Link href="/" onClick={(e) => {
+                  router.push("/")
+                  setMenuIsOpen(false)
+                }}>Home</Link>
+              <Link href="/LandingPagePackage" onClick={(e) => {
+                  router.push("/LandingPagePackage")
+                  setMenuIsOpen(false)
+                }}>Website Package</Link>
+              <Link href="/AboutUs" onClick={(e) => {
+                  router.push("/AboutUs")
+                  setMenuIsOpen(false)
+                }}>
                 About Us
               </Link>
-              <Link href="/OurValues">Our Values</Link>
+              <Link href="/OurValues" onClick={(e) => {
+                  router.push("/OurValues")
+                  setMenuIsOpen(false)
+                }}>Our Values</Link>
               <Link
                 href="/#faq"
+                onClick={(e) => {
+                  router.push("/#faq")
+                  setMenuIsOpen(false)
+                }}
               >
                 FAQ
               </Link>
