@@ -12,6 +12,7 @@ import { SolutionAnimation2 } from "../animated/SolutionAnimation2";
 import { SolutionAnimation3 } from "../animated/SolutionAnimation3";
 import { SolutionAnimation4 } from "../animated/SolutionAnimation4";
 import { SolutionAnimation5 } from "../animated/SolutionAnimation5";
+import { ProgressIndicator } from "../animated/ProgressIndicator";
 
 export const Solution: React.FC = () => {
   const [frame, setFrame] = useState(0);
@@ -74,14 +75,14 @@ export const Solution: React.FC = () => {
   };
 
   return (
-    <section className="min-h-[60rem] flex flex-col items-center bg-storm-black">
+    <section className="min-h-[60rem] flex flex-col items-center bg-storm-black md:pb-[15rem]">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
-        <h2 className="font-charcoalDance px-5 text-left w-full leading-8">
+        <h2 className="font-charcoalDance px-5 text-left w-full leading-8 md:sticky top-24 z-40">
           your landing page = your{" "}
           <span className="text-sun-orange">conversions</span>
         </h2>
 
-        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[168rem] iphone12pro:min-h-[164rem] iphone14max:min-h-[155rem] sm:min-h-[185rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[168rem] iphone12pro:min-h-[164rem] iphone14max:min-h-[155rem] sm:min-h-[185rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
             <SolutionContainer id="title1">
               <h3 className="font-gunterz">
@@ -148,6 +149,11 @@ export const Solution: React.FC = () => {
               <AnimatePresence mode="popLayout">
                 {renderComponent()}
               </AnimatePresence>
+            </div>
+          </div>
+          <div className="sm:flex sticky top-[20rem] hidden">
+            <div className="relative">
+              <ProgressIndicator progress={frame}/>
             </div>
           </div>
         </div>

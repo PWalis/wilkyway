@@ -18,8 +18,6 @@ export const Header = () => {
 
   const router = useRouter()
 
-  // when nav link is clicked on mobile nav should go away 
-
   const handleToggle = () => {
     setMenuIsOpen(!menuIsOpen);
   };
