@@ -3,7 +3,7 @@ import { LearnMore } from "../buttons";
 
 export const OurValues: React.FC = () => {
   return (
-    <section className="min-h-[60rem] bg-storm-black flex flex-col items-center px-5 pb-20">
+    <section className="min-h-[60rem] bg-section-background flex flex-col items-center px-5 pb-20">
       <h2 className="w-full max-w-[100rem] mb-5 sm:mb-12 font-charcoalDance leading-8">
         We guarantee <span className="text-sun-orange">greatness</span>
       </h2>

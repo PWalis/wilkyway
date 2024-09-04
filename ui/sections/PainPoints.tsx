@@ -1,13 +1,13 @@
 import react from "react";
 import { CTA } from "../buttons";
 import { PainPoint } from "../containers/PaintPoint";
+import { HeroSupportContainer } from "../containers/HeroSupportContainer";
 
 export const PainPoints: React.FC = () => {
   return (
-    <section className="flex flex-col relative justify-center items-center min-h-[60rem] px-5 bg-storm-black">
+    <section className="flex flex-col relative justify-center items-center min-h-[60rem] px-5 bg-section-background">
       <div className="flex gap-[1.5rem] md:gap-[3.5313rem] flex-row flex-wrap justify-center lg1/2:absolute lg1/2:-top-[9rem]">
-        <div className="min-h-[19.9375rem]  max-w-[26.4375rem] rounded-tr-[96px] bg-storm-gray px-[3rem] pt-[3rem] pb-[4rem] flex">
-          <div className="container">
+        <HeroSupportContainer>
             <div className="max-w-[6rem] mt-3 mb-2">
               <svg
                 id="Layer_2"
@@ -19,7 +19,7 @@ export const PainPoints: React.FC = () => {
                     {`
       .cls-1XX {
         fill: none;
-        stroke: #f7931e;
+        stroke: #5A8CF9;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 7px;
@@ -40,8 +40,7 @@ export const PainPoints: React.FC = () => {
             <p>
               Don’t let your brand get lost in the noise we make you stand out.
             </p>
-          </div>
-        </div>
+        </HeroSupportContainer>
         <div className="min-h-[19.9375rem]  max-w-[26.4375rem] rounded-tr-[96px] bg-sun-orange px-[3rem] pt-[3rem] pb-[4rem]">
           <div className="container">
             <div className="max-w-[6rem] mt-3 mb-2">
@@ -54,7 +53,7 @@ export const PainPoints: React.FC = () => {
                   <style>
                     {`
       .cls-1asd {
-        fill: #272727;
+        fill: #5A8CF9;
       }`}
                   </style>
                 </defs>
@@ -96,7 +95,7 @@ export const PainPoints: React.FC = () => {
                   <style>
                     {`
       .cls-1qwe {
-        fill: #f7931e;
+        fill: #5A8CF9;
       }`}
                   </style>
                 </defs>

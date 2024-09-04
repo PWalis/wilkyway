@@ -31,6 +31,9 @@ const config: Config = {
         "cool-stone": "#3D3D3D",
         "sun-orange": "#FF9900",
         "crystal-white": "#FFFFF",
+        "section-background": "#001824",
+        "CTA" : "#3355D1",
+        "hero-color2": "#5A8CF9"
       },
       fontFamily: {
         gunterz: ["var(--font-gunterz)"],

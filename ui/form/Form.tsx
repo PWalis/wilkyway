@@ -163,7 +163,7 @@ export const Form: React.FC = () => {
       animate={formSwitch ? "visible" : "hidden"}
       transition={{ ease: "easeOut" }}
     >
-      <div className="sm:min-h-[40rem] h-full w-full flex flex-col justify-center items-center bg-storm-black px-5 py-24 relative">
+      <div className="sm:min-h-[40rem] h-full w-full flex flex-col justify-center items-center bg-section-background px-5 py-24 relative">
         <button
           onClick={() => {
             setFormSwitch(false);

@@ -7,11 +7,6 @@ import { Footer } from "@/ui/Footer";
 import Provider from "./providers";
 import { Form } from "@/ui/form/Form";
 
-const nobelUno = localFont({
-  src: "../public/fonts/NobelUno-Regular.otf",
-  variable: "--font-nobel-uno",
-});
-
 const charcoalDance = localFont({
   src: "../public/fonts/CharcoalDance-Regular.otf",
   variable: "--font-charcoal-dance",
@@ -42,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${nobelUno.className} ${charcoalDance.variable} ${gunterz.variable} ${gunterzBold.variable} ${gunterzBoldItalic.variable}`}
+        className={`${charcoalDance.variable} ${gunterz.variable} ${gunterzBold.variable} ${gunterzBoldItalic.variable}`}
       >
         <Provider>
           <Form />

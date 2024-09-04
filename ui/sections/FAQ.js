@@ -180,7 +180,7 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="min-h-[60rem] bg-storm-black flex flex-col items-center w-full"
+      className="min-h-[60rem] bg-section-background flex flex-col items-center w-full"
     >
       <div className="w-full max-w-[100rem]">
         <h2 className="text-center sm:text-left px-3 font-charcoalDance tracking-wider">

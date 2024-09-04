@@ -2,7 +2,7 @@ import react from "react";
 
 export default function OutValues() {
   return (
-    <main className="flex min-h-[60rem] bg-storm-black flex-col  items-center py-[10rem] w-full px-5">
+    <main className="flex min-h-[60rem] bg-section-background flex-col  items-center py-[10rem] w-full px-5">
       <h1 className="font-gunterz text-[3rem] w-full text-center">
         OUR <span className="text-sun-orange">VALUES</span>
       </h1>

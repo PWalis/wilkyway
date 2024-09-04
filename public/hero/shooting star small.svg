@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.73 71.18">
+  <defs>
+    <style>
+      .cls-1starSmall {
+        fill: none;
+        stroke: #325175;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2.38px;
+      }
+
+      .cls-2starSmall {
+        fill: #325175;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <path className="cls-2starSmall" d="M25.29,53.95c-9.08,5.15-9.93,6.96-8.05,17.24-5.15-9.08-6.96-9.93-17.24-8.05,9.08-5.15,9.93-6.96,8.05-17.24,5.15,9.08,6.96,9.93,17.24,8.05Z"/>
+    <line className="cls-1starSmall" x1="13.64" y1="58.18" x2="170.54" y2="1.19"/>
+  </g>
+</svg>

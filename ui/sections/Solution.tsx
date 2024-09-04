@@ -75,7 +75,7 @@ export const Solution: React.FC = () => {
   };
 
   return (
-    <section className="min-h-[60rem] flex flex-col items-center bg-storm-black md:pb-[15rem]">
+    <section className="min-h-[60rem] flex flex-col items-center bg-section-background md:pb-[15rem]">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
         <h2 className="font-charcoalDance px-5 text-left w-full leading-8 md:sticky top-24 z-40">
           your landing page = your{" "}
@@ -144,7 +144,7 @@ export const Solution: React.FC = () => {
               </p>
             </SolutionContainer>
           </div>
-          <div className="flex justify-center w-full lg:max-w-[30rem] h-[24rem] bg-storm-black mb-20 mt-[20rem] lg:mt-[15rem] sticky top-[58vh] lg:top-[20rem]">
+          <div className="flex justify-center w-full lg:max-w-[30rem] h-[24rem] bg-section-background mb-20 mt-[20rem] lg:mt-[15rem] sticky top-[58vh] lg:top-[20rem]">
             <div className="h-[30rem] max-w-[30rem] w-full">
               <AnimatePresence mode="popLayout">
                 {renderComponent()}
