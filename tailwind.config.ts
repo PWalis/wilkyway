@@ -18,8 +18,10 @@ const config: Config = {
       },
       screens: {
         "xs": "375px",
-        "iphone14max": "415px",
         "iphone12pro": "389px", 
+        "iphone14max": "415px",
+        "3sm": "430px",
+        "2sm": "500px",
         "lg1/2": "964px",
         "lg3/4": "1155px",
         "xl1/2": "1355px",
@@ -32,8 +34,9 @@ const config: Config = {
         "sun-orange": "#FF9900",
         "crystal-white": "#FFFFF",
         "section-background": "#001824",
-        "CTA" : "#3355D1",
-        "hero-color2": "#5A8CF9"
+        "CTA" : "#FFC700",
+        "hero-color2": "#5A8CF9",
+        "hero-checklist": "#7796B9",
       },
       fontFamily: {
         gunterz: ["var(--font-gunterz)"],

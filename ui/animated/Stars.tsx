@@ -1,23 +1,136 @@
-import react from "react";
+"use client";
+import react, { useEffect } from "react";
+import { delay, motion, useAnimate } from "framer-motion";
 
 export const Stars: React.FC = () => {
+  const [scope5, animate5] = useAnimate();
+  const [scope6, animate6] = useAnimate();
+
+  useEffect(() => {
+    animate5(
+      [
+        [
+          scope5.current,
+          { x: "-200%", y: "200%", opacity: 1 },
+          { delay: 4, duration: 0.1 },
+        ],
+        [
+          scope5.current,
+          { x: "-400%", y: "400%", opacity: 0 },
+          { duration: 0.2 },
+        ],
+        [scope5.current, { x: "0%", y: "0%", opacity: 0 }, { duration: 0.2 }],
+      ],
+      { repeat: Infinity }
+    );
+
+    animate6(
+      [
+        [
+          scope6.current,
+          { x: "-300%", y: "300%", opacity: 1 },
+          { delay: 6, duration: 0.1 },
+        ],
+        [
+          scope6.current,
+          { x: "-500%", y: "500%", opacity: 0 },
+          { duration: 0.2 },
+        ],
+        [scope6.current, { x: "0%", y: "0%", opacity: 0 }, { duration: 0.2 }],
+      ],
+      { repeat: Infinity }
+    );
+  }, []);
+
   return (
     <>
-      <div className="absolute -top-[50px] -left-[70px] w-[12px]">
+      <div className="absolute -top-[100px] -left-[10px] w-[12px]">
         <Star1 />
       </div>
-      <div className="absolute top-[50px] right-[130px] w-[12px]">
+      <div className="absolute top-[50px] right-[85px] w-[12px]">
+        <Star4 />
+      </div>
+      <div className="absolute -bottom-[30px] -left-[200px] w-[12px]">
+        <Star4 />
+      </div>
+      <div className="absolute bottom-[100px] -left-[255px] w-[12px]">
         <Star1 />
       </div>
-      <div></div>
-      <div></div>
+      <div className="absolute -bottom-[90px] right-[60px] w-[20px]">
+        <Star4 />
+      </div>
+      <div className="absolute -top-[150px] -right-[60px] w-[15px]">
+        <Star1 />
+      </div>
+      <div className="absolute -top-[200px] left-[40px] w-[15px]">
+        <Star4 />
+      </div>
+      <div className="absolute -top-[160px] -left-[100px] w-[6px]">
+        <Star3 />
+      </div>
+      <div className="absolute -top-[50px] -left-[150px] w-[4px]">
+        <Star3 />
+      </div>
+      <div className="absolute top-[90px] -left-[35px] w-[4px]">
+        <Star3 />
+      </div>
+      <div className="absolute -top-[60px] right-[150px] w-[5px]">
+        <Star3 />
+      </div>
+      <div className="absolute -top-[0px] right-[190px] w-[6px]">
+        <Star3 />
+      </div>
+      <div className="absolute top-[90px] right-[170px] w-[4px]">
+        <Star3 />
+      </div>
+      <div className="absolute top-[200px] right-[90px] w-[4px]">
+        <Star3 />
+      </div>
+      <div className="absolute top-[220px] -right-[80px] w-[4px]">
+        <Star3 />
+      </div>
+      <div className="absolute -bottom-[120px] -left-[80px] w-[4px]">
+        <Star3 />
+      </div>
+      <div className="absolute -bottom-[20px] -left-[280px] w-[4px]">
+        <Star3 />
+      </div>
+      <div className="absolute -bottom-[80px] -left-[290px] w-[4px]">
+        <Star3 />
+      </div>
+      <div className="absolute bottom-[50px] -left-[360px] w-[4px]">
+        <Star3 />
+      </div>
+      <div className="absolute -bottom-[170px] right-[10px] w-[4px]">
+        <Star3 />
+      </div>
+      <div className="absolute -bottom-[110px] right-[110px] w-[10px]">
+        <Star2 />
+      </div>
+      <div className="absolute -top-[5px] -left-[50px] w-[10px]">
+        <Star2 />
+      </div>
+      <div
+        className="absolute bottom-[50px] right-[120px] w-[100px] z-50"
+        ref={scope6}
+        style={{ opacity: 0 }}
+      >
+        <ShootingStarSmall />
+      </div>
+      <div
+        className="absolute -bottom-[120px] lg1/2:bottom-[750px] -right-[500px] lg1/2:right-[500px] w-[200px]"
+        ref={scope5}
+        style={{ opacity: 0 }}
+      >
+        <ShootingStarSmall />
+      </div>
     </>
   );
 };
 
 const ShootingStarLarge: React.FC = () => {
   return (
-    <svg
+    <motion.svg
       id="Layer_2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 278.75 115.55"
@@ -51,7 +164,7 @@ const ShootingStarLarge: React.FC = () => {
           y2="1.93"
         />
       </g>
-    </svg>
+    </motion.svg>
   );
 };
 
@@ -96,11 +209,26 @@ const ShootingStarSmall: React.FC = () => {
 };
 
 const Star1: React.FC = () => {
+  const [scope1, animate1] = useAnimate();
+
+  useEffect(() => {
+    animate1(
+      [
+        [scope1.current, { opacity: 0.3 }],
+        [scope1.current, { opacity: 0.6 }],
+        [scope1.current, { opacity: 0.2 }],
+        [scope1.current, { opacity: 1 }],
+      ],
+      { repeat: Infinity, duration: 4 }
+    );
+  }, []);
+
   return (
     <svg
       id="Layer_2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 11.69 15.1"
+      ref={scope1}
     >
       <defs>
         <style>
@@ -121,8 +249,27 @@ const Star1: React.FC = () => {
 };
 
 const Star2: React.FC = () => {
+  const [scope2, animate1] = useAnimate();
+
+  useEffect(() => {
+    animate1(
+      [
+        [scope2.current, { opacity: 0.5 }],
+        [scope2.current, { opacity: 0.3 }],
+        [scope2.current, { opacity: 1 }],
+        [scope2.current, { opacity: 0.6 }],
+        [scope2.current, { opacity: 1 }],
+      ],
+      { repeat: Infinity, duration: 3 }
+    );
+  }, []);
   return (
-    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 15.89">
+    <svg
+      id="Layer_2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 11 15.89"
+      ref={scope2}
+    >
       <defs>
         <style>
           {`
@@ -146,11 +293,26 @@ const Star2: React.FC = () => {
 };
 
 const Star3: React.FC = () => {
+  const [scope3, animate1] = useAnimate();
+
+  useEffect(() => {
+    animate1(
+      [
+        [scope3.current, { opacity: 0.2 }],
+        [scope3.current, { opacity: 1 }],
+        [scope3.current, { opacity: 0.3 }],
+        [scope3.current, { opacity: 0.6 }],
+        [scope3.current, { opacity: 1 }],
+      ],
+      { repeat: Infinity, duration: 3.5 }
+    );
+  }, []);
   return (
     <svg
       id="Layer_2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 4.29 4.29"
+      ref={scope3}
     >
       <defs>
         <style>
@@ -168,11 +330,26 @@ const Star3: React.FC = () => {
 };
 
 const Star4: React.FC = () => {
+  const [scope4, animate1] = useAnimate();
+
+  useEffect(() => {
+    animate1(
+      [
+        [scope4.current, { opacity: 0.8 }],
+        [scope4.current, { opacity: 0.4 }],
+        [scope4.current, { opacity: 1 }],
+        [scope4.current, { opacity: 0.6 }],
+        [scope4.current, { opacity: 1 }],
+      ],
+      { repeat: Infinity, duration: 2 }
+    );
+  }, []);
   return (
     <svg
       id="Layer_2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 13.64 13.64"
+      ref={scope4}
     >
       <defs>
         <style>

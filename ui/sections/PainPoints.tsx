@@ -5,18 +5,18 @@ import { HeroSupportContainer } from "../containers/HeroSupportContainer";
 
 export const PainPoints: React.FC = () => {
   return (
-    <section className="flex flex-col relative justify-center items-center min-h-[60rem] px-5 bg-section-background">
-      <div className="flex gap-[1.5rem] md:gap-[3.5313rem] flex-row flex-wrap justify-center lg1/2:absolute lg1/2:-top-[9rem]">
+    <section className="flex flex-col relative items-center min-h-[60rem] px-5 bg-section-background">
+      <div className="flex gap-[1.5rem] md:gap-[3.5313rem] flex-row flex-wrap justify-center xl1/2:absolute -top-[9rem]">
         <HeroSupportContainer>
-            <div className="max-w-[6rem] mt-3 mb-2">
-              <svg
-                id="Layer_2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 73.41 63.65"
-              >
-                <defs>
-                  <style>
-                    {`
+          <div className="max-w-[6rem] mt-3 mb-2">
+            <svg
+              id="Layer_2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 73.41 63.65"
+            >
+              <defs>
+                <style>
+                  {`
       .cls-1XX {
         fill: none;
         stroke: #5A8CF9;
@@ -24,103 +24,93 @@ export const PainPoints: React.FC = () => {
         stroke-linejoin: round;
         stroke-width: 7px;
       }`}
-                  </style>
-                </defs>
-                <g id="Layer_1-2" data-name="Layer_1">
-                  <path
-                    className="cls-1XX"
-                    d="M69.9,21.17c-.1,5.12-2.41,9.67-6,12.77-.13.18-.28.36-.46.52l-27.8,25.68-26.76-26.76s-.07-.07-.1-.1c0,0,0-.01-.01-.02-3.33-3.23-5.36-7.78-5.26-12.78C3.69,10.92,11.6,3.32,21.17,3.5c6.98.14,12.9,4.38,15.53,10.37,2.73-6.22,9-10.51,16.22-10.37,9.57.19,17.17,8.1,16.98,17.67Z"
-                  />
-                </g>
-              </svg>
-            </div>
-            <h4 className="font-gunterz">
-              BRAND <br /> CENTERED
-            </h4>
-            <p>
-              Don’t let your brand get lost in the noise we make you stand out.
-            </p>
+                </style>
+              </defs>
+              <g id="Layer_1-2" data-name="Layer_1">
+                <path
+                  className="cls-1XX"
+                  d="M69.9,21.17c-.1,5.12-2.41,9.67-6,12.77-.13.18-.28.36-.46.52l-27.8,25.68-26.76-26.76s-.07-.07-.1-.1c0,0,0-.01-.01-.02-3.33-3.23-5.36-7.78-5.26-12.78C3.69,10.92,11.6,3.32,21.17,3.5c6.98.14,12.9,4.38,15.53,10.37,2.73-6.22,9-10.51,16.22-10.37,9.57.19,17.17,8.1,16.98,17.67Z"
+                />
+              </g>
+            </svg>
+          </div>
+          <h4 className="font-gunterz">Bi-Weekly PROJECT SNAPSHOTS</h4>
+          <p>
+            Frequent check-in schedule keeps our vision aligned
+          </p>
         </HeroSupportContainer>
-        <div className="min-h-[19.9375rem]  max-w-[26.4375rem] rounded-tr-[96px] bg-sun-orange px-[3rem] pt-[3rem] pb-[4rem]">
-          <div className="container">
-            <div className="max-w-[6rem] mt-3 mb-2">
-              <svg
-                id="Layer_2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 85 77.4"
-              >
-                <defs>
-                  <style>
-                    {`
+        <HeroSupportContainer>
+          <div className="max-w-[6rem] mt-3 mb-2">
+            <svg
+              id="Layer_2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 85 77.4"
+            >
+              <defs>
+                <style>
+                  {`
       .cls-1asd {
         fill: #5A8CF9;
       }`}
-                  </style>
-                </defs>
-                <g id="Layer_1-2" data-name="Layer_1">
-                  <g>
-                    <path
-                      className="cls-1asd"
-                      d="M7.51,73.79c.38-5.82,2.45-11.19,4.86-16.44,1.38-3.01,4.96-11.33,7.97-5.39,1.64,3.24,2.75,6.62,6.27,8.34,3.31,1.61,6.54.61,9.33-1.57,6.18-4.83,8.88-12.62,10.59-20,2.5-10.82,4.53-21.76,6.77-32.64.97-4.71-6.26-6.73-7.23-1.99-2.24,10.87-4.27,21.82-6.77,32.64-1.04,4.49-2.29,9.14-5.01,12.93-.58.81-1.21,1.71-2.01,2.34-2.07,1.62-2.55,1.5-3.87-.29-1.09-1.48-1.46-3.58-2.45-5.15-4.21-6.68-11.76-5.5-16.22.18C4.1,53.92.59,64.8,0,73.79c-.31,4.82,7.19,4.8,7.5,0h0Z"
-                    />
-                    <path
-                      className="cls-1asd"
-                      d="M45.31,1.12c-6.51,5.41-12.2,11.05-17.23,17.87-2.87,3.89,3.64,7.63,6.48,3.79,4.63-6.28,10.08-11.39,16.06-16.35,3.72-3.09-1.61-8.37-5.3-5.3h0Z"
-                    />
-                    <path
-                      className="cls-1asd"
-                      d="M45.59,5.39c4.4,5.93,8.79,11.85,13.19,17.78,2.84,3.83,9.36.1,6.48-3.79-4.4-5.93-8.79-11.85-13.19-17.78-2.84-3.83-9.36-.1-6.48,3.79h0Z"
-                    />
-                  </g>
+                </style>
+              </defs>
+              <g id="Layer_1-2" data-name="Layer_1">
+                <g>
+                  <path
+                    className="cls-1asd"
+                    d="M7.51,73.79c.38-5.82,2.45-11.19,4.86-16.44,1.38-3.01,4.96-11.33,7.97-5.39,1.64,3.24,2.75,6.62,6.27,8.34,3.31,1.61,6.54.61,9.33-1.57,6.18-4.83,8.88-12.62,10.59-20,2.5-10.82,4.53-21.76,6.77-32.64.97-4.71-6.26-6.73-7.23-1.99-2.24,10.87-4.27,21.82-6.77,32.64-1.04,4.49-2.29,9.14-5.01,12.93-.58.81-1.21,1.71-2.01,2.34-2.07,1.62-2.55,1.5-3.87-.29-1.09-1.48-1.46-3.58-2.45-5.15-4.21-6.68-11.76-5.5-16.22.18C4.1,53.92.59,64.8,0,73.79c-.31,4.82,7.19,4.8,7.5,0h0Z"
+                  />
+                  <path
+                    className="cls-1asd"
+                    d="M45.31,1.12c-6.51,5.41-12.2,11.05-17.23,17.87-2.87,3.89,3.64,7.63,6.48,3.79,4.63-6.28,10.08-11.39,16.06-16.35,3.72-3.09-1.61-8.37-5.3-5.3h0Z"
+                  />
+                  <path
+                    className="cls-1asd"
+                    d="M45.59,5.39c4.4,5.93,8.79,11.85,13.19,17.78,2.84,3.83,9.36.1,6.48-3.79-4.4-5.93-8.79-11.85-13.19-17.78-2.84-3.83-9.36-.1-6.48,3.79h0Z"
+                  />
                 </g>
-              </svg>
-            </div>
-            <h4 className="font-gunterz">
-              CONVERSION <br /> FOCUSED
-            </h4>
-            <p>
-              Your landing page should get you more clients not just look pretty
-            </p>
+              </g>
+            </svg>
           </div>
-        </div>
-        <div className="min-h-[19.9375rem]  max-w-[26.4375rem] rounded-tr-[96px] bg-storm-gray px-[3rem] pt-[3rem] pb-[4rem]">
-          <div className="container">
-            <div className="max-w-[6rem] mt-3 mb-2">
-              <svg
-                id="Layer_2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 70 75.32"
-              >
-                <defs>
-                  <style>
-                    {`
+          <h4 className="font-gunterz">response within 24 hours</h4>
+          <p>
+            Quick clear communication is out top priority 
+          </p>
+        </HeroSupportContainer>
+        <HeroSupportContainer>
+          <div className="max-w-[6rem] mt-3 mb-2">
+            <svg
+              id="Layer_2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 70 75.32"
+            >
+              <defs>
+                <style>
+                  {`
       .cls-1qwe {
         fill: #5A8CF9;
       }`}
-                  </style>
-                </defs>
-                <g id="Layer_1-2" data-name="Layer_1">
-                  <g>
-                    <path
-                      className="cls-1qwe"
-                      d="M17.66,43.73C7.91,50.33-3.79,60.2,1.18,73.43c.51,1.35,2.26,2.54,3.67,1.49,3.79-2.8,7.6-5.56,11.45-8.28l-3.76-2.16c.4,7.09,7.69,5.6,11.3,1.7,4.8-5.19,6.33-12.2,5.17-19.03-.54-3.17-5.36-1.82-4.82,1.33s.32,6.05-.74,8.92c-.43,1.17-1.04,2.34-1.72,3.39.41-.62-4.11,5.01-4.19,3.68-.1-1.73-2.11-3.33-3.76-2.16-3.85,2.72-7.66,5.48-11.45,8.28l3.67,1.49c-4.12-10.95,6.26-18.69,14.18-24.05,2.65-1.79.15-6.13-2.52-4.32h0Z"
-                    />
-                    <path
-                      className="cls-1qwe"
-                      d="M22.63,40.63l-.72-.08,3.62,2.75c-.85-2.2,3.49-8.46,4.62-10.45,2.02-3.57,4.31-7,6.89-10.2,4.89-6.06,10.65-11.27,17.11-15.6l-5.51-4.23c-4.3,15.81-13.03,29.65-25.37,40.43l6.27,1.65c-.81-2.29,3.02-5.82,4.35-7.58,1.86-2.46,3.66-4.98,5.39-7.53,3.29-4.86,6.33-9.88,9.17-15.01,2.36-4.26-3.81-7.77-6.48-3.79-6.08,9.08-12.16,18.17-18.24,27.25-2.69,4.02,3.8,7.78,6.48,3.79,6.08-9.08,12.16-18.17,18.24-27.25l-6.48-3.79c-3.74,6.76-7.83,13.3-12.35,19.56-3.38,4.68-9.56,9.97-7.31,16.34.97,2.75,4.06,3.58,6.27,1.65,13.25-11.57,22.69-26.77,27.3-43.74.82-3.01-2.72-6.11-5.51-4.23-8.16,5.47-15.26,12.12-21.14,20-2.96,3.96-5.56,8.19-7.74,12.64-1.68,3.44-4.7,8.19-3.19,12.09.67,1.72,1.81,2.55,3.62,2.75l.72.08c4.79.55,4.75-6.95,0-7.5h0Z"
-                    />
-                  </g>
+                </style>
+              </defs>
+              <g id="Layer_1-2" data-name="Layer_1">
+                <g>
+                  <path
+                    className="cls-1qwe"
+                    d="M17.66,43.73C7.91,50.33-3.79,60.2,1.18,73.43c.51,1.35,2.26,2.54,3.67,1.49,3.79-2.8,7.6-5.56,11.45-8.28l-3.76-2.16c.4,7.09,7.69,5.6,11.3,1.7,4.8-5.19,6.33-12.2,5.17-19.03-.54-3.17-5.36-1.82-4.82,1.33s.32,6.05-.74,8.92c-.43,1.17-1.04,2.34-1.72,3.39.41-.62-4.11,5.01-4.19,3.68-.1-1.73-2.11-3.33-3.76-2.16-3.85,2.72-7.66,5.48-11.45,8.28l3.67,1.49c-4.12-10.95,6.26-18.69,14.18-24.05,2.65-1.79.15-6.13-2.52-4.32h0Z"
+                  />
+                  <path
+                    className="cls-1qwe"
+                    d="M22.63,40.63l-.72-.08,3.62,2.75c-.85-2.2,3.49-8.46,4.62-10.45,2.02-3.57,4.31-7,6.89-10.2,4.89-6.06,10.65-11.27,17.11-15.6l-5.51-4.23c-4.3,15.81-13.03,29.65-25.37,40.43l6.27,1.65c-.81-2.29,3.02-5.82,4.35-7.58,1.86-2.46,3.66-4.98,5.39-7.53,3.29-4.86,6.33-9.88,9.17-15.01,2.36-4.26-3.81-7.77-6.48-3.79-6.08,9.08-12.16,18.17-18.24,27.25-2.69,4.02,3.8,7.78,6.48,3.79,6.08-9.08,12.16-18.17,18.24-27.25l-6.48-3.79c-3.74,6.76-7.83,13.3-12.35,19.56-3.38,4.68-9.56,9.97-7.31,16.34.97,2.75,4.06,3.58,6.27,1.65,13.25-11.57,22.69-26.77,27.3-43.74.82-3.01-2.72-6.11-5.51-4.23-8.16,5.47-15.26,12.12-21.14,20-2.96,3.96-5.56,8.19-7.74,12.64-1.68,3.44-4.7,8.19-3.19,12.09.67,1.72,1.81,2.55,3.62,2.75l.72.08c4.79.55,4.75-6.95,0-7.5h0Z"
+                  />
                 </g>
-              </svg>
-            </div>
-            <h4 className="font-gunterz">
-              100% CUSTOM <br /> DESIGN
-            </h4>
-            <p>
-              We make landing pages for YOUR business we don’t use a template
-            </p>
+              </g>
+            </svg>
           </div>
-        </div>
+          <h4 className="font-gunterz">
+            website in 60 days or less
+          </h4>
+          <p>We work fast so you can launch sooner</p>
+        </HeroSupportContainer>
       </div>
       <div className="flex flex-col justify-start w-full max-w-[100rem] min-h-[30rem] items-center mt-0 lg1/2:mt-[36rem] xl3/4:mt-[13.5rem]">
         <h2 className="font-charcoalDance w-full text-left mb-3 mt-10">

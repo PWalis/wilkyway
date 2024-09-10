@@ -5,7 +5,7 @@ import { useFormSwitch } from "@/context/FormSwitch";
 export const CTA: React.FC<PropsWithChildren> = ({ children }) => {
   const {formSwitch, setFormSwitch} = useFormSwitch()
   return (
-    <button onClick={() => {setFormSwitch(true)}} className="text-[#FEFEFE] font-bold tracking-wider antialiased text-[1.25rem] w-full max-w-64 bg-CTA px-5 py-4 border-transparent">
+    <button onClick={() => {setFormSwitch(true)}} className="text-[#151E28] font-bold tracking-wider antialiased text-[1.25rem] w-full sm:max-w-64 bg-CTA px-5 py-4 border-transparent">
       {children}
     </button>
   );
@@ -13,7 +13,7 @@ export const CTA: React.FC<PropsWithChildren> = ({ children }) => {
 
 export const SecondaryCTA: React.FC<PropsWithChildren> = ({ children }) => {
   return (
-    <button style={{borderStyle: "inset"}} className="border-2 antialiased text-[1.25rem] w-full border-crystal-white tracking-wider max-w-64 bg-transparent text-crystal-white px-5 py-4">
+    <button style={{borderStyle: "inset"}} className="border-2 antialiased text-[1.25rem] w-full border-crystal-white tracking-wider sm:max-w-64 bg-transparent text-crystal-white px-5 py-4">
       {children}
     </button>
   );

@@ -152,9 +152,9 @@ export const Solution: React.FC = () => {
             </div>
           </div>
           <div className="sm:flex sticky top-[20rem] hidden">
-            <div className="relative">
+            {/* <div className="relative">
               <ProgressIndicator progress={frame}/>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -8,15 +8,18 @@ export const Hero = () => {
   const { width } = useWindowDimensions();
 
   return (
-    <section className="flex justify-center items-center min-h-[60rem] bg-section-background">
-      <div className="w-full max-w-[102.5rem] flex justify-between mb-14 px-8 flex-col-reverse lg1/2:flex-row items-center">
-        <div className="flex flex-col z-10 mt-[5rem] md:mt-0">
+    <section
+      className="flex justify-center items-center min-h-[60rem] bg-section-background"
+      style={{ contain: "paint" }}
+    >
+      <div className="w-full max-w-[102.5rem] flex justify-start mb-14 px-8 flex-col-reverse lg1/2:flex-row items-center">
+        <div className="flex flex-col z-10 mt-[5rem] xl:mt-0">
           <h1 className="mt-4 sm:mt-0 antialiased content-end">
-            <span className="text-[#FEFEFE] font-gunterz text-[2.1rem] tracking-wide pb-2 inline-block pl-2">
-              CONVERSION-FIRST WEBSITES
+            <span className="text-[#FEFEFE] font-gunterz text-[0.75rem] xs:text-[1rem] lg1/2:text-[1.5rem] tracking-wide lg1/2:pl-1 pb-2 inline-block ">
+              Forge your brand into a star with
             </span>{" "}
             <br />
-            <span className="leading-[90px] tracking-tighter text-left text-[5.5rem] font-gunterzBold">
+            <span className="leading-[50px] lg1/2:leading-[80px] tracking-tighter text-left text-[2.5rem] xs:text-[3rem] lg1/2:text-[5rem] font-gunterzBold">
               <span
                 className="pt-1"
                 style={{
@@ -25,7 +28,7 @@ export const Hero = () => {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                THAT ARE OUT OF
+                expert crafted
               </span>{" "}
               <br />
               <span
@@ -37,29 +40,43 @@ export const Hero = () => {
                 }}
                 className="pt-1"
               >
-                THIS WORLD
+                high performing websites
               </span>{" "}
             </span>
           </h1>
-          <p className="text-[1.25rem] tracking-wider mb-1 pl-3 mt-10 sm:mt-0 max-w-[40rem] antialiased">
-            We take your target audience, your business needs, identity, and
-            fitness philosophy and turn it into a professional landing page that
-            does all the work for you so you can spend your time doing what you
-            love.
+          <p className="text-[1.25rem] tracking-wider mb-1 max-w-[40rem] antialiased lg1/2:pl-1">
+            Break through the digital atmosphere with websites that are
+            light-years ahead of the competition, combining stellar design,
+            copywriting that converts, lightning-fast load times, and perfect
+            onsite SEO.
           </p>
-          <div className="flex-col items-center sm:flex-row flex gap-5 mt-4 pl-3">
+          <div className="flex-col items-center sm:flex-row flex gap-5 mt-4">
             <CTA>ATTRACT CLIENTS</CTA>{" "}
             <SecondaryCTA>FREE GROWTH KIT</SecondaryCTA>
           </div>
+          <div className="text-hero-checklist mt-5">
+            <div className="flex gap-1">
+              <img src="https://placehold.co/20" />
+              <p className="text-[1.25rem] font-semibold tracking-wider">Brand Identity Creation</p>
+            </div>
+            <div className="flex gap-1">
+              <img src="https://placehold.co/20" />
+              <p className="text-[1.25rem] font-semibold tracking-wider">Powerful Copywriting</p>
+            </div>
+            <div className="flex gap-1">
+              <img src="https://placehold.co/20" />
+              <p className="text-[1.25rem] font-semibold tracking-wider">Custom Design</p>
+            </div>
+          </div>
         </div>
-        <div className="w-full max-w-[30rem] h-full max-h-[30rem] overflow-visible relative z-0">
+        <div className="w-full max-w-[30rem] h-[11rem] xs:h-[15rem] iphone14max:h-[17rem] 3sm:h-[18.5rem] 2sm:h-[25rem] lg1/2:h-[30rem] overflow-visible relative z-0">
           <Stars />
           <svg
             id="Layer_2"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 1799.93 1804.77"
-            className="w-[35rem] absolute top-0 md:-left-[15rem]"
+            className="lg1/2:w-[37rem] lg1/2:absolute -top-[5.5rem] lg1/2:-left-[12rem]"
           >
             <defs>
               <style>{`
