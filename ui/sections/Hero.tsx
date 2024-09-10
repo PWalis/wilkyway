@@ -51,7 +51,8 @@ export const Hero = () => {
             onsite SEO.
           </p>
           <div className="flex-col items-center sm:flex-row flex gap-5 mt-4">
-            <CTA>ATTRACT CLIENTS</CTA>{" "}
+            <div className="w-full sm:max-w-64 shadow-CTA shadow-[0px_0px_40px_-16px_#FFC700]">
+            <CTA>ATTRACT CLIENTS</CTA>{" "}</div>
             <SecondaryCTA>FREE GROWTH KIT</SecondaryCTA>
           </div>
           <div className="text-hero-checklist mt-5">
