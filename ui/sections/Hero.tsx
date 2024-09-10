@@ -69,7 +69,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-[30rem] h-[11rem] xs:h-[15rem] iphone14max:h-[17rem] 3sm:h-[18.5rem] 2sm:h-[25rem] lg1/2:h-[30rem] overflow-visible relative z-0">
+        <div className="w-full max-w-[30rem] h-[9rem] xs:h-[11rem] iphone14max:h-[13rem] 3sm:h-[14rem] 2sm:h-[22rem] lg1/2:h-[30rem] overflow-visible relative z-0">
           <Stars />
           <svg
             id="Layer_2"
