@@ -16,7 +16,7 @@ export const Hero = () => {
         <div className="flex flex-col z-10 mt-[5rem] xl:mt-0">
           <h1 className="mt-4 sm:mt-0 antialiased content-end">
             <span className="text-[#FEFEFE] font-gunterz text-[0.75rem] xs:text-[1rem] lg1/2:text-[1.5rem] tracking-wide lg1/2:pl-1 pb-2 inline-block ">
-              Forge your brand into a star with
+              Make your brand a star with
             </span>{" "}
             <br />
             <span className="leading-[50px] lg1/2:leading-[80px] tracking-tighter text-left text-[2.5rem] xs:text-[3rem] lg1/2:text-[5rem] font-gunterzBold">
