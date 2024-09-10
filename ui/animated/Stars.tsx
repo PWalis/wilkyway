@@ -11,12 +11,12 @@ export const Stars: React.FC = () => {
       [
         [
           scope5.current,
-          { x: "-200%", y: "200%", opacity: 1 },
+          { x: "-250%", y: "200%", opacity: 1 },
           { delay: 4, duration: 0.1 },
         ],
         [
           scope5.current,
-          { x: "-400%", y: "400%", opacity: 0 },
+          { x: "-500%", y: "400%", opacity: 0 },
           { duration: 0.2 },
         ],
         [scope5.current, { x: "0%", y: "0%", opacity: 0 }, { duration: 0.2 }],
