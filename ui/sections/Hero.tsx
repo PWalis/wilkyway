@@ -60,7 +60,7 @@ export const Hero = () => {
             <div className="flex gap-1">
               <div className="flex justify-center items-center w-[20px]">
                 <svg
-                  id="Layer_2"
+                  id="Layer_2painPointCheck"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40.67 28.97"
                 >
@@ -72,7 +72,10 @@ export const Hero = () => {
       }`}
                     </style>
                   </defs>
-                  <g id="Layer_1-2" data-name="Layer_1">
+                  <g
+                    id="Layer_1-2painPointCheck"
+                    data-name="Layer_1painPointCheck"
+                  >
                     <polygon
                       className="cls-1-painPointCheck"
                       points="40.67 4.25 15.95 28.97 15.93 28.96 15.92 28.97 0 13.05 4.25 8.81 15.93 20.5 36.43 0 40.67 4.25"
@@ -87,7 +90,7 @@ export const Hero = () => {
             <div className="flex gap-1">
               <div className="flex justify-center items-center w-[20px]">
                 <svg
-                  id="Layer_2"
+                  id="Layer_2painPointCheck"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40.67 28.97"
                 >
@@ -99,7 +102,10 @@ export const Hero = () => {
       }`}
                     </style>
                   </defs>
-                  <g id="Layer_1-2" data-name="Layer_1">
+                  <g
+                    id="Layer_1-2painPointCheck"
+                    data-name="Layer_1painPointCheck"
+                  >
                     <polygon
                       className="cls-1-painPointCheck"
                       points="40.67 4.25 15.95 28.97 15.93 28.96 15.92 28.97 0 13.05 4.25 8.81 15.93 20.5 36.43 0 40.67 4.25"
@@ -114,7 +120,7 @@ export const Hero = () => {
             <div className="flex gap-1">
               <div className="flex justify-center items-center w-[20px]">
                 <svg
-                  id="Layer_2"
+                  id="Layer_2painPointCheck"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40.67 28.97"
                 >
@@ -126,7 +132,10 @@ export const Hero = () => {
       }`}
                     </style>
                   </defs>
-                  <g id="Layer_1-2" data-name="Layer_1">
+                  <g
+                    id="Layer_1-2painPointCheck"
+                    data-name="Layer_1painPointCheck"
+                  >
                     <polygon
                       className="cls-1-painPointCheck"
                       points="40.67 4.25 15.95 28.97 15.93 28.96 15.92 28.97 0 13.05 4.25 8.81 15.93 20.5 36.43 0 40.67 4.25"

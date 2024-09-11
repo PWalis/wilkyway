@@ -8,11 +8,12 @@ export const PainPoints: React.FC = () => {
     <section className="flex flex-col relative items-center min-h-[60rem] px-5 bg-section-background">
       <div className="flex gap-[1.5rem] md:gap-[3.5313rem] flex-row flex-wrap justify-center xl1/2:absolute -top-[9rem]">
         <HeroSupportContainer>
-          <div className="max-w-[6rem] h-[100px] flex items-center justify-center">
+          <div className="max-w-[6rem] h-[100px]">
             <svg
-              id="Layer_2"
+              id="Layer_2heroCam"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 94.37 79.81"
+              className="overflow-visible"
             >
               <defs>
                 <style>
@@ -37,7 +38,7 @@ export const PainPoints: React.FC = () => {
       }`}
                 </style>
               </defs>
-              <g id="Layer_1-2" data-name="Layer_1">
+              <g id="Layer_1-2heroCam" data-name="Layer_1heroCam">
                 <g>
                   <path
                     className="cls-3heroCam"
@@ -61,11 +62,12 @@ export const PainPoints: React.FC = () => {
           <p>Frequent check-in schedule keeps our vision aligned</p>
         </HeroSupportContainer>
         <HeroSupportContainer>
-          <div className="max-w-[6rem] h-[100px] flex items-end pb-3 justify-center">
+          <div className="max-w-[6rem] h-[100px]">
             <svg
-              id="Layer_2"
+              id="Layer_2heroChat"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 111.91 76.68"
+              viewBox="0 -20 111.91 76.68"
+              className="overflow-visible"
             >
               <defs>
                 <style>
@@ -75,7 +77,7 @@ export const PainPoints: React.FC = () => {
       }`}
                 </style>
               </defs>
-              <g id="Layer_1-2" data-name="Layer_1">
+              <g id="Layer_1-2heroChat" data-name="Layer_1heroChat">
                 <path
                   className="cls-1heroChat"
                   d="M102.33,71.13c-1.56-1.01-4.5-3.56-3.41-5.63h.01c6.11-3.39,10.25-9.9,10.25-17.37v-28.29c0-10.96-8.88-19.84-19.84-19.84H19.83C8.88,0,0,8.88,0,19.84v28.29c0,10.95,8.88,19.83,19.83,19.83h55.67c.93.63,1.76,1.19,2.36,1.51,5.04,2.72,10.13,6.21,15.93,6.95,3.51.45,7.23.32,10.76-.48,2.6-.6,5.1-1.56,7.36-2.93-3.25.6-6.8-.07-9.58-1.88ZM81.13,26.47c4.15,0,7.51,3.37,7.51,7.51s-3.36,7.51-7.51,7.51-7.51-3.36-7.51-7.51,3.37-7.51,7.51-7.51ZM28.04,41.49c-4.15,0-7.51-3.36-7.51-7.51s3.36-7.51,7.51-7.51,7.51,3.37,7.51,7.51-3.36,7.51-7.51,7.51ZM54.59,41.49c-4.15,0-7.51-3.36-7.51-7.51s3.36-7.51,7.51-7.51,7.51,3.37,7.51,7.51-3.37,7.51-7.51,7.51Z"
@@ -87,9 +89,9 @@ export const PainPoints: React.FC = () => {
           <p>Quick clear communication is out top priority</p>
         </HeroSupportContainer>
         <HeroSupportContainer>
-          <div className="max-w-[6rem]  h-[100px] flex items-center justify-center">
+          <div className="max-w-[6rem]  h-[100px]">
             <svg
-              id="Layer_2"
+              id="Layer_2heroCheck"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 112.93 107.43"
             >
@@ -101,7 +103,7 @@ export const PainPoints: React.FC = () => {
       }`}
                 </style>
               </defs>
-              <g id="Layer_1-2" data-name="Layer_1">
+              <g id="Layer_1-2heroCheck" data-name="Layer_1heroCheck">
                 <path
                   className="cls-1heroCheck"
                   d="M112.93,53.72l-16.1-13.12,5.31-20.08-20.74-1.14L73.91,0l-17.45,11.28L39.01,0l-7.49,19.38-20.74,1.14,5.31,20.08L0,53.72l16.09,13.12-5.31,20.07,20.74,1.15,7.49,19.37,17.45-11.27,17.45,11.27,7.49-19.37,20.74-1.14-5.31-20.08,16.1-13.12ZM66.66,51.23c-5.28,6.26-8.72,13.34-9.93,20.48l-1.63,9.6-6.25-7.47c-5.28-6.29-12.47-11.19-20.26-13.79l2.86-8.54c6.85,2.29,13.15,5.92,18.53,10.65,2.12-5.89,5.44-11.57,9.8-16.73,5.37-6.37,12.4-12.05,20.9-16.89l4.45,7.82c-7.57,4.31-13.79,9.32-18.47,14.87Z"
@@ -298,11 +300,12 @@ export const PainPoints: React.FC = () => {
             <p>Think your website could use a fresh new design?</p>
           </PainPoint>
           <PainPoint>
-            <div className="w-full flex items-end max-w-[120px] h-[60px] mt-9 mb-7">
+            <div className="w-full max-w-[120px] h-[60px] mt-9 mb-7">
               <svg
                 id="Layer_2"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 126.56 56.62"
+                viewBox="0 -15 126.56 56.62"
+                className="overflow-visible"
               >
                 <defs>
                   <style>
