@@ -77,9 +77,9 @@ export const Solution: React.FC = () => {
   return (
     <section className="min-h-[60rem] flex flex-col items-center bg-section-background md:pb-[15rem]">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
-        <h2 className="font-charcoalDance px-5 text-left w-full leading-8 md:sticky top-24 z-40">
+        <h2 className="font-gunterz px-5 text-left w-full leading-8">
           your landing page = your{" "}
-          <span className="text-sun-orange">conversions</span>
+          <span className="text-hero-color2">conversions</span>
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[168rem] iphone12pro:min-h-[164rem] iphone14max:min-h-[155rem] sm:min-h-[185rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
@@ -96,7 +96,7 @@ export const Solution: React.FC = () => {
             </SolutionContainer>
             <SolutionContainer id="title2">
               <h3 className="font-gunterz">
-                <span className="text-sun-orange">BOOST SALES</span> AND
+                <span className="text-hero-color2">BOOST SALES</span> AND
                 MAXIMIZE CLICKS.
               </h3>
               <p className="max-w-[26.25rem]">
@@ -109,7 +109,7 @@ export const Solution: React.FC = () => {
             </SolutionContainer>
             <SolutionContainer id="title3">
               <h3 className="font-gunterz">
-                <span className="text-sun-orange">BUILD TRUST</span> THROUGH
+                <span className="text-hero-color2">BUILD TRUST</span> THROUGH
                 PROFESSIONAL DESIGN.
               </h3>
               <p className="max-w-[29rem]">
@@ -122,7 +122,7 @@ export const Solution: React.FC = () => {
             </SolutionContainer>
             <SolutionContainer id="title4">
               <h3 className="font-gunterz">
-                <span className="text-sun-orange">CAPTIVATE YOUR MARKET</span>{" "}
+                <span className="text-hero-color2">CAPTIVATE YOUR MARKET</span>{" "}
                 WITH TARGETED COPYWRITING.
               </h3>
               <p className="max-w-[26.25rem]">
@@ -134,7 +134,7 @@ export const Solution: React.FC = () => {
             </SolutionContainer>
             <SolutionContainer id="title5">
               <h3 className="font-gunterz">
-                SO <span className="text-sun-orange">FAST</span> YOU WON'T MISS
+                SO <span className="text-hero-color2">FAST</span> YOU WON'T MISS
                 IT.
               </h3>
               <p className="max-w-[26.25rem]">
@@ -145,16 +145,12 @@ export const Solution: React.FC = () => {
             </SolutionContainer>
           </div>
           <div className="flex justify-center w-full lg:max-w-[30rem] h-[24rem] bg-section-background mb-20 mt-[20rem] lg:mt-[15rem] sticky top-[58vh] lg:top-[20rem]">
-            <div className="h-[30rem] max-w-[30rem] w-full">
+            <div className="h-[30rem] max-w-[30rem] w-full relative">
               <AnimatePresence mode="popLayout">
                 {renderComponent()}
               </AnimatePresence>
-            </div>
-          </div>
-          <div className="sm:flex sticky top-[20rem] hidden">
-            {/* <div className="relative">
               <ProgressIndicator progress={frame}/>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

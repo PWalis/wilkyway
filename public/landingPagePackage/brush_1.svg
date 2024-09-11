@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 131.73 95.11">
+  <defs>
+    <style>
+      .cls-1Brush {
+        fill: #21b45f;
+      }
+
+      .cls-2Brush {
+        fill: none;
+      }
+
+      .cls-3Brush {
+        fill: #0c6132;
+      }
+
+      .cls-4Brush {
+        clip-path: url(#clippathBrush);
+      }
+    </style>
+    <clipPath id="clippathBrush">
+      <path className="cls-2Brush" d="M53.83,51.07c4.29,6.64-1.81,18.23-13.64,25.87s-35.06,5.62-35.06,5.62c0,0,7.68-22.02,19.51-29.67s24.9-8.46,29.19-1.82Z"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <g>
+      <path className="cls-1Brush" d="M131.49.84c2.47,3.82-14.91,19.42-38.8,34.87-8.33,5.38-16.34,10.04-23.36,13.65-1.08.57-2.14,1.1-3.17,1.6l-7.18-11.11c.89-.74,1.8-1.48,2.76-2.23,6.18-4.92,13.71-10.32,22.03-15.71C107.66,6.47,129.03-2.96,131.49.84Z"/>
+      <path className="cls-3Brush" d="M63.31,35.81l8.32,12.87c.54.83.21,2-.73,2.61l-1.5.97c-.94.61-2.14.43-2.68-.41l-8.32-12.87c-.54-.83-.21-2,.73-2.61l1.5-.97c.94-.61,2.14-.43,2.68.41Z"/>
+      <g className="cls-4Brush">
+        <path className="cls-1Brush" d="M53.83,51.07c4.29,6.64-1.81,18.23-13.64,25.87s-35.06,5.62-35.06,5.62c0,0,7.68-22.02,19.51-29.67s24.9-8.46,29.19-1.82Z"/>
+        <polygon className="cls-3Brush" points="10.16 60.28 4.8 82.23 32.37 64.4 10.16 60.28"/>
+        <polygon className="cls-3Brush" points="5.36 73.17 0 95.11 27.57 77.28 5.36 73.17"/>
+      </g>
+      <rect className="cls-3Brush" x="50.54" y="43.13" width="13.07" height="11.67" transform="translate(-17.44 38.84) rotate(-32.89)"/>
+    </g>
+  </g>
+</svg>

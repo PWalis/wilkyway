@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.95 72.04">
+  <defs>
+    <style>
+      .cls-1Graph {
+        fill: #21b45f;
+      }
+
+      .cls-2Graph {
+        fill: none;
+        stroke: #0c6132;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3Graph {
+        fill: #0c6132;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <g>
+      <rect className="cls-3Graph" x="24.93" y="14.2" width="18.95" height="53.81"/>
+      <rect className="cls-1Graph" x="2.78" y="26.32" width="18.95" height="41.68"/>
+      <rect className="cls-1Graph" x="47.07" y="26.32" width="18.95" height="41.68"/>
+      <rect className="cls-3Graph" x="69.22" width="18.95" height="68.01"/>
+      <line className="cls-2Graph" y1="71.04" x2="90.95" y2="71.04"/>
+    </g>
+  </g>
+</svg>

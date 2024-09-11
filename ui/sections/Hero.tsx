@@ -51,22 +51,92 @@ export const Hero = () => {
             onsite SEO.
           </p>
           <div className="flex-col items-center sm:flex-row flex gap-5 mt-4">
-            <div className="w-full sm:max-w-64 shadow-CTA shadow-[0px_0px_40px_-16px_#FFC700]">
-            <CTA>ATTRACT CLIENTS</CTA>{" "}</div>
+            <div className="w-full sm:max-w-64 shadow-CTA shadow-[0px_0px_10px_-2px]">
+              <CTA>ATTRACT CLIENTS</CTA>{" "}
+            </div>
             <SecondaryCTA>FREE GROWTH KIT</SecondaryCTA>
           </div>
           <div className="text-hero-checklist mt-5">
             <div className="flex gap-1">
-              <img src="https://placehold.co/20" />
-              <p className="text-[1.25rem] font-semibold tracking-wider">Brand Identity Creation</p>
+              <div className="flex justify-center items-center w-[20px]">
+                <svg
+                  id="Layer_2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40.67 28.97"
+                >
+                  <defs>
+                    <style>
+                      {`
+      .cls-1-painPointCheck {
+        fill: #3355d1;
+      }`}
+                    </style>
+                  </defs>
+                  <g id="Layer_1-2" data-name="Layer_1">
+                    <polygon
+                      className="cls-1-painPointCheck"
+                      points="40.67 4.25 15.95 28.97 15.93 28.96 15.92 28.97 0 13.05 4.25 8.81 15.93 20.5 36.43 0 40.67 4.25"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <p className="text-[1.25rem] font-semibold tracking-wider">
+                Brand Identity Creation
+              </p>
             </div>
             <div className="flex gap-1">
-              <img src="https://placehold.co/20" />
-              <p className="text-[1.25rem] font-semibold tracking-wider">Powerful Copywriting</p>
+              <div className="flex justify-center items-center w-[20px]">
+                <svg
+                  id="Layer_2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40.67 28.97"
+                >
+                  <defs>
+                    <style>
+                      {`
+      .cls-1-painPointCheck {
+        fill: #3355d1;
+      }`}
+                    </style>
+                  </defs>
+                  <g id="Layer_1-2" data-name="Layer_1">
+                    <polygon
+                      className="cls-1-painPointCheck"
+                      points="40.67 4.25 15.95 28.97 15.93 28.96 15.92 28.97 0 13.05 4.25 8.81 15.93 20.5 36.43 0 40.67 4.25"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <p className="text-[1.25rem] font-semibold tracking-wider">
+                Powerful Copywriting
+              </p>
             </div>
             <div className="flex gap-1">
-              <img src="https://placehold.co/20" />
-              <p className="text-[1.25rem] font-semibold tracking-wider">Custom Design</p>
+              <div className="flex justify-center items-center w-[20px]">
+                <svg
+                  id="Layer_2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40.67 28.97"
+                >
+                  <defs>
+                    <style>
+                      {`
+      .cls-1-painPointCheck {
+        fill: #3355d1;
+      }`}
+                    </style>
+                  </defs>
+                  <g id="Layer_1-2" data-name="Layer_1">
+                    <polygon
+                      className="cls-1-painPointCheck"
+                      points="40.67 4.25 15.95 28.97 15.93 28.96 15.92 28.97 0 13.05 4.25 8.81 15.93 20.5 36.43 0 40.67 4.25"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <p className="text-[1.25rem] font-semibold tracking-wider">
+                Custom Design
+              </p>
             </div>
           </div>
         </div>

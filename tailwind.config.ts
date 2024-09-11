@@ -37,6 +37,9 @@ const config: Config = {
         "CTA" : "#FFC700",
         "hero-color2": "#5A8CF9",
         "hero-checklist": "#7796B9",
+        "painPoint": "#071D2A",
+        "painPointAccent": "#CB5246",
+        "landingPagePackageAccent": "#18B560",
       },
       fontFamily: {
         gunterz: ["var(--font-gunterz)"],
