@@ -58,11 +58,12 @@ export const Hero = () => {
           </div>
           <div className="text-hero-checklist mt-5">
             <div className="flex gap-1">
-              <div className="flex justify-center items-center w-[20px]">
+              <div className="w-[20px]">
                 <svg
                   id="Layer_2painPointCheck"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 40.67 28.97"
+                  viewBox="0 -11 40.67 28.97"
+                  className="overflow-visible"
                 >
                   <defs>
                     <style>
@@ -88,11 +89,12 @@ export const Hero = () => {
               </p>
             </div>
             <div className="flex gap-1">
-              <div className="flex justify-center items-center w-[20px]">
+              <div className="w-[20px]">
                 <svg
                   id="Layer_2painPointCheck"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 40.67 28.97"
+                  viewBox="0 -11 40.67 28.97"
+                  className="overflow-visible"
                 >
                   <defs>
                     <style>
@@ -118,11 +120,12 @@ export const Hero = () => {
               </p>
             </div>
             <div className="flex gap-1">
-              <div className="flex justify-center items-center w-[20px]">
+              <div className="w-[20px]">
                 <svg
                   id="Layer_2painPointCheck"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 40.67 28.97"
+                  viewBox="0 -11 40.67 28.97"
+                  className="overflow-visible"
                 >
                   <defs>
                     <style>
