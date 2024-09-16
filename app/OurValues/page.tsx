@@ -215,7 +215,7 @@ export default function OutValues() {
           <h4 className="font-gunterz">Genuine connection</h4>
           <p className="text-center">
             We strive to create connections with those working towards their
-            dreams, just like we do. We can't wait to get to know you.
+            dreams, just like we do. We can&apos;t wait to get to know you.
           </p>
         </div>
         <div className="max-w-[20rem] max-h-[20rem] w-full h-full flex flex-col items-center text-center">
