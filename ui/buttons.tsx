@@ -13,7 +13,7 @@ export const CTA: React.FC<PropsWithChildren> = ({ children }) => {
 
 export const SecondaryCTA: React.FC<PropsWithChildren> = ({ children }) => {
   return (
-    <button style={{borderStyle: "inset"}} className="border-2 antialiased text-[1.25rem] w-full border-crystal-white tracking-wider sm:max-w-64 bg-transparent text-crystal-white px-5 py-4">
+    <button style={{borderStyle: ""}} className=" antialiased text-[1.25rem] w-full tracking-wider sm:max-w-64 text-formBlue font-bold px-5 py-4 bg-[#0F202B]">
       {children}
     </button>
   );

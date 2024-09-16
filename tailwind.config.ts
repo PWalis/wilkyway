@@ -33,7 +33,7 @@ const config: Config = {
   			'sun-orange': '#FF9900',
   			'crystal-white': '#FFFFF',
   			'section-background': '#001824',
-  			'CTA': '#FFC700',
+  			'CTA': '#FBCF36',
   			'hero-color2': '#5A8CF9',
   			'hero-checklist': '#7796B9',
   			'painPoint': '#071D2A',
