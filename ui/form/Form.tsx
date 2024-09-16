@@ -92,7 +92,6 @@ export const Form: React.FC = () => {
       lastName: false,
       email: false,
       phoneNumber: false,
-      businessName: false,
       projectDescription: false,
       date: false,
     });
