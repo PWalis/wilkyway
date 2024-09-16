@@ -44,7 +44,7 @@ export const Hero = () => {
               </span>{" "}
             </span>
           </h1>
-          <p className="text-[1.25rem] tracking-wider mb-1 max-w-[40rem] antialiased lg1/2:pl-1">
+          <p className="text-[1.25rem] tracking-widest mb-1 max-w-[42rem] antialiased lg1/2:pl-1">
             Break through the digital atmosphere with websites that are
             light-years ahead of the competition, combining stellar design,
             copywriting that converts, lightning-fast load times, and perfect
@@ -84,7 +84,7 @@ export const Hero = () => {
                   </g>
                 </svg>
               </div>
-              <p className="text-[1.25rem] font-semibold tracking-wider">
+              <p className="pl-1 text-[1.25rem] antialiased font-normal tracking-widest">
                 Brand Identity Creation
               </p>
             </div>
@@ -115,7 +115,7 @@ export const Hero = () => {
                   </g>
                 </svg>
               </div>
-              <p className="text-[1.25rem] font-semibold tracking-wider">
+              <p className="pl-1 text-[1.25rem] antialiased font-normal tracking-widest">
                 Powerful Copywriting
               </p>
             </div>
@@ -146,7 +146,7 @@ export const Hero = () => {
                   </g>
                 </svg>
               </div>
-              <p className="text-[1.25rem] font-semibold tracking-wider">
+              <p className="pl-1 text-[1.25rem] antialiased font-normal tracking-widest">
                 Custom Design
               </p>
             </div>
