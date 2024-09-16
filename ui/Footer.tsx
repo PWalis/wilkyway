@@ -4,7 +4,7 @@ import react from "react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-section-background min-h-[30rem] flex flex-col justify-center gap-10 items-center px-5 pb-10">
+    <footer className="bg-section-background min-h-[25rem] flex flex-col justify-center gap-10 items-center px-5">
       <div className="flex flex-col md:flex-row justify-between max-w-[90rem] w-full gap-10">
         <div className="flex flex-col justify-center gap-3">
           <div className="w-full min-w-[15rem] max-w-[17.7rem]">
@@ -58,29 +58,29 @@ export const Footer: React.FC = () => {
             </svg>
           </div>
           <p className="font-gunterz text-[1.25rem] max-w-[18rem]">
-            Make your business a start
+            Make your business a star
           </p>
         </div>
         <div className="flex flex-row flex-wrap gap-16">
           <div className="flex flex-col">
-            <a className="font-gunterz">Home</a>
-            <a>Our Process</a>
-            <a>Our Solution</a>
-            <a>Testimonials</a>
-            <a>S.T.A.R Method</a>
+            <a className="font-semibold uppercase  text-[1.25rem]">Home</a>
+            <a className="text-[1.25rem]">Our Process</a>
+            <a className="text-[1.25rem]">Our Solution</a>
+            <a className="text-[1.25rem]">Testimonials</a>
+            <a className="text-[1.25rem]">S.T.A.R Method</a>
           </div>
           <div className="flex flex-col">
-            <a className="font-gunterz">Our Services</a>
-            <a>Website Package</a>
+            <a className="font-semibold uppercase text-[1.25rem]">Our Services</a>
+            <a className="text-[1.25rem]" >Website Package</a>
           </div>
           <div className="flex flex-col">
-            <a className="font-gunterz">About Us</a>
-            <a>Our Team</a>
-            <a>Our Values</a>
+            <a className="font-semibold uppercase text-[1.25rem]">About Us</a>
+            <a className="text-[1.25rem]">Our Team</a>
+            <a className="text-[1.25rem]">Our Values</a>
           </div>
           <div className="flex flex-col">
-            <a className="font-gunterz">Contact Us</a>
-            <a>Get a Quote</a>
+            <a className="font-semibold uppercase text-[1.25rem]">Contact Us</a>
+            <a className="text-[1.25rem]">Get a Quote</a>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@ export const Footer: React.FC = () => {
           </p>
         </div>
         <div className="flex flex-row gap-10 justify-center md:justify-end w-full max-w-[30rem]">
-          <div className="max-w-[5rem]">
+          <div className="max-w-[4rem]">
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export const Footer: React.FC = () => {
               </g>
             </svg>
           </div>
-          <div className="max-w-[5rem]">
+          <div className="max-w-[4rem]">
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +155,7 @@ export const Footer: React.FC = () => {
               </g>
             </svg>
           </div>
-          <div className="max-w-[5rem]">
+          <div className="max-w-[4rem]">
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"

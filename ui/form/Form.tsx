@@ -142,7 +142,7 @@ export const Form: React.FC = () => {
   };
 
   return (
-    <section className="h-full min-h-[40rem] w-full flex flex-col justify-center items-center bg-section-background overflow-hidden pl-5 pt-[3rem] pb-[5rem]">
+    <section className="h-full min-h-[40rem] w-full flex flex-col justify-center items-center bg-section-background overflow-hidden pl-5 pt-[3rem] pb-[4rem] lg:pb-[1rem]">
       <form
         className="h-full w-full 2xl:grid grid-cols-2 grid-rows-2 px-5 relative max-w-[45rem] 2xl:max-w-[100rem]"
         name="website-request"
@@ -150,10 +150,10 @@ export const Form: React.FC = () => {
       >
         <div className="flex justify-between max-w-[42rem]">
           <div className="flex flex-col">
-            <h2 className="font-gunterz text-left w-full max-w-[28rem] text-[1.5rem] 2xl:text-[3.5rem]">
-              Let's get in <span className="text-formBlue">touch</span>
+            <h2 className="font-gunterz text-left w-full max-w-[28rem] text-[1.5rem] 2xl:text-[2.5rem]">
+              Let's get in <span className="text-formBlue">touch...</span>
             </h2>
-            <p className="max-w-[25rem] text-[1.25rem] 2xl:text-[1.5rem]">
+            <p className="max-w-[25rem] text-[1.25rem] lg:text-[1.5rem]">
               Tell us a little about your project, so we can reach out to you.
             </p>
           </div>
@@ -275,7 +275,7 @@ export const Form: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col items-start justify-center mt-3 mb-3 w-full max-w-[42.3rem] h-[9.05rem]">
-            <label className="font-nobel-uno">Project Description</label>
+            <label className="font-nobel-uno">Project Description:</label>
             <textarea
               name="project-description"
               className="w-full h-[9rem] bg-formInput hover:bg-slate-800 pl-5 pt-5 focus:outline-none resize-none"
@@ -290,7 +290,7 @@ export const Form: React.FC = () => {
               <FormLine />
             </div>
           </div>
-          <label>Please select the services you are interested in</label>
+          <label className="text-[1.25rem] lg:text-[1.5rem] font-light">Please select the services you are interested in:</label>
           <div className="flex flex-row flex-wrap gap-2 max-w-[35rem] relative">
           <div className="absolute -top-[35px] -left-[20px] 2xl:-left-[35px]">
             <div className="relative">
@@ -301,7 +301,7 @@ export const Form: React.FC = () => {
               name="web-design-button"
               type="button"
               className={clsx(
-                "border-1   px-3 py-1 rounded-full hover:cursor-pointer",
+                "border-1   px-5 py-2 rounded-full hover:cursor-pointer",
                 webDesignToggle
                   ? "border-formBlue/80 text-white/80 bg-formBlue"
                   : "border-white/50 text-white/50 bg-formInput"
@@ -316,7 +316,7 @@ export const Form: React.FC = () => {
               name="logo-design-button"
               type="button"
               className={clsx(
-                "border-1  px-3 py-1 rounded-full hover:cursor-pointer",
+                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
                 logoDesignToggle
                   ? "border-formBlue/80 text-white/80 bg-formBlue"
                   : "border-white/50 text-white/50 bg-formInput"
@@ -331,7 +331,7 @@ export const Form: React.FC = () => {
               name="copywriting-button"
               type="button"
               className={clsx(
-                "border-1  px-3 py-1 rounded-full hover:cursor-pointer",
+                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
                 copywritingToggle
                   ? "border-formBlue/80 text-white/80 bg-formBlue"
                   : "border-white/50 text-white/50 bg-formInput"
@@ -349,7 +349,7 @@ export const Form: React.FC = () => {
               name="brand-identity-button"
               type="button"
               className={clsx(
-                "border-1  px-3 py-1 rounded-full hover:cursor-pointer",
+                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
                 brandIdentityToggle
                   ? "border-formBlue/80 text-white/80 bg-formBlue"
                   : "border-white/50 text-white/50 bg-formInput"
@@ -367,7 +367,7 @@ export const Form: React.FC = () => {
               name="a/b-testing-button"
               type="button"
               className={clsx(
-                "border-1  px-3 py-1 rounded-full hover:cursor-pointer",
+                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
                 abTestingToggle
                   ? "border-formBlue/80 text-white/80 bg-formBlue"
                   : "border-white/50 text-white/50 bg-formInput"
@@ -382,7 +382,7 @@ export const Form: React.FC = () => {
               name="seo-button"
               type="button"
               className={clsx(
-                "border-1  px-3 py-1 rounded-full hover:cursor-pointer",
+                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
                 seoToggle
                   ? "border-formBlue/80 text-white/80 bg-formBlue"
                   : "border-white/50 text-white/50 bg-formInput"
@@ -397,7 +397,7 @@ export const Form: React.FC = () => {
               name="other-button"
               type="button"
               className={clsx(
-                "border-1  px-3 py-1 rounded-full hover:cursor-pointer",
+                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
                 otherToggle
                   ? "border-formBlue/80 text-white/80 bg-formBlue"
                   : "border-white/50 text-white/50 bg-formInput"
@@ -414,7 +414,7 @@ export const Form: React.FC = () => {
         <div className="max-w-[42.3rem] row-start-2 col-start-2 flex items-end ">
           <button
             type="submit"
-            className="bg-formBlue text-white tracking-widest font-gunterz py-3 px-5 w-full relative"
+            className="bg-formBlue text-white tracking-wider font-semibold py-3 px-5 w-full relative"
           >
             {isLoading
               ? "Loading..."

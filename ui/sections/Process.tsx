@@ -57,8 +57,8 @@ export const Process: React.FC = () => {
     <section className="min-h-[60rem] flex flex-col items-center bg-section-background">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
         <h2 className="font-gunterz text-left px-5 md:px-0 w-full leading-8">
-          Let&apos;s create something{" "}
-          <span className="text-processAccent">great</span> together
+          Our Lightning Fast{" "}
+          <span className="text-processAccent">Process</span>
         </h2>
         <div
           style={{ contain: "paint" }}
@@ -67,14 +67,13 @@ export const Process: React.FC = () => {
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] max-w-[35rem] absolute lg:relative top-10 px-5 mb-[10rem]">
             <ProcessContainer id="process1">
               <h3 className="font-gunterz leading-[3.4rem]">
-                send us a free request, receive your
-                <span className="text-processAccent"> quote.</span>{" "}
+                send us a free request,
+                <span className="text-processAccent"> receive your quote.</span>{" "}
               </h3>
               <p>
-                We value your time which is why we&apos;ll respond within 24
-                hours. Answer a few questions about your business and project
-                needs then choose when you&apos;d like us to reach out with one
-                click. Yes it&apos;s that easy!
+                We value <span className="italic">your time</span> which is why we&apos;ll always <span className="font-semibold">respond within 24
+                hours</span>. Answer a few questions about your business and project
+                needs, and we will reach out to you to schedule a call to discuss your project. Yes,  <span className="font-semibold">it&apos;s that easy!</span>
               </p>
             </ProcessContainer>
             <ProcessContainer id="process2">
@@ -83,8 +82,8 @@ export const Process: React.FC = () => {
                 <span className="text-processAccent"> strategy call.</span>
               </h3>
               <p>
-                Where we plan out the direction for your brand, messaging and
-                design. Depending on the scope of the project multiple strategy
+                Where we plan out the <span className="font-semibold">direction for your brand, messaging and
+                design.</span> Depending on the scope of the project multiple strategy
                 calls may be needed.{" "}
               </p>
             </ProcessContainer>
@@ -94,9 +93,8 @@ export const Process: React.FC = () => {
                 <span className="text-processAccent"> we get to work.</span>
               </h3>
               <p>
-                Once you&apos;re satisfied with your brand, messaging, and
-                design we get to work. From first strategy call to launch in
-                under 60 days.
+                Once you approve the vision of your site and brand that we have crafted, we get to work. <span className="font-semibold">From first strategy call to launch in
+                under 60 days.</span>
               </p>
             </ProcessContainer>
           </div>

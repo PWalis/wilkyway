@@ -81,7 +81,7 @@
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 100;
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
@@ -89,7 +89,7 @@ p {
 
 @media (max-width: 640px) {
   p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 100;
     line-height: 1.5rem;
   }

@@ -59,7 +59,7 @@ export const PainPoints: React.FC = () => {
             </svg>
           </div>
           <h4 className="font-gunterz">Bi-Weekly PROJECT SNAPSHOTS</h4>
-          <p>Frequent check-in schedule keeps our vision aligned</p>
+          <p className="">Frequent check-in schedule keeps our vision aligned</p>
         </HeroSupportContainer>
         <HeroSupportContainer>
           <div className="max-w-[6rem] h-[100px]">
@@ -434,8 +434,8 @@ export const PainPoints: React.FC = () => {
           </PainPoint>
           <div className="w-full max-w-[19rem] min-h-[21rem] bg-painPointAccent flex flex-col items-center px-5 pt-10 text-center gap-1 relative">
             <button className="w-full h-full bg-transparent flex flex-col pt-8">
-              <p className="text-[1.25rem] font-gunterz text-left flex max-w-[15rem] font-semibold leading-[30px] ml-5">
-                Had enough? let's change that!
+              <p className="text-[1.25rem] font-gunterz text-left max-w-[15rem] leading-[30px] ml-5">
+                If you have had enough, let's fix this!
               </p>
               <div className="w-full max-w-[13rem] absolute bottom-10 right-14">
                 <svg
