@@ -1,5 +1,8 @@
 import react from "react";
-import { TestimonialContainer } from "../containers/TestimonialContainer";
+import {
+  FiveStar,
+  TestimonialContainer,
+} from "../containers/TestimonialContainer";
 
 export const Testimonials: React.FC = () => {
   return (
@@ -26,15 +29,12 @@ export const Testimonials: React.FC = () => {
             <div className="flex mt-3">
               <img src="https://placehold.co/77" />
               <div className="flex flex-col justify-center gap-1 ml-5">
-                <p className="text-[1.5rem]">-- Kara Leino</p>
-                <p className="text-[1.5rem] text-[#9B9B9B]">
-                  Kara's Chicken Coop
-                </p>
+                <p className="text-[1.5rem]">Kara Leino</p>
+                <div className="w-full">
+                  <FiveStar />
+                </div>
               </div>
             </div>
-            <p className="w-full text-center mt-3 text-[2rem] tracking-[1rem] text-sun-orange">
-              *****
-            </p>
           </TestimonialContainer>
           <TestimonialContainer>
             <p>
@@ -49,15 +49,12 @@ export const Testimonials: React.FC = () => {
             <div className="flex mt-3">
               <img src="https://placehold.co/77" />
               <div className="flex flex-col justify-center gap-1 ml-5">
-                <p className="text-[1.5rem]">-- Kara Leino</p>
-                <p className="text-[1.5rem] text-[#9B9B9B]">
-                  Kara's Chicken Coop
-                </p>
+                <p className="text-[1.5rem]">Kara Leino</p>
+                <div className="w-full">
+                  <FiveStar />
+                </div>
               </div>
             </div>
-            <p className="w-full text-center mt-3 text-[2rem] tracking-[1rem] text-sun-orange">
-              *****
-            </p>
           </TestimonialContainer>
           <TestimonialContainer>
             <p>
@@ -72,15 +69,12 @@ export const Testimonials: React.FC = () => {
             <div className="flex mt-3">
               <img src="https://placehold.co/77" />
               <div className="flex flex-col justify-center gap-1 ml-5">
-                <p className="text-[1.5rem]">-- Kara Leino</p>
-                <p className="text-[1.5rem] text-[#9B9B9B]">
-                  Kara's Chicken Coop
-                </p>
+                <p className="text-[1.5rem]">Kara Leino</p>
+                <div className="w-full">
+                  <FiveStar />
+                </div>
               </div>
             </div>
-            <p className="w-full text-center mt-3 text-[2rem] tracking-[1rem] text-sun-orange">
-              *****
-            </p>
           </TestimonialContainer>
         </div>
       </div>

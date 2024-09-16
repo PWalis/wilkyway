@@ -20,7 +20,7 @@ export const StarLine: React.FC = () => {
         id="Layer_2"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 2 655.96"
-        className="absolute -top-[5px] w-[2px] overflow-visible"
+        className="absolute -top-[5px] w-[2px] overflow-visible hidden sm:flex"
         ref={line}
       >
         <defs>
@@ -42,6 +42,53 @@ export const StarLine: React.FC = () => {
             x1="1"
             x2="1"
             y2="655.96"
+          />
+        </g>
+      </svg>
+    </>
+  );
+};
+
+export const StarLineMobile: React.FC = () => {
+  const line = useRef(null);
+  const lineInView = useInView(line);
+  const pathVariants = {
+    hidden: { opacity: 0, pathLength: 0 },
+    visible: {
+      opacity: 1,
+      pathLength: 1,
+      transition: { duration: 2, ease: "easeInOut" },
+    },
+  };
+
+  return (
+    <>
+      <svg //LINE
+        id="Layer_2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 2 655.96"
+        className="absolute -top-[5px] w-[2px] overflow-visible sm:hidden"
+        ref={line}
+      >
+        <defs>
+          <style>
+            {`
+      .cls-1LineIcon1 {
+        fill: none;
+        stroke: #b05ccd;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }`}
+          </style>
+        </defs>
+        <g id="Layer_1-2" data-name="Layer_1">
+          <motion.line
+            variants={pathVariants}
+            animate={lineInView ? "visible" : "hidden"}
+            className="cls-1LineIcon1"
+            x1="1"
+            x2="1"
+            y2="760"
           />
         </g>
       </svg>

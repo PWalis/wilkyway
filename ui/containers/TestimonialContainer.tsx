@@ -4,32 +4,157 @@ export const TestimonialContainer: React.FC<PropsWithChildren> = ({
   children,
 }) => {
   return (
-    <div className="max-w-[28.6rem] min-h-[36.4rem] rounded-tr-[60px] bg-painPoint py-10 px-5 lg:p-14">
+    <div className="max-w-[28.6rem] min-h-[33rem] rounded-tr-[60px] bg-painPoint py-10 px-5 lg:p-14">
       <div className="w-full max-w-[5rem] mb-4">
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 85.5 57.3"
+          viewBox="0 0 92.56 88.17"
         >
           <defs>
             <style>
               {`
-.cls-1quoteTess {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 2px;
-}`}
+      .cls-1Quotesv2 {
+        fill: #eca653;
+      }`}
             </style>
           </defs>
           <g id="Layer_1-2" data-name="Layer_1">
             <path
-              className="cls-1quoteTess"
-              d="M37.25,26.82v29.48H1v-29.48C1,15.07,10,5.24,16,1.19l13.5,8.12c-2.75,3.42-4.25,7.26-4.25,13.24v4.27h12ZM84.5,26.82v29.48h-36.25v-29.48c0-11.75,9-21.58,15-25.64l13.5,8.12c-2.75,3.42-4.25,7.26-4.25,13.24v4.27h12Z"
+              className="cls-1Quotesv2"
+              d="M0,47.56L20.12,0h18.29l-12.8,47.56h12.8v40.61H0v-40.61ZM54.15,47.56L74.27,0h18.29l-12.81,47.56h12.81v40.61h-38.41v-40.61Z"
             />
           </g>
         </svg>
       </div>
       {children}
+    </div>
+  );
+};
+
+export const FiveStar: React.FC = () => {
+  return (
+    <div className="flex max-w-[8rem] m-auto">
+      <svg
+        id="Layer_2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 81.85 77.85"
+      >
+        <defs>
+          <style>
+            {`
+        .cls-1Star {
+          fill: #eca653;
+        }`}
+          </style>
+        </defs>
+        <g id="Layer_1-2" data-name="Layer_1">
+          <polygon
+            className="cls-1Star"
+            points="40.93 0 50.62 29.68 81.85 29.73 56.62 48.13 66.22 77.85 40.93 59.53 15.63 77.85 25.24 48.13 0 29.73 31.23 29.68 40.93 0"
+          />
+        </g>
+      </svg>
+      <svg
+        id="Layer_2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 81.85 77.85"
+      >
+        <defs>
+          <style>
+            {`
+        .cls-1Star {
+          fill: #eca653;
+        }`}
+          </style>
+        </defs>
+        <g id="Layer_1-2" data-name="Layer_1">
+          <polygon
+            className="cls-1Star"
+            points="40.93 0 50.62 29.68 81.85 29.73 56.62 48.13 66.22 77.85 40.93 59.53 15.63 77.85 25.24 48.13 0 29.73 31.23 29.68 40.93 0"
+          />
+        </g>
+      </svg>
+      <svg
+        id="Layer_2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 81.85 77.85"
+      >
+        <defs>
+          <style>
+            {`
+        .cls-1Star {
+          fill: #eca653;
+        }`}
+          </style>
+        </defs>
+        <g id="Layer_1-2" data-name="Layer_1">
+          <polygon
+            className="cls-1Star"
+            points="40.93 0 50.62 29.68 81.85 29.73 56.62 48.13 66.22 77.85 40.93 59.53 15.63 77.85 25.24 48.13 0 29.73 31.23 29.68 40.93 0"
+          />
+        </g>
+      </svg>
+      <svg
+        id="Layer_2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 81.85 77.85"
+      >
+        <defs>
+          <style>
+            {`
+        .cls-1Star {
+          fill: #eca653;
+        }`}
+          </style>
+        </defs>
+        <g id="Layer_1-2" data-name="Layer_1">
+          <polygon
+            className="cls-1Star"
+            points="40.93 0 50.62 29.68 81.85 29.73 56.62 48.13 66.22 77.85 40.93 59.53 15.63 77.85 25.24 48.13 0 29.73 31.23 29.68 40.93 0"
+          />
+        </g>
+      </svg>
+      <svg
+        id="Layer_2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 81.85 77.85"
+      >
+        <defs>
+          <style>
+            {`
+        .cls-1Star {
+          fill: #eca653;
+        }`}
+          </style>
+        </defs>
+        <g id="Layer_1-2" data-name="Layer_1">
+          <polygon
+            className="cls-1Star"
+            points="40.93 0 50.62 29.68 81.85 29.73 56.62 48.13 66.22 77.85 40.93 59.53 15.63 77.85 25.24 48.13 0 29.73 31.23 29.68 40.93 0"
+          />
+        </g>
+      </svg>
+      <svg
+        id="Layer_2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 81.85 77.85"
+      >
+        <defs>
+          <style>
+            {`
+        .cls-1Star {
+          fill: #eca653;
+        }`}
+          </style>
+        </defs>
+        <g id="Layer_1-2" data-name="Layer_1">
+          <polygon
+            className="cls-1Star"
+            points="40.93 0 50.62 29.68 81.85 29.73 56.62 48.13 66.22 77.85 40.93 59.53 15.63 77.85 25.24 48.13 0 29.73 31.23 29.68 40.93 0"
+          />
+        </g>
+      </svg>
     </div>
   );
 };

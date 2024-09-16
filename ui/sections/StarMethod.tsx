@@ -1,5 +1,5 @@
 import react from "react";
-import { StarLine, StarCircle } from "../animated/StarLine";
+import { StarLine, StarCircle, StarLineMobile } from "../animated/StarLine";
 
 export const StarMethod: React.FC = () => {
   return (
@@ -15,6 +15,7 @@ export const StarMethod: React.FC = () => {
           <div className="ml-10 relative">
             <div className="absolute -left-[30px]">
               <StarLine />
+              <StarLineMobile />
               <StarCircle />
             </div>
 
