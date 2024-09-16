@@ -903,12 +903,54 @@ export const LandingPagePackage: React.FC = () => {
             </svg>
           </div>
         </LandingPagePackageContainer>
-        <div className="w-[17rem] h-[14.45rem] bg-landingPagePackageAccent">
+        <div className="w-[17rem] h-[14.45rem] bg-landingPagePackageAccent relative" >
           <button className="w-full h-full bg-transparent flex flex-col pt-8">
-            <p className="text-[1.5rem] text-left flex max-w-[15rem] font-semibold leading-[30px] ml-5 text-painPoint uppercase">
+            <p className="text-[1.25rem] font-gunterz text-left flex max-w-[15rem] font-semibold leading-[30px] ml-5 text-painPoint uppercase ">
               View our full landing page package!
             </p>
-            <p className="mt-20">Arrow svg goes here</p>
+            <div className="w-full max-w-[13rem] absolute right-10 bottom-10">
+              <svg
+                id="Layer_2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 214.73 35.73"
+              >
+                <defs>
+                  <style>
+                    {`
+      .cls-1ArrowSVG {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }`}
+                  </style>
+                </defs>
+                <g id="Layer_1-2" data-name="Layer_1">
+                  <line
+                    className="cls-1ArrowSVG"
+                    y1="17.87"
+                    x2="213.02"
+                    y2="17.87"
+                  />
+                  <g>
+                    <line
+                      className="cls-1ArrowSVG"
+                      x1="196.19"
+                      y1=".71"
+                      x2="214.02"
+                      y2="18.54"
+                    />
+                    <line
+                      className="cls-1ArrowSVG"
+                      x1="214.02"
+                      y1="17.19"
+                      x2="196.19"
+                      y2="35.02"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
           </button>
         </div>
       </div>

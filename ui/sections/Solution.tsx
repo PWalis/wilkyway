@@ -89,58 +89,62 @@ export const Solution: React.FC = () => {
                 DON&apos;T LET YOUR LEADS LEAVE YOU ON READ.
               </h3>
               <p className="max-w-[26.25rem]">
-                Your landing page should turn casual visitors into loyal clients
-                and keep your audience engaged from the first click. We’ve got
-                your covered.
+                Turn casual visitors into loyal customers by keeping your
+                audience engaged from the moment they land on your page. We use
+                your offer and ideal customer as our north star to create your
+                brand, copywriting, and website so that it converts highly.
               </p>
             </SolutionContainer>
             <SolutionContainer id="title2">
               <h3 className="font-gunterz">
-                <span className="text-hero-color2">BOOST SALES</span> AND
-                MAXIMIZE CLICKS.
+                <span className="text-hero-color2">Boost sales</span> and
+                maximize clicks.
               </h3>
               <p className="max-w-[26.25rem]">
-                Tap into the behavior of your visitors. Some are ready to buy
-                the second they land on your site, most need to be persuaded to
-                take the leap, and everyone just want some information. Give
-                them what they want so you can give them what they need, a
-                COACH!
+                Capture your visitors at every stage. Whether they&apos;re ready
+                to buy, need a little convincing, or just want some information,
+                we give your visitors a path at every stage of the sales funnel.
+                You can be at peace knowing you&apos;re getting the most out of
+                every click.
               </p>
             </SolutionContainer>
             <SolutionContainer id="title3">
               <h3 className="font-gunterz">
-                <span className="text-hero-color2">BUILD TRUST</span> THROUGH
-                PROFESSIONAL DESIGN.
+                <span className="text-hero-color2">Build trust</span> through
+                branded design.
               </h3>
               <p className="max-w-[29rem]">
-                We make sure that first impression is a great one. Website
-                design says a thousand words before anyone even reads the first
-                headline and your potential clients will judge your entire
-                business by what they can see. If they don’t like what they see
-                what kind of impression does that leave?
+                Create a first impression that is out of this world and
+                Instantly communicate your brand through the look and feel of
+                your website. You don&apos;t have to settle for a generic
+                website with your logo on it. We do the research on your ideal
+                customer so that your brand is something they can proudly be a
+                part of.
               </p>
             </SolutionContainer>
             <SolutionContainer id="title4">
               <h3 className="font-gunterz">
-                <span className="text-hero-color2">CAPTIVATE YOUR MARKET</span>{" "}
-                WITH TARGETED COPYWRITING.
+                <span className="text-hero-color2">Captivate your market</span>{" "}
+                with targeted copywriting.
               </h3>
               <p className="max-w-[26.25rem]">
-                Your target audience speaks a certain way, has certain pain
-                points, and they want to know that you’re the right coach for
-                them. We do the research so when they land on your page it feels
-                like it was made for them, because it was.
+                Speak to your market and show them your solution is exactly what
+                they need. Increase revenue, fill up your lead list, and create
+                loyal customers. We craft your messaging to speak directly to
+                your ideal customer and a/b test to increase conversions month
+                after month.
               </p>
             </SolutionContainer>
             <SolutionContainer id="title5">
               <h3 className="font-gunterz">
-                SO <span className="text-hero-color2">FAST</span> YOU WON'T MISS
-                IT.
+                So <span className="text-hero-color2">fast</span> your
+                won&apos;t miss it.
               </h3>
               <p className="max-w-[26.25rem]">
-                Our websites load fast even on a slow network. Don’t let a slow
-                website bring your conversion to a screeching halt. With peak
-                you’ll get the pinnacle of performance.
+                Don’t let a slow website bring your conversions to a screeching
+                halt. Insure no one leaves your website because of bad load
+                time. We use advanced hosting so that your customers load your
+                site fast, even on a slow network.
               </p>
             </SolutionContainer>
           </div>
@@ -149,7 +153,7 @@ export const Solution: React.FC = () => {
               <AnimatePresence mode="popLayout">
                 {renderComponent()}
               </AnimatePresence>
-              <ProgressIndicator progress={frame}/>
+              <ProgressIndicator progress={frame} />
             </div>
           </div>
         </div>

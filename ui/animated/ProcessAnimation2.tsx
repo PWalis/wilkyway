@@ -4,9 +4,6 @@ import {
   useAnimate,
   usePresence,
   motion,
-  useMotionValue,
-  useMotionValueEvent,
-  easeInOut,
 } from "framer-motion";
 
 export const ProcessAnimation2: React.FC = () => {
@@ -23,7 +20,6 @@ export const ProcessAnimation2: React.FC = () => {
       enterAnimation();
     } else {
       const exitAnimation = async () => {
-        // await animate2(scope2.current, {opacity: 0, duration: 0.1 })
         safeToRemove();
       };
       exitAnimation();

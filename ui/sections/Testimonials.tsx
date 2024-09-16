@@ -3,9 +3,9 @@ import { TestimonialContainer } from "../containers/TestimonialContainer";
 
 export const Testimonials: React.FC = () => {
   return (
-    <section className="min-h-[60rem] bg-storm-black flex flex-col px-5 items-center gap-10">
-      <h2 className="font-charcoalDance max-w-[100rem] w-full text-left leading-8">
-        The <span className="text-sun-orange">results</span> speak for
+    <section className="min-h-[60rem] bg-section-background flex flex-col px-5 items-center gap-10 pb-[10rem]">
+      <h2 className="font-gunterz max-w-[100rem] w-full text-left leading-8">
+        The <span className="text-testimonialAccent">results</span> speak for
         themselves
       </h2>
       <div className="flex flex-col items-center gap-10">

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158.42 158.57">
+  <defs>
+    <style>
+      .cls-1FooterArrow {
+        fill: #3355d1;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <polyline className="cls-1FooterArrow" points="2.12 0 0 2.12 154.73 156.85 156.85 154.73 2.12 0"/>
+    <polyline className="cls-1FooterArrow" points="155.42 155.57 158.42 155.57 158.42 14.71 155.42 14.71 155.42 155.57"/>
+    <polyline className="cls-1FooterArrow" points="158.42 158.57 158.42 155.57 17.56 155.57 17.56 158.57 158.42 158.57"/>
+  </g>
+</svg>

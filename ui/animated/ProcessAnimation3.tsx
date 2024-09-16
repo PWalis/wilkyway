@@ -73,7 +73,7 @@ export const ProcessAnimation3: React.FC = () => {
   return (
     <div
       ref={scope2}
-      style={{ opacity: 1 }}
+      style={{ opacity: 0 }}
       className="flex justify-center w-full min-h-[30rem]"
     >
       <div className="relative w-full max-w-[23rem] lg:max-w-[30rem] px-3 ">

@@ -4,7 +4,7 @@ export const TestimonialContainer: React.FC<PropsWithChildren> = ({
   children,
 }) => {
   return (
-    <div className="max-w-[28.6rem] min-h-[36.4rem] rounded-tr-[60px] bg-storm-gray py-10 px-5 lg:p-14">
+    <div className="max-w-[28.6rem] min-h-[36.4rem] rounded-tr-[60px] bg-painPoint py-10 px-5 lg:p-14">
       <div className="w-full max-w-[5rem] mb-4">
         <svg
           id="Layer_2"

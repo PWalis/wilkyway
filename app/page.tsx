@@ -7,6 +7,7 @@ import { Testimonials } from "@/ui/sections/Testimonials";
 import { Process } from "@/ui/sections/Process";
 import { OurValues } from "@/ui/sections/OurValues";
 import { FAQ } from "@/ui/sections/FAQ";
+import { StarMethod } from "@/ui/sections/StarMethod";
 
 const charcoalDance = localFont({
   src: "../public/fonts/Charcoal Dance-SVG.otf",
@@ -35,9 +36,10 @@ export default function Home() {
       <Solution />
       <LandingPagePackage />
       <Testimonials />
+      <StarMethod />
       <Process />
       <OurValues />
-      <FAQ />
+      {/* <FAQ /> */}
     </main>
   );
 }

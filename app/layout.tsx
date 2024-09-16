@@ -40,9 +40,9 @@ export default function RootLayout({
         className={`${charcoalDance.variable} ${gunterz.variable} ${gunterzBold.variable} ${gunterzBoldItalic.variable}`}
       >
         <Provider>
-          <Form />
           <Header />
           {children}
+          <Form />
           <Footer />
         </Provider>
       </body>
