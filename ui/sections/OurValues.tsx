@@ -5,7 +5,7 @@ export const OurValues: React.FC = () => {
   return (
     <section className="min-h-[50rem] bg-section-background flex flex-col items-center px-5 ">
       <h2 className="w-full max-w-[100rem] mb-5 sm:mb-12 font-gunterz leading-8">
-        We guarantee <span className="text-[#8CAC48]">greatness</span>
+        how We  <span className="text-[#8CAC48]">guarantee excellence</span>
       </h2>
       <div className="flex flex-col lg:grid lg:grid-cols-12 lg:grid-rows-15 min-h-[40rem] gap-6 max-w-[90rem]">
         <div className="bg-[#0C212E] rounded-[20px] 2xl:row-star-1 2xl:row-span-7 2xl:col-start-1 2xl:col-span-4 col-start-1 col-span-5 row-start-1 row-span-5 p-5 md:pl-10 pl-6 pt-10 pb-16 2xl:pb-5 relative">
@@ -74,12 +74,12 @@ export const OurValues: React.FC = () => {
               </g>
             </svg>
           </div>
-          <h4 className="font-gunterz text-[1.25rem] max-w-[30rem] text-[#18B560]">
+          <h4 className="font-gunterz text-[1.50rem] max-w-[30rem] text-[#18B560]">
             24 HOUR RESPONSE
           </h4>
           <p className="max-w-[20rem]">
-            We value your time so we guarantee we will respond to you within 24
-            hours
+            We value your time, so we guarantee we will respond to you within 24
+            hours.
           </p>
           <button
             className={`absolute right-5 bottom-5 bg-[#20313C] text-[#D9D9D9] text-[1rem] font-gunterz pt-1 px-5 rounded-[10px]`}
@@ -137,7 +137,7 @@ export const OurValues: React.FC = () => {
               </g>
             </svg>
           </div>
-          <h4 className="font-gunterz text-[1.25rem] max-w-[28rem] text-[#CB5246]">
+          <h4 className="font-gunterz text-[1.50rem] max-w-[28rem] text-[#CB5246]">
             QUICK TURNAROUND TIME
           </h4>
           <p className="max-w-[28rem]">
@@ -230,7 +230,7 @@ export const OurValues: React.FC = () => {
               </g>
             </svg>
           </div>
-          <h4 className="font-gunterz text-[1.25rem] max-w-[18rem] text-[#8CAC48]">
+          <h4 className="font-gunterz text-[1.50rem] max-w-[18rem] text-[#8CAC48]">
             Driven by results
           </h4>
           <p className="max-w-[20rem]">
@@ -312,7 +312,7 @@ export const OurValues: React.FC = () => {
               </g>
             </svg>
           </div>
-          <h4 className="font-gunterz text-[1.25rem] max-w-[20rem] text-[#5C60CE]">
+          <h4 className="font-gunterz text-[1.50rem] max-w-[20rem] text-[#5C60CE]">
             FULL SATISFACTION
           </h4>
           <p className="max-w-[20rem]">
@@ -327,12 +327,12 @@ export const OurValues: React.FC = () => {
         </div>
         <div className="flex bg-[#0F232F] rounded-[20px] 2xl:row-start-9 2xl:row-span-6 2xl:col-start-5 2xl:col-span-4 col-start-1 col-span-7 row-start-12 row-span-3 p-5 md:pl-10 pl-6 pt-10 relative pb-16 2xl:pb-5">
           <div className="flex flex-col">
-            <h4 className="font-gunterz text-[1.25rem] text-[#5A8CF9]">
+            <h4 className="font-gunterz text-[1.50rem] text-[#5A8CF9]">
               Genuine connection
             </h4>
             <p className="max-w-[12rem]">We strive to create connections that will last.</p>
           </div>
-          <div className="w-full max-w-[8rem]">
+          <div className="w-full max-w-[9rem]">
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -417,7 +417,7 @@ export const OurValues: React.FC = () => {
             </svg>
           </div>
           <div className="flex flex-col">
-            <h4 className="font-gunterz text-[1.25rem]  max-w-[20rem] text-[#ECA654]">
+            <h4 className="font-gunterz text-[1.50rem]  max-w-[20rem] text-[#ECA654]">
               Clear, honest communication
             </h4>
             <p className="max-w-[25rem]">

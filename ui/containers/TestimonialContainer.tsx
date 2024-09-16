@@ -4,7 +4,7 @@ export const TestimonialContainer: React.FC<PropsWithChildren> = ({
   children,
 }) => {
   return (
-    <div className="max-w-[28.6rem] min-h-[33rem] rounded-tr-[60px] bg-painPoint py-10 px-5 lg:p-14">
+    <div className="max-w-[28.6rem] min-h-[33rem] rounded-[25px] bg-painPoint py-3 px-3 lg:p-10">
       <div className="w-full max-w-[5rem] mb-4">
         <svg
           id="Layer_2"
@@ -34,7 +34,7 @@ export const TestimonialContainer: React.FC<PropsWithChildren> = ({
 
 export const FiveStar: React.FC = () => {
   return (
-    <div className="flex max-w-[8rem] m-auto">
+    <div className="flex max-w-[10rem] gap-2 h-8">
       <svg
         id="Layer_2"
         xmlns="http://www.w3.org/2000/svg"
@@ -148,12 +148,6 @@ export const FiveStar: React.FC = () => {
         }`}
           </style>
         </defs>
-        <g id="Layer_1-2" data-name="Layer_1">
-          <polygon
-            className="cls-1Star"
-            points="40.93 0 50.62 29.68 81.85 29.73 56.62 48.13 66.22 77.85 40.93 59.53 15.63 77.85 25.24 48.13 0 29.73 31.23 29.68 40.93 0"
-          />
-        </g>
       </svg>
     </div>
   );

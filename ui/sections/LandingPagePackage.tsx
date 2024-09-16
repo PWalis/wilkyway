@@ -5,8 +5,8 @@ export const LandingPagePackage: React.FC = () => {
   return (
     <section className="min-h-[60rem] bg-section-background px-10 pb-24 flex flex-col items-center">
       <h2 className="font-gunterz max-w-[100rem] mb-5 sm:mb-12 w-full leading-8">
-        Our landing page{" "}
-        <span className="text-landingPagePackageAccent">package</span>
+        Our Stellar {" "}
+        <span className="text-landingPagePackageAccent">Website Package</span>
       </h2>
       <div className="flex flex-row flex-wrap justify-center items-center gap-5 max-w-[100rem]">
         <LandingPagePackageContainer title="BRAND IDENTITY CREATION">
@@ -905,7 +905,7 @@ export const LandingPagePackage: React.FC = () => {
         </LandingPagePackageContainer>
         <div className="w-[17rem] h-[14.45rem] bg-landingPagePackageAccent relative" >
           <button className="w-full h-full bg-transparent flex flex-col pt-8">
-            <p className="text-[1.25rem] font-gunterz text-left flex max-w-[15rem] font-semibold leading-[30px] ml-5 text-painPoint uppercase ">
+            <p className="text-[1.25rem] font-gunterz text-left flex max-w-[15rem] leading-[30px] ml-5 text-crystal-white uppercase ">
               View our full landing page package!
             </p>
             <div className="w-full max-w-[13rem] absolute right-10 bottom-10">

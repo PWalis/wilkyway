@@ -47,7 +47,7 @@ export const LandingPagePackageContainer: React.FC<
       onMouseLeave={() => handleMouseLeave()}
       onMouseEnter={() => handleMouseEnter()}
       className={clsx("w-[17rem] h-[14.45rem] bg-painPoint py-10 px-5 flex flex-col items-center gap-3 relative transition-shadow duration-300", 
-        isHovered ? "shadow-[0px_0px_15px_0px] shadow-landingPagePackageAccent" : ""
+        isHovered ? "shadow-[0px_0px_15px_0px] shadow-[#084738]" : ""
       )}
       ref={ref}
     >

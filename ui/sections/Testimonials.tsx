@@ -12,8 +12,8 @@ export const Testimonials: React.FC = () => {
         themselves
       </h2>
       <div className="flex flex-col items-center gap-10">
-        <h4 className="font-gunterz lg:text-left text-center">
-          "My conversion rate has never been higher..."
+        <h4 className="text-[42px] lg:text-left text-center">
+          "I am so <span className="text-testimonialAccent italic font-semibold">highly impressed...</span>"
         </h4>
         <div className="flex flex-row justify-center flex-wrap gap-10">
           <TestimonialContainer>

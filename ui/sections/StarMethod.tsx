@@ -4,7 +4,7 @@ import { StarLine, StarCircle, StarLineMobile } from "../animated/StarLine";
 export const StarMethod: React.FC = () => {
   return (
     <section className="h-min-[60rem] bg-section-background flex flex-col items-center pb-[10rem] px-5">
-      <h2 className="font-gunterz max-w-[100rem] w-full text-left leading-8 mb-[5rem]">
+      <h2 className="font-gunterz max-w-[100rem] w-full text-left leading-8 mb-[1rem]">
         Make your business a <span className="text-[#B05CCD]">S.T.A.R</span>
       </h2>
       <div className="flex flex-col-reverse lg3/4:flex-row max-w-[80rem] w-full justify-between items-center ">

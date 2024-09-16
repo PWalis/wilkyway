@@ -78,21 +78,21 @@ export const Solution: React.FC = () => {
     <section className="min-h-[60rem] flex flex-col items-center bg-section-background md:pb-[15rem]">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
         <h2 className="font-gunterz px-5 text-left w-full leading-8">
-          your landing page = your{" "}
-          <span className="text-hero-color2">conversions</span>
+          Your Site = {" "}
+          <span className="text-hero-color2">Your Conversions</span>
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[168rem] iphone12pro:min-h-[164rem] iphone14max:min-h-[155rem] sm:min-h-[185rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
             <SolutionContainer id="title1">
               <h3 className="font-gunterz">
-                DON&apos;T LET YOUR LEADS LEAVE YOU ON READ.
+                DON&apos;T LET YOUR LEADS <span className="text-hero-color2">LEAVE YOU ON READ.</span> 
               </h3>
               <p className="max-w-[26.25rem]">
-                Turn casual visitors into loyal customers by keeping your
-                audience engaged from the moment they land on your page. We use
+                Turn casual visitors into <span className="font-semibold italic">loyal customers</span> by keeping your
+                audience engaged from the <span className="italic">moment</span> they land on your page. We use
                 your offer and ideal customer as our north star to create your
-                brand, copywriting, and website so that it converts highly.
+                brand, copywriting, and website so that it <span className="font-semibold">converts highly</span>.
               </p>
             </SolutionContainer>
             <SolutionContainer id="title2">
@@ -101,11 +101,11 @@ export const Solution: React.FC = () => {
                 maximize clicks.
               </h3>
               <p className="max-w-[26.25rem]">
-                Capture your visitors at every stage. Whether they&apos;re ready
-                to buy, need a little convincing, or just want some information,
-                we give your visitors a path at every stage of the sales funnel.
-                You can be at peace knowing you&apos;re getting the most out of
-                every click.
+                Capture your visitors at <span className="italic">every stage</span>. Whether they&apos;re ready
+                to buy, need a little convincing, or just want some information, {" "}
+                <span className="font-semibold italic">we give your visitors a path</span> at every stage of the sales funnel.
+                You can be at peace knowing you&apos;re getting the <span className="font-semibold"><span className="italic">most</span> out of
+                every click.</span>
               </p>
             </SolutionContainer>
             <SolutionContainer id="title3">
@@ -114,10 +114,10 @@ export const Solution: React.FC = () => {
                 branded design.
               </h3>
               <p className="max-w-[29rem]">
-                Create a first impression that is out of this world and
-                Instantly communicate your brand through the look and feel of
-                your website. You don&apos;t have to settle for a generic
-                website with your logo on it. We do the research on your ideal
+                Create a <span className="italic">first impression</span> that is out of this world and
+                instantly communicates your brand through the look and feel of
+                your website. You <span className="font-semibold">don&apos;t have to settle</span> for a generic
+                website with your logo on it. <span className="italic font-semibold">We do the research</span> on your ideal
                 customer so that your brand is something they can proudly be a
                 part of.
               </p>
@@ -128,10 +128,10 @@ export const Solution: React.FC = () => {
                 with targeted copywriting.
               </h3>
               <p className="max-w-[26.25rem]">
-                Speak to your market and show them your solution is exactly what
-                they need. Increase revenue, fill up your lead list, and create
-                loyal customers. We craft your messaging to speak directly to
-                your ideal customer and a/b test to increase conversions month
+                Speak to your market and show them <span className="font-semibold">your solution is <span className="italic">exactly what
+                they need</span></span>. Increase revenue, fill up your lead list, and create
+                loyal customers. <span className="font-semibold italic">We craft your messaging</span> to speak <span className="italic">directly</span> to
+                your ideal customer and a/b test to <span className="font-semibold">increase conversions</span> month
                 after month.
               </p>
             </SolutionContainer>
@@ -141,9 +141,9 @@ export const Solution: React.FC = () => {
                 won&apos;t miss it.
               </h3>
               <p className="max-w-[26.25rem]">
-                Don’t let a slow website bring your conversions to a screeching
-                halt. Insure no one leaves your website because of bad load
-                time. We use advanced hosting so that your customers load your
+                Don’t let a <span className="italic">slow website</span> bring your conversions to a screeching
+                halt. <span className="font-semibold">Insure no one leaves your website</span> because of bad load
+                time. We use <span className="font-semibold italic">advanced hosting</span> so that your customers load your
                 site fast, even on a slow network.
               </p>
             </SolutionContainer>
