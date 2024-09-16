@@ -194,7 +194,7 @@ export const Form: React.FC = () => {
 
         <div className="flex flex-col row-start-1 col-start-2 row-span-2 max-w-[42rem]">
           <div className="flex flex-row flex-wrap gap-4 mb-5 ">
-            <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.75rem]">
+            <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.5rem]">
               <div className="absolute -left-[20px] 2xl:-left-[35px]">
                 <div className="relative">
                   <FormLine />
@@ -222,7 +222,7 @@ export const Form: React.FC = () => {
                 ></input>
               </div>
             </div>
-            <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.75rem]">
+            <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.5rem]">
               <label className="font-nobel-uno">Last Name:</label>
               {errors.lastName === true && (
                 <p className="absolute -bottom-[21px] left-[4px] text-red-500 tracking-widest text-[0.75rem] font-bold">
@@ -239,7 +239,7 @@ export const Form: React.FC = () => {
                 ></input>
               </div>
             </div>
-            <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.75rem]">
+            <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.5rem]">
               <label className="font-nobel-uno">Email:</label>
               {errors.email === true && (
                 <p className="absolute -bottom-[21px] left-[4px] text-red-500 tracking-widest text-[0.75rem] font-bold">
@@ -256,7 +256,7 @@ export const Form: React.FC = () => {
                 ></input>
               </div>
             </div>
-            <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.75rem]">
+            <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.5rem]">
               <label className="font-nobel-uno">Phone Number:</label>
               {errors.phoneNumber === true && (
                 <p className="absolute -bottom-[21px] left-[4px] text-red-500 tracking-widest text-[0.75rem] font-bold">

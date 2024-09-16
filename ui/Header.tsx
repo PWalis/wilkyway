@@ -70,7 +70,7 @@ export const Header = () => {
             initial="closed"
             animate={width >= 964 || menuIsOpen ? "opened" : "closed"}
             className={clsx(
-              "h-[calc(110dvh)] w-[calc(111dvw)] absolute bg-storm-black lg1/2:bg-transparent lg1/2:pr-5 lg1/2:flex lg1/2:h-auto lg1/2:w-auto lg1/2:top-auto",
+              "h-[calc(110dvh)] w-[calc(111dvw)] absolute bg-section-background lg1/2:bg-transparent lg1/2:pr-5 lg1/2:flex lg1/2:h-auto lg1/2:w-auto lg1/2:top-auto",
               menuIsOpen
                 ? "lg1/2:top-auto lg1/2:right-auto -top-3 -right-7 lg1/2:pt-0 pt-[calc(15dvh)]"
                 : "lg1/2:top-auto lg1/2:right-auto -top-3 -right-7 lg1/2:pt-0 pt-[calc(15dvh)]"
@@ -88,8 +88,8 @@ export const Header = () => {
                   router.push("/")
                   setMenuIsOpen(false)
                 }}>Home</Link>
-              <Link href="/LandingPagePackage" onClick={(e) => {
-                  router.push("/LandingPagePackage")
+              <Link href="/WebsitePackage" onClick={(e) => {
+                  router.push("/WebsitePackage")
                   setMenuIsOpen(false)
                 }}>Website Package</Link>
               <Link href="/AboutUs" onClick={(e) => {

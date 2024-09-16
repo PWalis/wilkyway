@@ -89,7 +89,8 @@ const config: Config = {
   			gunterzBoldItalic: ["var(--font-gunterz-bold-italic)"],
   			gunterzBold: ["var(--font-gunterz-bold)"],
   			nobelUno: ["var(--font-nobel-uno)"],
-  			charcoalDance: ["var(--font-charcoal-dance)"]
+  			charcoalDance: ["var(--font-charcoal-dance)"],
+			gunterzItalic: ["var(--font-gunterz-medium-italic)"],
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
