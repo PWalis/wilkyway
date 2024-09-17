@@ -5,6 +5,7 @@ import { z } from "zod";
 import { FormCircle, FormLine } from "../animated/FormLine";
 import { FormLine2 } from "../animated/FormLine2";
 import { Calendar } from "@/components/ui/calendar";
+import { H2Container } from "../containers/H2Container";
 
 export const Form: React.FC = () => {
   // state for button toggles
@@ -143,6 +144,11 @@ export const Form: React.FC = () => {
 
   return (
     <section className="h-full min-h-[40rem] w-full flex flex-col justify-center items-center bg-section-background overflow-hidden pl-5 pt-[3rem] pb-[4rem] lg:pb-[1rem]">
+      <div className="w-full max-w-[82rem]">
+        <H2Container color="#3355D1" topString="Contact Us">
+           Get your awesome new <span className="text-formBlue">website</span>
+        </H2Container>
+      </div>
       <form
         className="h-full w-full 2xl:grid grid-cols-2 grid-rows-2 px-5 relative max-w-[45rem] 2xl:max-w-[100rem]"
         name="website-request"
@@ -150,9 +156,9 @@ export const Form: React.FC = () => {
       >
         <div className="flex justify-between max-w-[42rem]">
           <div className="flex flex-col">
-            <h2 className="font-gunterz text-left w-full max-w-[28rem] text-[1.5rem] 2xl:text-[2.5rem]">
+            <p className="font-gunterz text-left w-full max-w-[28rem] text-[1.5rem] 2xl:text-[2.5rem] leading-[30px] 2xl:leading-[50px]">
               Let's get in <span className="text-formBlue">touch...</span>
-            </h2>
+            </p>
             <p className="max-w-[25rem] text-[1.25rem] lg:text-[1.5rem]">
               Tell us a little about your project, so we can reach out to you.
             </p>
@@ -296,7 +302,6 @@ export const Form: React.FC = () => {
             <div className="relative">
               <FormCircle />
             </div>
-          </div>
             <input
               name="web-design-button"
               type="button"

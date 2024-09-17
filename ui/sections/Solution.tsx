@@ -13,6 +13,7 @@ import { SolutionAnimation3 } from "../animated/SolutionAnimation3";
 import { SolutionAnimation4 } from "../animated/SolutionAnimation4";
 import { SolutionAnimation5 } from "../animated/SolutionAnimation5";
 import { ProgressIndicator } from "../animated/ProgressIndicator";
+import { H2Container } from "../containers/H2Container";
 
 export const Solution: React.FC = () => {
   const [frame, setFrame] = useState(0);
@@ -75,13 +76,10 @@ export const Solution: React.FC = () => {
   };
 
   return (
-    <section className="min-h-[60rem] flex flex-col items-center bg-section-background md:pb-[15rem]">
+    <section className="min-h-[60rem] px-5 flex flex-col items-center bg-section-background md:pb-[15rem]">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
-        <h2 className="font-gunterz px-5 text-left w-full leading-8">
-          Your Site = {" "}
-          <span className="text-hero-color2">Your Conversions</span>
-        </h2>
-
+        <H2Container color="#5A8CF9" topString="Our Solution">Your Site = {" "}
+        <span className="text-hero-color2">Your Conversions</span></H2Container>
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[168rem] iphone12pro:min-h-[164rem] iphone14max:min-h-[155rem] sm:min-h-[185rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
             <SolutionContainer id="title1">

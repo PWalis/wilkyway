@@ -1,12 +1,13 @@
 import react from "react";
 import { LearnMore } from "../buttons";
+import { H2Container } from "../containers/H2Container";
 
 export const OurValues: React.FC = () => {
   return (
     <section className="min-h-[50rem] bg-section-background flex flex-col items-center px-5 ">
-      <h2 className="w-full max-w-[100rem] mb-5 sm:mb-12 font-gunterz leading-8">
-        how We  <span className="text-[#8CAC48]">guarantee excellence</span>
-      </h2>
+      <H2Container color="#7D9B45" topString="Our Values">
+        how We <span className="text-[#8CAC48]">guarantee excellence</span>
+      </H2Container>
       <div className="flex flex-col lg:grid lg:grid-cols-12 lg:grid-rows-15 min-h-[40rem] gap-6 max-w-[90rem]">
         <div className="bg-[#0C212E] rounded-[20px] 2xl:row-star-1 2xl:row-span-7 2xl:col-start-1 2xl:col-span-4 col-start-1 col-span-5 row-start-1 row-span-5 p-5 md:pl-10 pl-6 pt-10 pb-16 2xl:pb-5 relative">
           <div className="max-w-[9rem]">
@@ -330,7 +331,9 @@ export const OurValues: React.FC = () => {
             <h4 className="font-gunterz text-[1.50rem] text-[#5A8CF9]">
               Genuine connection
             </h4>
-            <p className="max-w-[12rem]">We strive to create connections that will last.</p>
+            <p className="max-w-[12rem]">
+              We strive to create connections that will last.
+            </p>
           </div>
           <div className="w-full max-w-[9rem]">
             <svg
