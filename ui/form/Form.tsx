@@ -146,7 +146,7 @@ export const Form: React.FC = () => {
     <section className="h-full min-h-[40rem] w-full flex flex-col justify-center items-center bg-section-background overflow-hidden pl-5 pt-[3rem] pb-[4rem] lg:pb-[1rem]">
       <div className="w-full max-w-[82rem]">
         <H2Container color="#3355D1" topString="Contact Us">
-           Get your awesome new <span className="text-formBlue">website</span>
+          Get your awesome new <span className="text-formBlue">website</span>
         </H2Container>
       </div>
       <form
@@ -197,9 +197,8 @@ export const Form: React.FC = () => {
         </div>
 
         <input type="hidden" name="form-name" value="website-request" />
-        
+
         <div className="flex flex-col row-start-1 col-start-2 row-span-2 max-w-[42rem]">
-          <p className="pb-6 text-[1.5rem] hidden sm:block"> Tell us a little about yourself: </p>
           <div className="flex flex-row flex-wrap gap-4 mb-5 ">
             <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.5rem]">
               <div className="absolute -left-[20px] -top-[-60px] 2xl:-left-[35px]">
@@ -296,123 +295,126 @@ export const Form: React.FC = () => {
               <FormLine />
             </div>
           </div>
-          <label className="text-[1.25rem] lg:text-[1.5rem] font-light pb-2">Please select the services you are interested in:</label>
+          <label className="text-[1.25rem] lg:text-[1.5rem] font-light pb-2">
+            Please select the services you are interested in:
+          </label>
           <div className="flex flex-row flex-wrap gap-2 max-w-[35rem] relative">
-          <div className="absolute -top-[60px] sm:-top-[45px] -left-[20px] 2xl:-left-[35px]">
-            <div className="relative">
-              <FormCircle />
+            <div className="absolute -top-[60px] sm:-top-[45px] -left-[20px] 2xl:-left-[35px]">
+              <div className="relative">
+                <FormCircle />
+              </div>
+              <input
+                name="web-design-button"
+                type="button"
+                className={clsx(
+                  "border-1   px-5 py-2 rounded-full hover:cursor-pointer",
+                  webDesignToggle
+                    ? "border-formBlue/80 text-white/80 bg-formBlue"
+                    : "border-white/50 text-white/50 bg-formInput"
+                )}
+                defaultValue={"Web Design"}
+                onClick={() => {
+                  setWebDesignToggle(!webDesignToggle);
+                  setServices({ ...services, webDesign: "webDesign" });
+                }}
+              ></input>
+              <input
+                name="logo-design-button"
+                type="button"
+                className={clsx(
+                  "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
+                  logoDesignToggle
+                    ? "border-formBlue/80 text-white/80 bg-formBlue"
+                    : "border-white/50 text-white/50 bg-formInput"
+                )}
+                defaultValue={"Logo Design"}
+                onClick={() => {
+                  setLogoDesignToggle(!logoDesignToggle);
+                  setServices({ ...services, logoDesign: "logoDesign" });
+                }}
+              ></input>
+              <input
+                name="copywriting-button"
+                type="button"
+                className={clsx(
+                  "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
+                  copywritingToggle
+                    ? "border-formBlue/80 text-white/80 bg-formBlue"
+                    : "border-white/50 text-white/50 bg-formInput"
+                )}
+                defaultValue={"Copywriting"}
+                onClick={() => {
+                  setCopywritingToggleToggle(!copywritingToggle);
+                  setServices({
+                    ...services,
+                    copywriting: "copywriting",
+                  });
+                }}
+              ></input>
+              <input
+                name="brand-identity-button"
+                type="button"
+                className={clsx(
+                  "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
+                  brandIdentityToggle
+                    ? "border-formBlue/80 text-white/80 bg-formBlue"
+                    : "border-white/50 text-white/50 bg-formInput"
+                )}
+                defaultValue={"Brand Identity"}
+                onClick={() => {
+                  setBrandIdentityToggle(!brandIdentityToggle);
+                  setServices({
+                    ...services,
+                    brandIdentity: "brandIdentity",
+                  });
+                }}
+              ></input>
+              <input
+                name="a/b-testing-button"
+                type="button"
+                className={clsx(
+                  "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
+                  abTestingToggle
+                    ? "border-formBlue/80 text-white/80 bg-formBlue"
+                    : "border-white/50 text-white/50 bg-formInput"
+                )}
+                defaultValue={"A/B Testing"}
+                onClick={() => {
+                  setAbTestingToggle(!abTestingToggle);
+                  setServices({ ...services, abTesting: "abTesting" });
+                }}
+              ></input>
+              <input
+                name="seo-button"
+                type="button"
+                className={clsx(
+                  "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
+                  seoToggle
+                    ? "border-formBlue/80 text-white/80 bg-formBlue"
+                    : "border-white/50 text-white/50 bg-formInput"
+                )}
+                defaultValue={"SEO"}
+                onClick={() => {
+                  setSeoToggle(!seoToggle);
+                  setServices({ ...services, seo: "seo" });
+                }}
+              ></input>
+              <input
+                name="other-button"
+                type="button"
+                className={clsx(
+                  "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
+                  otherToggle
+                    ? "border-formBlue/80 text-white/80 bg-formBlue"
+                    : "border-white/50 text-white/50 bg-formInput"
+                )}
+                defaultValue={"Other"}
+                onClick={() => {
+                  setOtherToggle(!otherToggle);
+                  setServices({ ...services, other: "other" });
+                }}
+              ></input>
             </div>
-            <input
-              name="web-design-button"
-              type="button"
-              className={clsx(
-                "border-1   px-5 py-2 rounded-full hover:cursor-pointer",
-                webDesignToggle
-                  ? "border-formBlue/80 text-white/80 bg-formBlue"
-                  : "border-white/50 text-white/50 bg-formInput"
-              )}
-              defaultValue={"Web Design"}
-              onClick={() => {
-                setWebDesignToggle(!webDesignToggle);
-                setServices({ ...services, webDesign: "webDesign" });
-              }}
-            ></input>
-            <input
-              name="logo-design-button"
-              type="button"
-              className={clsx(
-                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
-                logoDesignToggle
-                  ? "border-formBlue/80 text-white/80 bg-formBlue"
-                  : "border-white/50 text-white/50 bg-formInput"
-              )}
-              defaultValue={"Logo Design"}
-              onClick={() => {
-                setLogoDesignToggle(!logoDesignToggle);
-                setServices({ ...services, logoDesign: "logoDesign" });
-              }}
-            ></input>
-            <input
-              name="copywriting-button"
-              type="button"
-              className={clsx(
-                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
-                copywritingToggle
-                  ? "border-formBlue/80 text-white/80 bg-formBlue"
-                  : "border-white/50 text-white/50 bg-formInput"
-              )}
-              defaultValue={"Copywriting"}
-              onClick={() => {
-                setCopywritingToggleToggle(!copywritingToggle);
-                setServices({
-                  ...services,
-                  copywriting: "copywriting",
-                });
-              }}
-            ></input>
-            <input
-              name="brand-identity-button"
-              type="button"
-              className={clsx(
-                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
-                brandIdentityToggle
-                  ? "border-formBlue/80 text-white/80 bg-formBlue"
-                  : "border-white/50 text-white/50 bg-formInput"
-              )}
-              defaultValue={"Brand Identity"}
-              onClick={() => {
-                setBrandIdentityToggle(!brandIdentityToggle);
-                setServices({
-                  ...services,
-                  brandIdentity: "brandIdentity",
-                });
-              }}
-            ></input>
-            <input
-              name="a/b-testing-button"
-              type="button"
-              className={clsx(
-                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
-                abTestingToggle
-                  ? "border-formBlue/80 text-white/80 bg-formBlue"
-                  : "border-white/50 text-white/50 bg-formInput"
-              )}
-              defaultValue={"A/B Testing"}
-              onClick={() => {
-                setAbTestingToggle(!abTestingToggle);
-                setServices({ ...services, abTesting: "abTesting" });
-              }}
-            ></input>
-            <input
-              name="seo-button"
-              type="button"
-              className={clsx(
-                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
-                seoToggle
-                  ? "border-formBlue/80 text-white/80 bg-formBlue"
-                  : "border-white/50 text-white/50 bg-formInput"
-              )}
-              defaultValue={"SEO"}
-              onClick={() => {
-                setSeoToggle(!seoToggle);
-                setServices({ ...services, seo: "seo" });
-              }}
-            ></input>
-            <input
-              name="other-button"
-              type="button"
-              className={clsx(
-                "border-1  px-5 py-2 rounded-full hover:cursor-pointer",
-                otherToggle
-                  ? "border-formBlue/80 text-white/80 bg-formBlue"
-                  : "border-white/50 text-white/50 bg-formInput"
-              )}
-              defaultValue={"Other"}
-              onClick={() => {
-                setOtherToggle(!otherToggle);
-                setServices({ ...services, other: "other" });
-              }}
-            ></input>
           </div>
         </div>
 
