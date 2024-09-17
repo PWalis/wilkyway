@@ -294,7 +294,7 @@ export const Form: React.FC = () => {
         </div>
 
         <div className="min-h-[10rem] flex flex-col gap-2 max-w-[40rem] mb-3 sm:mb-0 sm:mt-0 row-start-2 col-start-1 2xl:justify-end relative">
-          <div className="absolute -top-[145px] -left-[20px] 2xl:-left-[35px]">
+          <div className="absolute -top-[55px] sm:-top-[145px] -left-[20px] 2xl:-left-[35px]">
             <div className="relative">
               <FormLine />
             </div>
