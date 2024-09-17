@@ -80,8 +80,8 @@ export const Solution: React.FC = () => {
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
         <H2Container color="#5A8CF9" topString="Our Solution">Your Site = {" "}
         <span className="text-hero-color2">Your Conversions</span></H2Container>
-        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[168rem] iphone12pro:min-h-[164rem] iphone14max:min-h-[155rem] sm:min-h-[185rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
-          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center lg:h-auto gap-0 lg:gap-20 w-full relative">
+          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3  lg:relative top-10">
             <SolutionContainer id="title1">
               <h3 className="font-gunterz">
                 DON&apos;T LET YOUR LEADS <span className="text-hero-color2">LEAVE YOU ON READ.</span> 
@@ -146,9 +146,9 @@ export const Solution: React.FC = () => {
               </p>
             </SolutionContainer>
           </div>
-          <div className="flex justify-center w-full lg:max-w-[30rem] h-[24rem] bg-section-background mb-20 mt-[20rem] lg:mt-[15rem] sticky top-[58vh] lg:top-[20rem]">
-            <div className="h-[30rem] max-w-[30rem] w-full relative">
-              <AnimatePresence mode="popLayout">
+          <div className="flex justify-center w-full lg:max-w-[30rem] bg-section-background lg:mt-[15rem] sticky bottom-0 lg:top-[20rem]">
+            <div className="max-w-[30rem] w-full relative">
+              <AnimatePresence mode="wait">
                 {renderComponent()}
               </AnimatePresence>
               <ProgressIndicator progress={frame} />

@@ -61,7 +61,7 @@ export const Process: React.FC = () => {
         <span className="text-processAccent">Process</span></H2Container>
         <div
           style={{ contain: "paint" }}
-          className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[110rem] xs:min-h-[103rem] iphone14max:min-h-[98rem] sm:min-h-[115rem] lg:min-h-[98rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative"
+          className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[125rem] xs:min-h-[120rem] iphone14max:min-h-[115rem] sm:min-h-[115rem] lg:min-h-[98rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative"
         >
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] max-w-[35rem] absolute lg:relative top-10 px-5 mb-[10rem]">
             <ProcessContainer id="process1">
