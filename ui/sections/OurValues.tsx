@@ -4,7 +4,7 @@ import { H2Container } from "../containers/H2Container";
 
 export const OurValues: React.FC = () => {
   return (
-    <section className="min-h-[50rem] bg-section-background flex flex-col items-center px-5 ">
+    <section className="min-h-[50rem] bg-section-background pb-[1rem] flex flex-col items-center px-5 ">
       <H2Container color="#7D9B45" topString="Our Values">
         how We <span className="text-[#8CAC48]">guarantee excellence</span>
       </H2Container>

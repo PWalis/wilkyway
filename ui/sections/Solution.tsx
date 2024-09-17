@@ -76,12 +76,12 @@ export const Solution: React.FC = () => {
   };
 
   return (
-    <section className="min-h-[60rem] px-5 flex flex-col items-center bg-section-background md:pb-[15rem]">
+    <section className="min-h-[60rem] px-5 pb-[3rem] flex flex-col items-center bg-section-background md:pb-[15rem]">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
         <H2Container color="#5A8CF9" topString="Our Solution">Your Site = {" "}
         <span className="text-hero-color2">Your Conversions</span></H2Container>
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center lg:h-auto gap-0 lg:gap-20 w-full">
-          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 mb-[3rem]  top-10">
+          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] mb-[3rem] px-2 top-10">
             <SolutionContainer id="title1">
               <h3 className="font-gunterz">
                 DON&apos;T LET YOUR LEADS <span className="text-hero-color2">LEAVE YOU ON READ.</span> 
@@ -147,7 +147,7 @@ export const Solution: React.FC = () => {
             </SolutionContainer>
           </div>
           <div className="flex justify-center w-full lg:max-w-[30rem] bg-section-background lg:mt-[15rem] sticky bottom-0 lg:top-[20rem]">
-            <div className="max-w-[30rem] w-full relative">
+            <div className="w-full relative">
               <AnimatePresence mode="wait">
                 {renderComponent()}
               </AnimatePresence>

@@ -7,14 +7,18 @@ import { H2Container } from "../containers/H2Container";
 
 export const Testimonials: React.FC = () => {
   return (
-    <section className="min-h-[60rem] bg-section-background flex flex-col px-5 items-center gap-10 pb-[10rem]">
+    <section className="min-h-[60rem] bg-section-background flex flex-col px-5 pb-[4rem] items-center gap-10">
       <H2Container color="#ECA653" topString="Our Testimonials">
-      The <span className="text-testimonialAccent">results</span> speak for
-      themselves
+        The <span className="text-testimonialAccent">results</span> speak for
+        themselves
       </H2Container>
       <div className="flex flex-col items-center gap-10">
         <h4 className="text-[42px] lg:text-left text-center">
-          "I am so <span className="text-testimonialAccent italic font-semibold">highly impressed...</span>"
+          "I am so{" "}
+          <span className="text-testimonialAccent italic font-semibold">
+            highly impressed...
+          </span>
+          "
         </h4>
         <div className="flex flex-row justify-center flex-wrap gap-10">
           <TestimonialContainer>

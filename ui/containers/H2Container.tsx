@@ -16,7 +16,7 @@ export const H2Container: React.FC<H2props> = ({
         <p className="col-start-2  row-start-1" style={{ color: color }}>
           {topString}
         </p>
-        <div className="max-w-[20rem] h-[40px] pt-7 lg:pt-3  col-start-1 row-start-2">
+        <div className="max-w-[10rem] lg:max-w-[20rem] h-[40px] pt-7 lg:pt-3  col-start-1 row-start-2">
           <svg
             id="Layer_2"
             xmlns="http://www.w3.org/2000/svg"
