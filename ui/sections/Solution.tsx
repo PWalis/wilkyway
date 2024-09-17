@@ -80,8 +80,8 @@ export const Solution: React.FC = () => {
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
         <H2Container color="#5A8CF9" topString="Our Solution">Your Site = {" "}
         <span className="text-hero-color2">Your Conversions</span></H2Container>
-        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center lg:h-auto gap-0 lg:gap-20 w-full relative">
-          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3  lg:relative top-10">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center lg:h-auto gap-0 lg:gap-20 w-full">
+          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 mb-[3rem]  top-10">
             <SolutionContainer id="title1">
               <h3 className="font-gunterz">
                 DON&apos;T LET YOUR LEADS <span className="text-hero-color2">LEAVE YOU ON READ.</span> 

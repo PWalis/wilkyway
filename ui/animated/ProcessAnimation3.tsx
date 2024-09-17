@@ -74,9 +74,9 @@ export const ProcessAnimation3: React.FC = () => {
     <div
       ref={scope2}
       style={{ opacity: 0 }}
-      className="flex justify-center w-full min-h-[30rem]"
+      className="flex justify-center w-full "
     >
-      <div className="relative w-full max-w-[23rem] lg:max-w-[30rem] px-3 ">
+      <div className="relative w-full lg:max-w-[30rem] px-3 ">
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"

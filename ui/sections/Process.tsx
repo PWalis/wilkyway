@@ -61,9 +61,9 @@ export const Process: React.FC = () => {
         <span className="text-processAccent">Process</span></H2Container>
         <div
           style={{ contain: "paint" }}
-          className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[125rem] xs:min-h-[120rem] iphone14max:min-h-[115rem] sm:min-h-[115rem] lg:min-h-[98rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative"
+          className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative"
         >
-          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] max-w-[35rem] absolute lg:relative top-10 px-5 mb-[10rem]">
+          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] max-w-[35rem] px-5 mb-[5rem]">
             <ProcessContainer id="process1">
               <h3 className="font-gunterz leading-[3.4rem]">
                 send us a free request,
@@ -97,9 +97,9 @@ export const Process: React.FC = () => {
               </p>
             </ProcessContainer>
           </div>
-          <div className="flex justify-center w-full lg:max-w-[30rem] h-[24rem] bg-section-background mb-20 mt-[20rem] lg:mt-[15rem] sticky top-[58vh] lg:top-[20rem]">
-            <div className="h-[30rem] max-w-[30rem] w-full relative">
-              <AnimatePresence mode="popLayout">
+          <div className="flex justify-center w-full lg:max-w-[30rem] bg-section-background lg:mt-[15rem] sticky bottom-0 lg:top-[20rem]">
+            <div className="max-w-[30rem] w-full relative">
+              <AnimatePresence mode="wait">
                 {renderComponent()}
               </AnimatePresence>
               <ProgressIndicator2 progress={frame} />
