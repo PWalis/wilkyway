@@ -201,18 +201,17 @@ export const Form: React.FC = () => {
         <div className="flex flex-col row-start-1 col-start-2 row-span-2 max-w-[42rem]">
           <div className="flex flex-row flex-wrap gap-4 mb-5 ">
             <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.5rem]">
-              <div className="absolute -left-[20px] 2xl:-left-[35px]">
+              <div className="absolute -left-[20px] -top-[-60px] 2xl:-left-[35px]">
                 <div className="relative">
                   <FormLine />
                 </div>
               </div>
-              <div className="absolute -top-[5px] -left-[20px] 2xl:-left-[35px]">
+              <div className="absolute -top-[2px] sm:-top-[-10px] -left-[20px] 2xl:-left-[35px]">
                 <div className="relative">
                   <FormCircle />
                 </div>
               </div>
-
-              <label className="font-nobel-uno">First Name:</label>
+              <label className="">First Name:</label>
               {errors.firstName === true && (
                 <p className="absolute -bottom-[21px] left-[4px] text-red-500 tracking-widest text-[0.75rem] font-bold">
                   Please enter first name
@@ -229,7 +228,7 @@ export const Form: React.FC = () => {
               </div>
             </div>
             <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.5rem]">
-              <label className="font-nobel-uno">Last Name:</label>
+              <label className="">Last Name:</label>
               {errors.lastName === true && (
                 <p className="absolute -bottom-[21px] left-[4px] text-red-500 tracking-widest text-[0.75rem] font-bold">
                   Please enter last name
@@ -246,7 +245,7 @@ export const Form: React.FC = () => {
               </div>
             </div>
             <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.5rem]">
-              <label className="font-nobel-uno">Email:</label>
+              <label className="">Email:</label>
               {errors.email === true && (
                 <p className="absolute -bottom-[21px] left-[4px] text-red-500 tracking-widest text-[0.75rem] font-bold">
                   Please enter email
@@ -263,7 +262,7 @@ export const Form: React.FC = () => {
               </div>
             </div>
             <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.5rem]">
-              <label className="font-nobel-uno">Phone Number:</label>
+              <label className="">Phone Number:</label>
               {errors.phoneNumber === true && (
                 <p className="absolute -bottom-[21px] left-[4px] text-red-500 tracking-widest text-[0.75rem] font-bold">
                   Please enter phone number
@@ -275,13 +274,13 @@ export const Form: React.FC = () => {
                   name="phone-number"
                   id="phone-number"
                   type="text"
-                  placeholder="Enter your phone #"
+                  placeholder="Enter your phone number"
                 ></input>
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-start justify-center mt-3 mb-3 w-full max-w-[42.3rem] h-[9.05rem]">
-            <label className="font-nobel-uno">Project Description:</label>
+          <div className="flex flex-col items-start mt-1 mb-3 w-full max-w-[42.3rem] h-[10rem] md:h-[15rem]">
+            <label className="">Project Description:</label>
             <textarea
               name="project-description"
               className="w-full h-[9rem] bg-formInput hover:bg-slate-800 pl-5 pt-5 focus:outline-none resize-none"
@@ -291,12 +290,12 @@ export const Form: React.FC = () => {
         </div>
 
         <div className="min-h-[10rem] flex flex-col gap-2 max-w-[40rem] mb-3 sm:mb-0 sm:mt-0 row-start-2 col-start-1 2xl:justify-end relative">
-          <div className="absolute -top-[170px] -left-[20px] 2xl:-left-[35px]">
+          <div className="absolute -top-[145px] -left-[20px] 2xl:-left-[35px]">
             <div className="relative">
               <FormLine />
             </div>
           </div>
-          <label className="text-[1.25rem] lg:text-[1.5rem] font-light">
+          <label className="text-[1.25rem] lg:text-[1.5rem] font-light pb-2">
             Please select the services you are interested in:
           </label>
           <div className="flex flex-row flex-wrap gap-2 max-w-[35rem] relative">
@@ -419,17 +418,17 @@ export const Form: React.FC = () => {
           </div>
         </div>
 
-        <div className="max-w-[42.3rem] row-start-2 col-start-2 flex items-end ">
+        <div className="max-w-[42rem] row-start-2 col-start-2 flex items-end ">
           <button
             type="submit"
-            className="bg-formBlue text-white tracking-wider font-semibold py-3 px-5 w-full relative"
+            className="bg-formBlue text-white tracking-wider font-semibold py-5 px-5 w-full relative"
           >
             {isLoading
               ? "Loading..."
               : formFailed
               ? "Failed to submit"
               : "SUBMIT REQUEST"}
-            <div className="absolute top-[5px] -left-[20px] 2xl:-left-[35px]">
+            <div className="absolute top-[15px] -left-[20px] 2xl:-left-[35px]">
               <div className="relative">
                 <FormCircle />
               </div>
