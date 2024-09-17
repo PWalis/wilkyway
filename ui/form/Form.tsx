@@ -414,7 +414,7 @@ export const Form: React.FC = () => {
         <div className="max-w-[42rem] row-start-2 col-start-2 flex items-end ">
           <button
             type="submit"
-            className="bg-formBlue text-white tracking-wider font-semibold py-5 px-5 w-full relative"
+            className="bg-formBlue hover:bg-[#466DFD] transition-all formBlue/40 text-white tracking-wider font-semibold py-5 px-5 w-full relative"
           >
             {isLoading
               ? "Loading..."

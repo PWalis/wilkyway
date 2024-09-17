@@ -112,14 +112,14 @@ export const Header = () => {
                 FAQ
               </Link>
               <div className="lg1/2:hidden">
-                <CTA>MAKE MONEY</CTA>
+                <CTA>GET YOUR QUOTE</CTA>
               </div>
             </nav>
           </motion.div>
         </div>
         <div className="flex items-center">
           <div className="hidden lg1/2:block">
-            <CTA>MAKE MONEY</CTA>
+            <CTA>GET YOUR QUOTE</CTA>
           </div>
           <div className="lg1/2:hidden">
             <Hamburger onToggle={handleToggle} toggled={menuIsOpen} />
