@@ -151,7 +151,7 @@ export const OurValues: React.FC = () => {
             Learn More
           </button>
         </div>
-        <div className="bg-[#0C212E] rounded-[20px] 2xl:row-start-1 2xl:row-span-8 2xl:col-start-10 2xl:col-span-3 col-start-1 col-span-6 row-start-6 row-span-6 p-5 md:pl-10 pl-6 pt-10 2xl:pt-14 relative pb-16 2xl:pb-5">
+        <div className="bg-[#0C212E] rounded-[20px] 2xl:row-start-1 2xl:row-span-8 2xl:col-start-10 2xl:col-span-4 col-start-1 col-span-6 row-start-6 row-span-6 p-5 md:pl-10 pl-6 pt-10 2xl:pt-14 relative pb-16 2xl:pb-5">
           <div className="max-w-[9rem]">
             <svg
               id="Layer_2"
