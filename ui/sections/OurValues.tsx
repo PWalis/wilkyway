@@ -326,7 +326,7 @@ export const OurValues: React.FC = () => {
             Learn More
           </button>
         </div>
-        <div className="flex bg-[#0F232F] rounded-[20px] 2xl:row-start-9 2xl:row-span-6 2xl:col-start-5 2xl:col-span-4 col-start-1 col-span-7 row-start-12 row-span-3 p-5 md:pl-10 pl-6 pt-10 relative pb-16 2xl:pb-5">
+        <div className="flex flex-col-reverse 2xl:flex-row bg-[#0F232F] rounded-[20px] 2xl:row-start-9 2xl:row-span-6 2xl:col-start-5 2xl:col-span-4 col-start-1 col-span-7 row-start-12 row-span-3 p-5 md:pl-10 pl-6 pt-10 relative pb-16 2xl:pb-5">
           <div className="flex flex-col">
             <h4 className="font-gunterz text-[1.50rem] text-[#5A8CF9]">
               Genuine connection
@@ -335,7 +335,7 @@ export const OurValues: React.FC = () => {
               We strive to create connections that will last.
             </p>
           </div>
-          <div className="w-full max-w-[9rem]">
+          <div className="w-full max-w-[9rem] mb-3 2xl:mb-0">
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -381,7 +381,7 @@ export const OurValues: React.FC = () => {
             Learn More
           </button>
         </div>
-        <div className="flex bg-[#0F2431] rounded-[20px] 2xl:row-start-9 2xl:row-span-6 2xl:col-start-9 2xl:col-span-5 col-start-8 col-span-5 row-start-12 row-span-3 p-5 md:pl-10 pl-6 pt-10 relative pb-16 2xl:pb-5">
+        <div className="flex flex-col 2xl:flex-row bg-[#0F2431] rounded-[20px] 2xl:row-start-9 2xl:row-span-6 2xl:col-start-9 2xl:col-span-5 col-start-8 col-span-5 row-start-12 row-span-3 p-5 md:pl-10 pl-6 pt-10 relative pb-16 2xl:pb-5">
           <div className="w-full pl-5 2xl:pl-0 max-w-[8rem]">
             <svg
               id="Layer_2"
