@@ -35,7 +35,7 @@ export const ProcessAnimation2: React.FC = () => {
     <div
       ref={scope2}
       style={{ opacity: 0 }}
-      className="flex justify-center w-full items-center relative lg:max-w-[30rem]"
+      className="w-full lg:max-w-[30rem]"
     >
       <svg
         id="Layer_2"
