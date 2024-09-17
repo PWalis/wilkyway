@@ -6,6 +6,7 @@ import { ProcessAnimation } from "../animated/ProcessAnimation";
 import { ProcessAnimation2 } from "../animated/ProcessAnimation2";
 import { ProcessAnimation3 } from "../animated/ProcessAnimation3";
 import { ProgressIndicator2 } from "../animated/ProgressIndicator2";
+import { H2Container } from "../containers/H2Container";
 
 export const Process: React.FC = () => {
   const [frame, setFrame] = useState(0);
@@ -54,12 +55,10 @@ export const Process: React.FC = () => {
   }, []);
 
   return (
-    <section className="min-h-[60rem] flex flex-col items-center bg-section-background">
+    <section className="min-h-[60rem] px-5 flex flex-col items-center bg-section-background">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
-        <h2 className="font-gunterz text-left px-5 md:px-0 w-full leading-8">
-          Our Lightning Fast{" "}
-          <span className="text-processAccent">Process</span>
-        </h2>
+        <H2Container color="#5BD9D9" topString="Our Process"> Our Lightning Fast{" "}
+        <span className="text-processAccent">Process</span></H2Container>
         <div
           style={{ contain: "paint" }}
           className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[110rem] xs:min-h-[103rem] iphone14max:min-h-[98rem] sm:min-h-[115rem] lg:min-h-[98rem] lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative"

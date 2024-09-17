@@ -1,12 +1,14 @@
 import react from "react";
 import { StarLine, StarCircle, StarLineMobile } from "../animated/StarLine";
+import { H2Container } from "../containers/H2Container";
 
 export const StarMethod: React.FC = () => {
   return (
     <section className="h-min-[60rem] bg-section-background flex flex-col items-center pb-[10rem] px-5">
-      <h2 className="font-gunterz max-w-[100rem] w-full text-left leading-8 mb-[1rem]">
+      <H2Container color="#B05CCD" topString="S.T.A.R Method">
+        {" "}
         Make your business a <span className="text-[#B05CCD]">S.T.A.R</span>
-      </h2>
+      </H2Container>
       <div className="flex flex-col-reverse lg3/4:flex-row max-w-[80rem] w-full justify-between items-center ">
         <div className="flex flex-col w-full gap-12 relative max-w-[40rem] mt-10 lg3/4mt-0">
           <h3 className="font-gunterz text-[1.5rem]">
