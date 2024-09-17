@@ -78,7 +78,7 @@ export const SolutionAnimation2: React.FC = () => {
         </svg>
       </div>
 
-      <div className="w-full sm:w-[30rem] px-3">
+      <div className="w-full sm:w-[30rem]">
         {toggle ? (
           <svg
             id="Layer_2"

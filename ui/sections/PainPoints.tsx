@@ -118,8 +118,10 @@ export const PainPoints: React.FC = () => {
           <p>We work fast so you can launch sooner</p>
         </HeroSupportContainer>
       </div>
-      <div className="flex flex-col justify-start w-full max-w-[100rem] min-h-[30rem] items-center mt-0 lg1/2:mt-[36rem] xl3/4:mt-[13.5rem]">
-      <H2Container topString="Your Problem" color="#CB5246">does this hit <span className="text-painPointAccent">home?</span></H2Container>
+      <div className="flex flex-col justify-start w-full max-w-[100rem] min-h-[30rem] items-center mt-0 xl1/2:mt-[13.5rem]">
+        <H2Container topString="Your Problem" color="#CB5246">
+          does this hit <span className="text-painPointAccent">home?</span>
+        </H2Container>
         <div className="w-full max-w-[86.375rem] flex flex-row justify-center flex-wrap gap-8">
           <PainPoint>
             <div className="w-full max-w-[100px] h-[60px] mt-7 mb-9">

@@ -56,7 +56,7 @@ export const SolutionAnimation3: React.FC = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               key="graphic 1"
-              className=" w-full top-0 left-0 px-2"
+              className=" w-full top-0 left-0 "
             >
               <defs>
                 <style>
@@ -251,7 +251,7 @@ export const SolutionAnimation3: React.FC = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             key="graphic 2"
-            className="absolute w-full top-0 left-0 px-2"
+            className="absolute w-full top-0 left-0"
           >
             <defs>
               <style>

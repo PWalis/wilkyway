@@ -4,7 +4,7 @@ import { H2Container } from "../containers/H2Container";
 
 export const LandingPagePackage: React.FC = () => {
   return (
-    <section className="min-h-[60rem] bg-section-background px-10 pb-24 flex flex-col items-center">
+    <section className="min-h-[60rem] bg-section-background px-5 pb-[4rem] flex flex-col items-center">
       <H2Container color="#18B560" topString="Our Services">
         Our Stellar{" "}
         <span className="text-landingPagePackageAccent"> Website Package</span>

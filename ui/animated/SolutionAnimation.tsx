@@ -108,7 +108,7 @@ export const SolutionAnimation: React.FC = () => {
         </svg>
       </motion.div>
 
-      <div className="w-full sm:w-[30rem] px-3">
+      <div className="w-full sm:w-[30rem]">
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"

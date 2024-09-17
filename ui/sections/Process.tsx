@@ -55,15 +55,15 @@ export const Process: React.FC = () => {
   }, []);
 
   return (
-    <section className="min-h-[60rem] flex flex-col items-center bg-section-background">
-      <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
+    <section className="min-h-[60rem] pb-[5rem] lg:pb-0 flex flex-col items-center bg-section-background">
+      <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center px-5">
         <H2Container color="#5BD9D9" topString="Our Process"> Our Lightning Fast{" "}
         <span className="text-processAccent">Process</span></H2Container>
         <div
           style={{ contain: "paint" }}
           className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center lg:mb-[10rem] lg:h-auto gap-0 lg:gap-20 w-full relative"
         >
-          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] max-w-[35rem] px-5 mb-[5rem]">
+          <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] max-w-[35rem] mb-[5rem]">
             <ProcessContainer id="process1">
               <h3 className="font-gunterz leading-[3.4rem]">
                 send us a free request,
