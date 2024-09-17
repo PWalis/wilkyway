@@ -5,7 +5,7 @@ import react from "react";
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-section-background min-h-[25rem] flex flex-col justify-center gap-10 items-center px-5 relative">
-      <div className="flex flex-col md:flex-row justify-between max-w-[90rem] w-full gap-10">
+      <div className="flex flex-col md:flex-row justify-between max-w-[90rem] w-full gap-10 z-10">
         <div className="flex flex-col justify-center gap-3">
           <div className="w-full min-w-[15rem] max-w-[17.7rem]">
             <svg
@@ -87,7 +87,7 @@ export const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-end max-w-[90rem] w-full">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-end max-w-[90rem] w-full z-10">
         <div className="flex md:pt-0 pt-5">
           <p>
             &#xa9; <span className="text-[#5A8CF9]">2024 Wilky Way LLC.</span>{" "}
@@ -203,14 +203,14 @@ export const Footer: React.FC = () => {
 
 const FooterStars: React.FC = () => {
   return (
-    <div className="absolute max-w-[110rem] bottom-0">
+    <div className="z-0 absolute w-full max-w-[110rem] overflow-hidden bottom-0">
       <svg
         width="1897"
         height="1107"
         viewBox="0 0 1897 1107"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full overflow-visible"
+        className="w-[110rem]"
       >
         <path
           d="M1189.18 1020.4C1190.34 1020.4 1191.27 1021.34 1191.27 1022.49C1191.27 1023.65 1190.34 1024.58 1189.18 1024.58C1188.02 1024.58 1187.09 1023.65 1187.09 1022.49C1187.09 1021.34 1188.02 1020.4 1189.18 1020.4Z"

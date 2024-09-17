@@ -144,13 +144,13 @@ export const Form: React.FC = () => {
 
   return (
     <section className="h-full min-h-[40rem] w-full flex flex-col justify-center items-center bg-section-background overflow-hidden pl-5 pt-[3rem] pb-[4rem] lg:pb-[1rem]">
-      <div className="w-full max-w-[82rem]">
+      <div className="w-full max-w-[82rem] z-10">
         <H2Container color="#3355D1" topString="Contact Us">
           Get your awesome new <span className="text-formBlue">website</span>
         </H2Container>
       </div>
       <form
-        className="h-full w-full 2xl:grid grid-cols-2 grid-rows-2 px-5 relative max-w-[45rem] 2xl:max-w-[100rem]"
+        className="h-full w-full 2xl:grid grid-cols-2 grid-rows-2 px-5 relative max-w-[45rem] 2xl:max-w-[100rem] z-10"
         name="website-request"
         onSubmit={handleFormSubmit}
       >
