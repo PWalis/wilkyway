@@ -80,7 +80,7 @@ export const Solution: React.FC = () => {
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
         <H2Container color="#5A8CF9" topString="Our Solution">Your Site = {" "}
         <span className="text-hero-color2">Your Conversions</span></H2Container>
-        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[168rem] iphone12pro:min-h-[164rem] iphone14max:min-h-[155rem] sm:min-h-[185rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center min-h-[200rem] iphone12pro:min-h-[188rem] iphone14max:min-h-[185rem] 3sm:min-h-[174rem]  sm:min-h-[192rem] lg:h-auto gap-0 lg:gap-20 w-full relative">
           <div className="flex flex-col gap-[10rem] lg:gap-[20rem] lg:mt-[15rem] lg:mb-[10rem] px-3 absolute lg:relative top-10">
             <SolutionContainer id="title1">
               <h3 className="font-gunterz">
