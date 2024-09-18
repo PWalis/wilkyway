@@ -61,26 +61,26 @@ export const Footer: React.FC = () => {
             Make your business a star
           </p>
         </div>
-        <div className="flex flex-row flex-wrap gap-16">
-          <div className="flex flex-col">
+        <div className="flex lg:justify-center flex-row flex-wrap gap-y-4 lg:gap-10 w-full">
+          <div className="flex flex-col w-full max-w-[9rem]">
             <a className="font-semibold uppercase  text-[1.25rem]">Home</a>
             <a className="text-[1.25rem]">Our Process</a>
             <a className="text-[1.25rem]">Our Solution</a>
             <a className="text-[1.25rem]">Testimonials</a>
             <a className="text-[1.25rem]">S.T.A.R Method</a>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full max-w-[9rem]">
             <a className="font-semibold uppercase text-[1.25rem]">
               Our Services
             </a>
             <a className="text-[1.25rem]">Website Package</a>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full max-w-[9rem]">
             <a className="font-semibold uppercase text-[1.25rem]">About Us</a>
             <a className="text-[1.25rem]">Our Team</a>
             <a className="text-[1.25rem]">Our Values</a>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full max-w-[9rem]">
             <a className="font-semibold uppercase text-[1.25rem]">Contact Us</a>
             <a className="text-[1.25rem]">Get a Quote</a>
           </div>

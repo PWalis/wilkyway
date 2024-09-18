@@ -397,7 +397,7 @@ export const Header = () => {
             variants={mobileMenuVariant}
             initial="closed"
             animate={menuIsOpen ? "opened" : "closed"}
-            className="fixed flex justify-center top-0 left-0 h-dvh w-dvw bg-section-background"
+            className="fixed touch-none flex justify-center top-0 left-0 h-dvh w-dvw bg-section-background"
           >
             <nav className="flex justify-center items-center flex-col w-full max-w-[80dvw] ">
               <a className="text-[2rem]">Our Solution</a>
