@@ -331,7 +331,7 @@ export const OurValues: React.FC = () => {
             <h4 className="font-gunterz text-[1.50rem] text-[#5A8CF9]">
               Genuine connection
             </h4>
-            <p className="max-w-[12rem]">
+            <p className="w-full 2xl:max-w-[12rem]">
               We strive to create connections that will last.
             </p>
           </div>

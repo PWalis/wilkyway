@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 575.05 91.49">
+  <defs>
+    <style>
+      .cls-1FullLogo {
+        fill: #5c8fff;
+      }
+
+      .cls-2FullLogo {
+        fill: #fefefe;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <rect className="cls-1FullLogo" x="318.83" y="57.51" width="55.59" height="18.45"/>
+    <rect className="cls-2FullLogo" x="75.41" y="46.83" width="18.33" height="39.92" transform="translate(17.79 151.36) rotate(-90)"/>
+    <rect className="cls-2FullLogo" x="259.14" y="15.3" width="32.2" height="18.45"/>
+    <path className="cls-2FullLogo" d="M150.56,15.12l-8.88,37.47-9.01-37.47h-18.41l-9.01,37.47-8.88-37.47h-18.54l12.79,42.28,5.61,18.55h18.02l9.14-31.72,9.27,31.72h18.02l18.41-60.83h-18.54Z"/>
+    <rect className="cls-2FullLogo" x="173.59" y="15.33" width="17.1" height="15.16"/>
+    <rect className="cls-2FullLogo" x="173.59" y="37.54" width="17.1" height="38.42"/>
+    <path className="cls-2FullLogo" d="M196.17,15.33l-.05,60.63h17.23l.05-60.63h-17.23Z"/>
+    <path className="cls-2FullLogo" d="M255.47,45.46l9.66-11.89,1.87-2.3,8.21-10.09,4.77-5.88.16.08-13.42-.05-7.83-.03-22.48,27.55V15.3h-17.23v60.71h17.23v-27.94l22.58,27.94h21.15l-24.67-30.55Z"/>
+    <path className="cls-1FullLogo" d="M411.79,15.12l-8.88,37.47-9.01-37.47h-18.41l-9.01,37.47-8.88-37.47h-18.54l12.82,42.38,5.58,18.45h18.02l9.13-31.72,9.27,31.72h18.02l13.2-43.61,3.79-12.55,1.42-4.67h0s-18.54,0-18.54,0Z"/>
+    <rect className="cls-1FullLogo" x="420.79" y="8.46" width="18.45" height="32.19" transform="translate(405.46 454.57) rotate(-90)"/>
+    <g>
+      <path className="cls-1FullLogo" d="M75.97,40.94v50.56h-18.33v-45.94c0-6.47-5.24-11.71-11.71-11.71H0V15.51h50.54c14.04,0,25.43,11.39,25.43,25.43Z"/>
+      <path className="cls-2FullLogo" d="M91.49,57.62v18.33h-50.54c-14.04,0-25.43-11.38-25.43-25.43V0h18.33v45.91c0,6.47,5.24,11.71,11.71,11.71h45.93Z"/>
+    </g>
+    <path className="cls-1FullLogo" d="M466.14,15.12h-35.24v35.24c0,14.13,11.46,25.59,25.59,25.59h16.79v7.77h18.46v-43.01c0-14.14-11.47-25.59-25.6-25.59ZM461.14,57.51c-6.51,0-11.78-5.28-11.78-11.78v-12.14h12.15c6.51,0,11.78,5.27,11.78,11.78v12.15h-12.15Z"/>
+    <g>
+      <path className="cls-2FullLogo" d="M320.45,57.51v18.45h11.6v15.54h-17.22v-15.67h-15.68c-13.19,0-23.89-11.69-23.89-26.12l-.02-16.13h16.63V15.3h.58l.05,17.27h0l.08,12.81c0,6.64,4.92,12.03,11,12.03h11.34l-.08-9.64h.03v-1.14h-.05V15.3h17.19v22.83c.04.56.05,1.14.05,1.71v17.66h-11.6Z"/>
+      <polygon className="cls-2FullLogo" points="291.86 15.3 291.86 33.58 275.23 33.58 275.21 21.18 275.2 15.3 291.86 15.3"/>
+      <rect className="cls-2FullLogo" x="320.45" y="57.51" width="11.6" height="18.45"/>
+    </g>
+    <rect className="cls-1FullLogo" x="468.67" y="57.51" width="104.77" height="18.45"/>
+    <rect className="cls-1FullLogo" x="524.02" y="57.51" width="51.03" height="18.45"/>
+    <g>
+      <path className="cls-1FullLogo" d="M554.13,39.85v17.66h-55.7c-.71-2.46-1.09-5.09-1.09-7.8l-.05-34.63h17.23l.05,17.49h0l-.02,12.81c0,6.64,4.92,12.03,11,12.03h11.34l.02-9.64h.03v-1.14h-.05V15.08l17.19-.04v23.16c.03.54.05,1.1.05,1.65Z"/>
+      <path className="cls-1FullLogo" d="M554.13,57.51v33.99h-17.22v-15.67h-15.68c-10.71,0-19.77-7.7-22.8-18.31h55.7Z"/>
+    </g>
+    <path className="cls-1FullLogo" d="M430.9,33.51v16.86c0,14.13,11.46,25.59,25.59,25.59h16.56v-18.45h-11.91c-6.51,0-11.78-5.28-11.78-11.78v-12.14"/>
+  </g>
+</svg>
