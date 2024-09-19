@@ -7,7 +7,7 @@ import { H2Container } from "../containers/H2Container";
 
 export const Testimonials: React.FC = () => {
   return (
-    <section className="min-h-[60rem] bg-section-background flex flex-col px-5 pb-[4rem] items-center gap-10">
+    <section id="Testimonials" className="min-h-[60rem] bg-section-background flex flex-col px-5 pb-[4rem] items-center gap-10">
       <H2Container color="#ECA653" topString="Our Testimonials">
         The <span className="text-testimonialAccent">results</span> speak for
         themselves

@@ -55,7 +55,7 @@ export const Process: React.FC = () => {
   }, []);
 
   return (
-    <section className="min-h-[60rem] pb-[5rem] lg:pb-0 flex flex-col items-center bg-section-background">
+    <section id="Process" className="min-h-[60rem] pb-[5rem] lg:pb-0 flex flex-col items-center bg-section-background">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center px-5">
         <H2Container color="#5BD9D9" topString="Our Process"> Our Lightning Fast{" "}
         <span className="text-processAccent">Process</span></H2Container>

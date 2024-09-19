@@ -4,7 +4,7 @@ import { H2Container } from "../containers/H2Container";
 
 export const StarMethod: React.FC = () => {
   return (
-    <section className="h-min-[60rem] bg-section-background flex flex-col items-center md:pb-[10rem] px-5">
+    <section id="StarMethod" className="h-min-[60rem] bg-section-background flex flex-col items-center md:pb-[10rem] px-5">
       <H2Container color="#B05CCD" topString="S.T.A.R Method">
         {" "}
         Make your business a <span className="text-[#B05CCD]">S.T.A.R</span>
