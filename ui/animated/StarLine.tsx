@@ -88,7 +88,7 @@ export const StarLineMobile: React.FC = () => {
             className="cls-1LineIcon1"
             x1="1"
             x2="1"
-            y2="760"
+            y2="900"
           />
         </g>
       </svg>

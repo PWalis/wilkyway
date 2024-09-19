@@ -74,9 +74,9 @@ export const ProcessAnimation3: React.FC = () => {
     <div
       ref={scope2}
       style={{ opacity: 0 }}
-      className="flex justify-center w-full min-h-[30rem]"
+      className="flex justify-center w-full "
     >
-      <div className="relative w-full max-w-[23rem] lg:max-w-[30rem] px-3 ">
+      <div className="relative w-full lg:max-w-[30rem]">
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +167,7 @@ export const ProcessAnimation3: React.FC = () => {
             <filter id="drop-shadow-1Calendar" filterUnits="userSpaceOnUse">
               <feOffset dx="7" dy="3" />
               <feGaussianBlur result="blur" stdDeviation="5" />
-              <feFlood flood-color="#576666" flood-opacity=".36" />
+              <feFlood floodColor="#576666" floodOpacity=".36" />
               <feComposite in2="blur" operator="in" />
               <feComposite in="SourceGraphic" />
             </filter>
