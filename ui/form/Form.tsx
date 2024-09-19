@@ -16,7 +16,6 @@ export const Form: React.FC = () => {
   const [abTestingToggle, setAbTestingToggle] = useState(false);
   const [seoToggle, setSeoToggle] = useState(false);
   const [otherToggle, setOtherToggle] = useState(false);
-  const [date, setDate] = useState<Date | undefined>(undefined);
 
   // sets form to be in view or not
 
@@ -32,7 +31,6 @@ export const Form: React.FC = () => {
     email: false,
     phoneNumber: false,
     projectDescription: false,
-    date: false,
   });
 
   // services form data
@@ -77,12 +75,6 @@ export const Form: React.FC = () => {
       .min(10),
     description: z.string({ invalid_type_error: "Must be a string" }),
     services: z.string({ invalid_type_error: "Must be a string" }),
-    date: z
-      .string({
-        required_error: "Please select a date for us to contact you",
-        invalid_type_error: "Must be a date",
-      })
-      .min(1),
   });
 
   const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -94,13 +86,11 @@ export const Form: React.FC = () => {
       email: false,
       phoneNumber: false,
       projectDescription: false,
-      date: false,
     });
     // set loading state
     setIsLoading(true);
     const formData = new FormData(event.currentTarget);
     formData.set("services", Object.values(services).toString());
-    formData.set("date", date?.toString() || "");
     const searchParams = new URLSearchParams();
 
     for (const [key, value] of formData.entries()) {
@@ -115,10 +105,10 @@ export const Form: React.FC = () => {
       businessName: formData.get("business-name"),
       description: formData.get("project-description"),
       services: formData.get("services"),
-      date: formData.get("date"),
     });
     // console log issues
     if (!result.success) {
+      console.log(result.error.issues)
       for (let issue of result.error.issues) {
         const field = issue.path[0];
         setErrors((prevState) => ({ ...prevState, [field]: true }));
@@ -143,7 +133,10 @@ export const Form: React.FC = () => {
   };
 
   return (
-    <section id="AwesomeWebsite" className="h-full min-h-[40rem] w-full flex flex-col justify-center items-center bg-section-background overflow-hidden pl-5 pt-[3rem] pb-[4rem] lg:pb-[1rem]">
+    <section
+      id="AwesomeWebsite"
+      className="h-full min-h-[40rem] w-full flex flex-col justify-center items-center bg-section-background overflow-hidden pl-5 pt-[3rem] pb-[4rem] lg:pb-[1rem]"
+    >
       <div className="w-full max-w-[82rem] z-10">
         <H2Container color="#3355D1" topString="Contact Us">
           Get your awesome new <span className="text-formBlue">website</span>
@@ -287,7 +280,7 @@ export const Form: React.FC = () => {
             <label className="">Project Description:</label>
             <textarea
               name="project-description"
-              className="w-full h-[9rem] bg-formInput hover:bg-slate-800 pl-5 pt-5 focus:outline-none resize-none"
+              className="w-full h-[9rem] bg-formInput hover:bg-slate-800 pl-5 pt-5 focus:outline-none resize-none z-10"
               placeholder="Besides converting visitors into clients what else would you like your website to have/do?"
             ></textarea>
           </div>
@@ -431,6 +424,8 @@ export const Form: React.FC = () => {
               ? "Loading..."
               : formFailed
               ? "Failed to submit"
+              : success
+              ? "Success!"
               : "SUBMIT REQUEST"}
             <div className="absolute top-[15px] -left-[20px] 2xl:-left-[35px]">
               <div className="relative">
