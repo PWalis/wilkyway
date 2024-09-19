@@ -76,7 +76,7 @@ export const Solution: React.FC = () => {
   };
 
   return (
-    <section className="min-h-[60rem] px-5 pb-[3rem] flex flex-col items-center bg-section-background md:pb-[15rem]">
+    <section id="Solution" className="min-h-[60rem] px-5 pb-[3rem] flex flex-col items-center bg-section-background md:pb-[15rem]">
       <div className="w-full max-w-[100rem] mt-16 flex flex-col justify-center items-center">
         <H2Container color="#5A8CF9" topString="Our Solution">Your Site = {" "}
         <span className="text-hero-color2">Your Conversions</span></H2Container>

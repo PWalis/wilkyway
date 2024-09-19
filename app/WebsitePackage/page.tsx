@@ -11,7 +11,7 @@ export default function WebsitePagePackage() {
           package
         </span>
       </h1>
-      <div className="flex flex-row flex-wrap max-w-[90rem] w-full gap-10">
+      <div className="flex flex-row justify-center 2xl:justify-start flex-wrap max-w-[90rem] w-full gap-10">
         <WebsitePackageContainer>
           <div className="w-full max-w-[70px] h-[65px] mb-3">
             <svg

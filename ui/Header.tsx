@@ -272,142 +272,147 @@ export const Header = () => {
             </g>
           </svg>
         </a>
-        {width > 964 ? (
-          <div className="w-full sm:max-w-[60rem] mt-3 flex justify-center max-w-[5rem] ">
-            <AnimatePresence>
-              <nav
-                onMouseEnter={() => handleMouseEnter()}
-                onMouseLeave={() => handleMouseLeave()}
-                ref={scope}
-                className="sm:flex max-w-[50rem] justify-between w-full uppercase tracking-wider bg-[#042032] rounded-[30px] mt-3 py-3 px-10 "
-              >
-                <div className="flex flex-col">
-                  <Link
-                    className="font-bold hover:text-[#5C8FFF] transition-all"
-                    href="/WebsitePackage"
-                    onClick={(e) => {
-                      router.push("/WebsitePackage");
-                      setMenuIsOpen(false);
-                    }}
+
+        <div className="w-full sm:max-w-[60rem] mt-3 justify-center max-w-[5rem] lg1/2:flex hidden">
+          <AnimatePresence>
+            <nav
+              onMouseEnter={() => handleMouseEnter()}
+              onMouseLeave={() => handleMouseLeave()}
+              ref={scope}
+              className="sm:flex max-w-[50rem] justify-between w-full uppercase h-[3rem] tracking-wider bg-[#042032] rounded-[30px] mt-3 py-3 px-10 "
+            >
+              <div className="flex flex-col">
+                <Link
+                  className="font-bold hover:text-[#5C8FFF] transition-all"
+                  href="/#Solution"
+                >
+                  Our Solution
+                </Link>
+                {isHovered && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1, transition: { delay: 0.1 } }}
+                    exit={{ opacity: 0 }}
+                    className="flex flex-col"
                   >
-                    Our Solution
-                  </Link>
-                  {isHovered && (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1, transition: { delay: 0.1 } }}
-                      exit={{ opacity: 0 }}
-                      className="flex flex-col"
+                    <Link
+                      className="hover:text-[#5C8FFF] transition-all"
+                      href="/#Process"
                     >
-                      <Link
-                        className="hover:text-[#5C8FFF] transition-all"
-                        href="/"
-                      >
-                        Our Process
-                      </Link>
-                    </motion.div>
-                  )}
-                </div>
-                <div className="flex flex-col">
-                  <Link
-                    className="font-bold hover:text-[#5C8FFF] transition-all"
-                    href="/AboutUs"
-                    onClick={(e) => {
-                      router.push("/AboutUs");
-                      setMenuIsOpen(false);
-                    }}
+                      Our Process
+                    </Link>
+                  </motion.div>
+                )}
+              </div>
+              <div className="flex flex-col">
+                <Link
+                  className="font-bold hover:text-[#5C8FFF] transition-all"
+                  href="/AboutUs"
+                >
+                  About Us
+                </Link>
+                {isHovered && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1, transition: { delay: 0.1 } }}
+                    exit={{ opacity: 0 }}
+                    className="flex flex-col"
                   >
-                    About Us
-                  </Link>
-                  {isHovered && (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1, transition: { delay: 0.1 } }}
-                      exit={{ opacity: 0 }}
-                      className="flex flex-col"
+                    <Link
+                      className="hover:text-[#5C8FFF] transition-all"
+                      href="/AboutUs/#OurValues"
                     >
-                      <Link
-                        className="hover:text-[#5C8FFF] transition-all"
-                        href="/"
-                      >
-                        Values
-                      </Link>
-                      <Link
-                        className="hover:text-[#5C8FFF] transition-all"
-                        href="/"
-                      >
-                        Team
-                      </Link>
-                    </motion.div>
-                  )}
-                </div>
-                <div className="flex flex-col ">
-                  <Link
-                    className="font-bold hover:text-[#5C8FFF] transition-all"
-                    href="/"
-                    onClick={(e) => {
-                      router.push("/");
-                      setMenuIsOpen(false);
-                    }}
-                  >
-                    Our Services
-                  </Link>
-                  {isHovered && (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1, transition: { delay: 0.1 } }}
-                      exit={{ opacity: 0 }}
-                      className="flex flex-col"
+                      Values
+                    </Link>
+                    <Link
+                      className="hover:text-[#5C8FFF] transition-all"
+                      href="/AboutUs/#OurTeam"
                     >
-                      <Link
-                        className="hover:text-[#5C8FFF] transition-all"
-                        href="/"
-                      >
-                        Site Package
-                      </Link>
-                      <Link
-                        className="hover:text-[#5C8FFF] transition-all"
-                        href="/"
-                      >
-                        STAR Method
-                      </Link>
-                    </motion.div>
-                  )}
-                </div>
-                <div className="flex flex-col">
-                  <Link
-                    className="font-bold hover:text-[#5C8FFF] transition-all"
-                    href="/"
-                    onClick={(e) => {
-                      router.push("/");
-                      setMenuIsOpen(false);
-                    }}
+                      Team
+                    </Link>
+                  </motion.div>
+                )}
+              </div>
+              <div className="flex flex-col ">
+                <Link
+                  className="font-bold hover:text-[#5C8FFF] transition-all"
+                  href="/WebsitePackage"
+                >
+                  Our Services
+                </Link>
+                {isHovered && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1, transition: { delay: 0.1 } }}
+                    exit={{ opacity: 0 }}
+                    className="flex flex-col"
                   >
-                    Testimonials
-                  </Link>
-                </div>
-                <div className="lg1/2:hidden">
-                  <CTA>Get A Quote</CTA>
-                </div>
-              </nav>
-            </AnimatePresence>
-          </div>
-        ) : (
-          <motion.div
-            variants={mobileMenuVariant}
-            initial="closed"
-            animate={menuIsOpen ? "opened" : "closed"}
-            className="fixed flex justify-center top-0 left-0 h-dvh w-dvw bg-section-background"
-          >
-            <nav className="flex justify-center items-center flex-col w-full max-w-[80dvw] ">
-              <a className="text-[2rem]">Our Solution</a>
-              <a className="text-[2rem]">About Us</a>
-              <a className="text-[2rem]">Our Services</a>
-              <a className="text-[2rem] mb-10">Testimonials</a>
-              <CTA>Get A Quote</CTA>
+                    <Link
+                      className="hover:text-[#5C8FFF] transition-all"
+                      href="/#StarMethod"
+                    >
+                      STAR Method
+                    </Link>
+                  </motion.div>
+                )}
+              </div>
+              <div className="flex flex-col">
+                <Link
+                  className="font-bold hover:text-[#5C8FFF] transition-all"
+                  href="/#Testimonials"
+                >
+                  Testimonials
+                </Link>
+              </div>
+              <div className="lg1/2:hidden">
+                <CTA>Get A Quote</CTA>
+              </div>
             </nav>
-          </motion.div>
-        )}
+          </AnimatePresence>
+        </div>
+        <motion.div //mobile Nav
+          variants={mobileMenuVariant}
+          initial="closed"
+          animate={menuIsOpen ? "opened" : "closed"}
+          className="fixed touch-none flex justify-center top-0 left-0 h-dvh w-dvw bg-section-background lg1/2:hidden"
+        >
+          <nav className="flex justify-center items-center flex-col w-full max-w-[80dvw] ">
+            <Link
+              onClick={handleToggle}
+              href="/#Solution"
+              className="text-[2rem]"
+            >
+              Our Solution
+            </Link>
+            <Link
+              onClick={handleToggle}
+              href="/AboutUs"
+              className="text-[2rem]"
+            >
+              About Us
+            </Link>
+            <Link
+              onClick={handleToggle}
+              href="/WebsitePackage"
+              className="text-[2rem]"
+            >
+              Our Services
+            </Link>
+            <Link
+              onClick={handleToggle}
+              href="/#Testimonials"
+              className="text-[2rem] mb-10"
+            >
+              Testimonials
+            </Link>
+            <button
+              onClick={handleToggle}
+              className="text-[#151E28] font-bold tracking-wider antialiased text-[1.25rem] w-full sm:max-w-64 bg-CTA shadow-CTA shadow-[0px_0px_10px_-2px] px-5 py-4 border-transparent"
+            >
+              <Link href="/#AwesomeWebsite">Get A Quote</Link>
+            </button>
+          </nav>
+        </motion.div>
         <div className="flex items-center">
           <div className="hidden lg1/2:block">
             <CTA>Get A Quote</CTA>
