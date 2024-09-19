@@ -191,8 +191,8 @@ export const Hero = () => {
                 y2="1804.77"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset=".18" stop-color="#5a8cf9" />
-                <stop offset="1" stop-color="#001824" />
+                <stop offset=".18" stopColor="#5a8cf9" />
+                <stop offset="1" stopColor="#001824" />
               </linearGradient>
               <radialGradient
                 id="radial-gradient"
@@ -204,14 +204,14 @@ export const Hero = () => {
                 gradientTransform="translate(-275.34 431.86) rotate(-23.46)"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stop-color="#f15a24" />
-                <stop offset="0" stop-color="#ef5a26" />
-                <stop offset=".11" stop-color="#ba5d61" />
-                <stop offset=".21" stop-color="#905f90" />
-                <stop offset=".29" stop-color="#7261b1" />
-                <stop offset=".37" stop-color="#5f62c6" />
-                <stop offset=".41" stop-color="#5963ce" />
-                <stop offset=".86" stop-color="#2246a1" />
+                <stop offset="0" stopColor="#f15a24" />
+                <stop offset="0" stopColor="#ef5a26" />
+                <stop offset=".11" stopColor="#ba5d61" />
+                <stop offset=".21" stopColor="#905f90" />
+                <stop offset=".29" stopColor="#7261b1" />
+                <stop offset=".37" stopColor="#5f62c6" />
+                <stop offset=".41" stopColor="#5963ce" />
+                <stop offset=".86" stopColor="#2246a1" />
               </radialGradient>
               <radialGradient
                 id="radial-gradient-2"
@@ -222,10 +222,10 @@ export const Hero = () => {
                 r="89.84"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stop-color="#7c9cff" />
-                <stop offset=".04" stop-color="#7a9bfe" />
-                <stop offset=".63" stop-color="#6290fa" />
-                <stop offset="1" stop-color="#5a8df9" />
+                <stop offset="0" stopColor="#7c9cff" />
+                <stop offset=".04" stopColor="#7a9bfe" />
+                <stop offset=".63" stopColor="#6290fa" />
+                <stop offset="1" stopColor="#5a8df9" />
               </radialGradient>
               <radialGradient
                 id="radial-gradient-3"
@@ -237,15 +237,15 @@ export const Hero = () => {
                 gradientTransform="translate(-275.34 431.86) rotate(-23.46)"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stop-color="#2a4787" />
-                <stop offset=".05" stop-color="#233d78" />
-                <stop offset=".14" stop-color="#1b3063" />
-                <stop offset=".25" stop-color="#142653" />
-                <stop offset=".37" stop-color="#11204a" />
-                <stop offset=".54" stop-color="#101f48" />
-                <stop offset=".76" stop-color="#0e1d44" />
-                <stop offset=".93" stop-color="#09183b" />
-                <stop offset="1" stop-color="#061535" />
+                <stop offset="0" stopColor="#2a4787" />
+                <stop offset=".05" stopColor="#233d78" />
+                <stop offset=".14" stopColor="#1b3063" />
+                <stop offset=".25" stopColor="#142653" />
+                <stop offset=".37" stopColor="#11204a" />
+                <stop offset=".54" stopColor="#101f48" />
+                <stop offset=".76" stopColor="#0e1d44" />
+                <stop offset=".93" stopColor="#09183b" />
+                <stop offset="1" stopColor="#061535" />
               </radialGradient>
               <linearGradient
                 id="linear-gradient-2"
@@ -255,14 +255,14 @@ export const Hero = () => {
                 y2="820.82"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stop-color="#001824" />
-                <stop offset=".04" stop-color="#072135" />
-                <stop offset=".21" stop-color="#204170" />
-                <stop offset=".37" stop-color="#345ca1" />
-                <stop offset=".51" stop-color="#4470c7" />
-                <stop offset=".65" stop-color="#507fe2" />
-                <stop offset=".77" stop-color="#5788f3" />
-                <stop offset=".86" stop-color="#5a8cf9" />
+                <stop offset="0" stopColor="#001824" />
+                <stop offset=".04" stopColor="#072135" />
+                <stop offset=".21" stopColor="#204170" />
+                <stop offset=".37" stopColor="#345ca1" />
+                <stop offset=".51" stopColor="#4470c7" />
+                <stop offset=".65" stopColor="#507fe2" />
+                <stop offset=".77" stopColor="#5788f3" />
+                <stop offset=".86" stopColor="#5a8cf9" />
               </linearGradient>
             </defs>
             <g id="Layer_1-2" data-name="Layer_1">

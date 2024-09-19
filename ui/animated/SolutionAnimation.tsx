@@ -183,7 +183,7 @@ export const SolutionAnimation: React.FC = () => {
             <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
               <feOffset dx="7" dy="7" />
               <feGaussianBlur result="blur" stdDeviation="5" />
-              <feFlood flood-color="#cccaca" flood-opacity=".5" />
+              <feFlood floodColor="#cccaca" floodOpacity=".5" />
               <feComposite in2="blur" operator="in" />
               <feComposite in="SourceGraphic" />
             </filter>

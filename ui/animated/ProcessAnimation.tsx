@@ -133,7 +133,7 @@ export const ProcessAnimation: React.FC = () => {
             <filter id="drop-shadow-1quote" filterUnits="userSpaceOnUse">
               <feOffset dx="1" dy="1" />
               <feGaussianBlur result="blur" stdDeviation="3" />
-              <feFlood flood-color="#7f7f7f" flood-opacity=".17" />
+              <feFlood floodColor="#7f7f7f" floodOpacity=".17" />
               <feComposite in2="blur" operator="in" />
               <feComposite in="SourceGraphic" />
             </filter>
