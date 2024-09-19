@@ -4,13 +4,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/ui/Header";
 import { Footer } from "@/ui/Footer";
-import Provider from "./providers";
 import { Form } from "@/ui/form/Form";
 
-const charcoalDance = localFont({
-  src: "../public/fonts/CharcoalDance-Regular.otf",
-  variable: "--font-charcoal-dance",
-});
 const gunterz = localFont({
   src: "../public/fonts/Gunterz-Regular.otf",
   variable: "--font-gunterz",
@@ -42,14 +37,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${charcoalDance.variable} ${gunterz.variable} ${gunterzBold.variable} ${gunterzBoldItalic.variable} ${gunterzItalic.variable}`}
+        className={`${gunterz.variable} ${gunterzBold.variable} ${gunterzBoldItalic.variable} ${gunterzItalic.variable}`}
       >
-        <Provider>
           <Header />
           {children}
           <Form />
           <Footer />
-        </Provider>
       </body>
     </html>
   );

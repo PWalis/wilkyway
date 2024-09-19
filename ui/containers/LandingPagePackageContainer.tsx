@@ -70,7 +70,7 @@ export const LandingPagePackageContainer: React.FC<
             color: "#D9D9D9",
           }}
           className="bg-[#20313C] w-[10.3rem] h-[1.8rem] absolute bottom-[15px] text-[1rem] font-gunterz justify-center flex items-end rounded-[10px]"
-          href="/LandingPagePackage"
+          href="/WebsitePackage"
         >
           Learn More &gt;
         </Link>

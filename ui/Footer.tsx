@@ -1,3 +1,4 @@
+import Link from "next/link";
 import react from "react";
 
 // this is real i promise
@@ -63,26 +64,24 @@ export const Footer: React.FC = () => {
         </div>
         <div className="flex lg:justify-center flex-row flex-wrap gap-y-4 lg:gap-10 w-full">
           <div className="flex flex-col w-full max-w-[9rem]">
-            <a className="font-semibold uppercase  text-[1.25rem]">Home</a>
-            <a className="text-[1.25rem]">Our Process</a>
-            <a className="text-[1.25rem]">Our Solution</a>
-            <a className="text-[1.25rem]">Testimonials</a>
-            <a className="text-[1.25rem]">S.T.A.R Method</a>
+            <Link href="/" className="font-semibold uppercase  text-[1.25rem]">Home</Link>
+            <Link href="/#Process" className="text-[1.25rem]">Our Process</Link>
+            <Link href="/#Solution" className="text-[1.25rem]">Our Solution</Link>
+            <Link href="/#Testimonial" className="text-[1.25rem]">Testimonials</Link>
+            <Link href="/#StarMethod" className="text-[1.25rem]">S.T.A.R Method</Link>
           </div>
           <div className="flex flex-col w-full max-w-[9rem]">
-            <a className="font-semibold uppercase text-[1.25rem]">
+            <Link href="/WebsitePackage" className="font-semibold uppercase text-[1.25rem]">
               Our Services
-            </a>
-            <a className="text-[1.25rem]">Website Package</a>
+            </Link>
           </div>
           <div className="flex flex-col w-full max-w-[9rem]">
-            <a className="font-semibold uppercase text-[1.25rem]">About Us</a>
-            <a className="text-[1.25rem]">Our Team</a>
-            <a className="text-[1.25rem]">Our Values</a>
+            <Link href="/AboutUs" className="font-semibold uppercase text-[1.25rem]">About Us</Link>
+            <Link href="/AboutUs/#OurTeam" className="text-[1.25rem]">Our Team</Link>
           </div>
           <div className="flex flex-col w-full max-w-[9rem]">
-            <a className="font-semibold uppercase text-[1.25rem]">Contact Us</a>
-            <a className="text-[1.25rem]">Get a Quote</a>
+            <Link href="/#AwesomeWebsite" className="font-semibold uppercase text-[1.25rem]">Contact Us</Link>
+            <Link href="/#AwesomeWebsite" className="text-[1.25rem]">Get a Quote</Link>
           </div>
         </div>
       </div>

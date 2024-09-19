@@ -1,6 +1,6 @@
 import react from "react";
-import { LearnMore } from "../buttons";
 import { H2Container } from "../containers/H2Container";
+import Link from "next/link";
 
 export const OurValues: React.FC = () => {
   return (
@@ -82,11 +82,11 @@ export const OurValues: React.FC = () => {
             We value your time, so we guarantee we will respond to you within 24
             hours.
           </p>
-          <button
+          <Link href="/AboutUs"
             className={`absolute right-5 bottom-5 bg-[#20313C] text-[#D9D9D9] text-[1rem] font-gunterz pt-1 px-5 rounded-[10px]`}
           >
             Learn More
-          </button>
+          </Link>
         </div>
         <div className="bg-[#081E2C] rounded-[20px] 2xl:row-start-1 2xl:row-span-8 2xl:col-start-5 2xl:col-span-5 col-start-6 col-span-7 row-start-1 row-span-5 p-5 md:pl-10 pl-6 pt-10 2xl:pt-20 relative pb-16 2xl:pb-5">
           <div className="max-w-[7rem]">
@@ -145,11 +145,11 @@ export const OurValues: React.FC = () => {
             We understand that time is your most valuable asset. That&apos;s why
             We will work as fast as we can to deliver on our promises
           </p>
-          <button
+          <Link href="/AboutUs"
             className={`absolute right-5 bottom-5 bg-[#20313C] text-[#D9D9D9] text-[1rem] font-gunterz pt-1 px-5 rounded-[10px]`}
           >
             Learn More
-          </button>
+          </Link>
         </div>
         <div className="bg-[#0C212E] rounded-[20px] 2xl:row-start-1 2xl:row-span-8 2xl:col-start-10 2xl:col-span-4 col-start-1 col-span-6 row-start-6 row-span-6 p-5 md:pl-10 pl-6 pt-10 2xl:pt-14 relative pb-16 2xl:pb-5">
           <div className="max-w-[9rem]">
@@ -237,11 +237,11 @@ export const OurValues: React.FC = () => {
           <p className="max-w-[20rem]">
             We want to make sure your business grows as much as you do.
           </p>
-          <button
+          <Link href="/AboutUs"
             className={`absolute right-5 bottom-5 bg-[#20313C] text-[#D9D9D9] text-[1rem] font-gunterz pt-1 px-5 rounded-[10px]`}
           >
             Learn More
-          </button>
+          </Link>
         </div>
         <div className="bg-[#051D2B] rounded-[20px] 2xl:row-start-8 2xl:row-span-7 2xl:col-start-1 2xl:col-span-4 col-start-7 col-span-6 row-start-6 row-span-6 p-5 md:pl-10 pl-6 pt-10 relative pb-16 2xl:pb-5">
           <div className="max-w-[9rem]">
@@ -320,11 +320,11 @@ export const OurValues: React.FC = () => {
             Understanding exactly what you want and getting you results is the
             reason we do this in the first place
           </p>
-          <button
+          <Link href="/AboutUs"
             className={`absolute right-5 bottom-5 bg-[#20313C] text-[#D9D9D9] text-[1rem] font-gunterz pt-1 px-5 rounded-[10px]`}
           >
             Learn More
-          </button>
+          </Link>
         </div>
         <div className="flex flex-col-reverse 2xl:flex-row bg-[#0F232F] rounded-[20px] 2xl:row-start-9 2xl:row-span-6 2xl:col-start-5 2xl:col-span-4 col-start-1 col-span-7 row-start-12 row-span-3 p-5 md:pl-10 pl-6 pt-10 relative pb-16 2xl:pb-5">
           <div className="flex flex-col">
@@ -375,11 +375,11 @@ export const OurValues: React.FC = () => {
               </g>
             </svg>
           </div>
-          <button
+          <Link href="/AboutUs"
             className={`absolute right-5 bottom-5 bg-[#20313C] text-[#D9D9D9] text-[1rem] font-gunterz pt-1 px-5 rounded-[10px]`}
           >
             Learn More
-          </button>
+          </Link>
         </div>
         <div className="flex flex-col 2xl:flex-row bg-[#0F2431] rounded-[20px] 2xl:row-start-9 2xl:row-span-6 2xl:col-start-9 2xl:col-span-5 col-start-8 col-span-5 row-start-12 row-span-3 p-5 md:pl-10 pl-6 pt-10 relative pb-16 2xl:pb-5">
           <div className="w-full pl-5 2xl:pl-0 max-w-[8rem]">
@@ -428,11 +428,11 @@ export const OurValues: React.FC = () => {
             </p>
           </div>
 
-          <button
+          <Link href="/AboutUs"
             className={`absolute right-5 bottom-5 bg-[#20313C] text-[#D9D9D9] text-[1rem] font-gunterz pt-1 px-5 rounded-[10px]`}
           >
             Learn More
-          </button>
+          </Link>
         </div>
       </div>
     </section>

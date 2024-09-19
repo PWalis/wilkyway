@@ -54,7 +54,7 @@ export const Hero = () => {
             <div className="w-full sm:max-w-64 shadow-CTA shadow-[0px_0px_10px_-2px]">
               <CTA>ATTRACT CLIENTS</CTA>{" "}
             </div>
-            <SecondaryCTA>FREE GROWTH KIT</SecondaryCTA>
+            {/* <SecondaryCTA>FREE GROWTH KIT</SecondaryCTA> */}
           </div>
           <div className="text-hero-checklist mt-5">
             <div className="flex gap-1">
