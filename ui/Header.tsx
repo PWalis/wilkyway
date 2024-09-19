@@ -82,7 +82,7 @@ export const Header = () => {
       className="w-full flex-col flex items-center z-30 px-5 fixed top-0"
     >
       <div className="w-full flex justify-between max-w-[110rem] h-24 transparent text-white relative">
-        <a className="max-w-[20rem] flex items-center">
+        <Link href="/" className="max-w-[20rem] flex items-center">
           <svg
             id="Layer_2"
             xmlns="http://www.w3.org/2000/svg"
@@ -271,7 +271,7 @@ export const Header = () => {
               </g>
             </g>
           </svg>
-        </a>
+        </Link>
 
         <div className="w-full sm:max-w-[60rem] mt-3 justify-center max-w-[5rem] lg1/2:flex hidden">
           <AnimatePresence>

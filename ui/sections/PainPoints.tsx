@@ -3,6 +3,7 @@ import { CTA } from "../buttons";
 import { PainPoint } from "../containers/PaintPoint";
 import { HeroSupportContainer } from "../containers/HeroSupportContainer";
 import { H2Container } from "../containers/H2Container";
+import Link from 'next/link'
 
 export const PainPoints: React.FC = () => {
   return (
@@ -436,7 +437,7 @@ export const PainPoints: React.FC = () => {
             <p>Having trouble with the direction of your brand?</p>
           </PainPoint>
           <div className="w-full max-w-[19rem] min-h-[21rem] bg-painPointAccent flex flex-col items-center px-5 pt-10 text-center gap-1 relative">
-            <button className="w-full h-full bg-transparent flex flex-col pt-8">
+            <Link href="/#AwesomeWebsite" className="w-full h-full bg-transparent flex flex-col pt-8">
               <p className="text-[1.25rem] font-gunterz text-left max-w-[15rem] leading-[30px] ml-5">
                 If you have had enough, let's fix this!
               </p>
@@ -483,7 +484,7 @@ export const PainPoints: React.FC = () => {
                   </g>
                 </svg>
               </div>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

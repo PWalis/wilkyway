@@ -1,6 +1,7 @@
 import react from "react";
 import { LandingPagePackageContainer } from "../containers/LandingPagePackageContainer";
 import { H2Container } from "../containers/H2Container";
+import Link from "next/link";
 
 export const LandingPagePackage: React.FC = () => {
   return (
@@ -905,7 +906,7 @@ export const LandingPagePackage: React.FC = () => {
           </div>
         </LandingPagePackageContainer>
         <div className="w-[17rem] h-[14.45rem] bg-landingPagePackageAccent relative">
-          <button className="w-full h-full bg-transparent flex flex-col pt-8">
+          <Link href="/WebsitePackage" className="w-full h-full bg-transparent flex flex-col pt-8">
             <p className="text-[1.25rem] font-gunterz text-left flex max-w-[15rem] leading-[30px] ml-5 text-crystal-white uppercase ">
               View our full landing page package!
             </p>
@@ -952,7 +953,7 @@ export const LandingPagePackage: React.FC = () => {
                 </g>
               </svg>
             </div>
-          </button>
+          </Link>
         </div>
       </div>
     </section>
