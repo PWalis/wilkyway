@@ -167,7 +167,7 @@ export const ProcessAnimation3: React.FC = () => {
             <filter id="drop-shadow-1Calendar" filterUnits="userSpaceOnUse">
               <feOffset dx="7" dy="3" />
               <feGaussianBlur result="blur" stdDeviation="5" />
-              <feFlood flood-color="#576666" flood-opacity=".36" />
+              <feFlood floodColor="#576666" floodOpacity=".36" />
               <feComposite in2="blur" operator="in" />
               <feComposite in="SourceGraphic" />
             </filter>
