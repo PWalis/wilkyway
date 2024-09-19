@@ -3,8 +3,7 @@ import react, { FormEvent, useState } from "react";
 import clsx from "clsx";
 import { z } from "zod";
 import { FormCircle, FormLine } from "../animated/FormLine";
-import { FormLine2 } from "../animated/FormLine2";
-import { Calendar } from "@/components/ui/calendar";
+import { H2Container } from "../containers/H2Container";
 
 export const Form: React.FC = () => {
   // state for button toggles
@@ -15,7 +14,6 @@ export const Form: React.FC = () => {
   const [abTestingToggle, setAbTestingToggle] = useState(false);
   const [seoToggle, setSeoToggle] = useState(false);
   const [otherToggle, setOtherToggle] = useState(false);
-  const [date, setDate] = useState<Date | undefined>(undefined);
 
   // sets form to be in view or not
 
@@ -31,7 +29,6 @@ export const Form: React.FC = () => {
     email: false,
     phoneNumber: false,
     projectDescription: false,
-    date: false,
   });
 
   // services form data
@@ -76,12 +73,6 @@ export const Form: React.FC = () => {
       .min(10),
     description: z.string({ invalid_type_error: "Must be a string" }),
     services: z.string({ invalid_type_error: "Must be a string" }),
-    date: z
-      .string({
-        required_error: "Please select a date for us to contact you",
-        invalid_type_error: "Must be a date",
-      })
-      .min(1),
   });
 
   const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -93,13 +84,11 @@ export const Form: React.FC = () => {
       email: false,
       phoneNumber: false,
       projectDescription: false,
-      date: false,
     });
     // set loading state
     setIsLoading(true);
     const formData = new FormData(event.currentTarget);
     formData.set("services", Object.values(services).toString());
-    formData.set("date", date?.toString() || "");
     const searchParams = new URLSearchParams();
 
     for (const [key, value] of formData.entries()) {
@@ -114,7 +103,6 @@ export const Form: React.FC = () => {
       businessName: formData.get("business-name"),
       description: formData.get("project-description"),
       services: formData.get("services"),
-      date: formData.get("date"),
     });
     // console log issues
     if (!result.success) {
@@ -142,9 +130,17 @@ export const Form: React.FC = () => {
   };
 
   return (
-    <section className="h-full min-h-[40rem] w-full flex flex-col justify-center items-center bg-section-background overflow-hidden pl-5 pt-[3rem] pb-[4rem] lg:pb-[1rem]">
+    <section
+      id="AwesomeWebsite"
+      className="h-full min-h-[40rem] w-full flex flex-col justify-center items-center bg-section-background overflow-hidden pl-5 pt-[3rem] pb-[4rem] lg:pb-[1rem]"
+    >
+      <div className="w-full max-w-[82rem] z-10">
+        <H2Container color="#3355D1" topString="Contact Us">
+          Get your awesome new <span className="text-formBlue">website</span>
+        </H2Container>
+      </div>
       <form
-        className="h-full w-full 2xl:grid grid-cols-2 grid-rows-2 px-5 relative max-w-[45rem] 2xl:max-w-[100rem]"
+        className="h-full w-full 2xl:grid grid-cols-2 grid-rows-2 px-5 relative max-w-[45rem] 2xl:max-w-[100rem] z-10"
         name="website-request"
         onSubmit={handleFormSubmit}
       >
@@ -191,9 +187,12 @@ export const Form: React.FC = () => {
         </div>
 
         <input type="hidden" name="form-name" value="website-request" />
-        
+
         <div className="flex flex-col row-start-1 col-start-2 row-span-2 max-w-[42rem]">
-          <p className="pb-6 text-[1.5rem] hidden sm:block"> Tell us a little about yourself: </p>
+          <p className="pb-6 text-[1.5rem] hidden sm:block">
+            {" "}
+            Tell us a little about yourself:{" "}
+          </p>
           <div className="flex flex-row flex-wrap gap-4 mb-5 ">
             <div className="flex flex-col items-start justify-center relative w-full 2xl:max-w-[20.5rem]">
               <div className="absolute -left-[20px] -top-[-60px] 2xl:-left-[35px]">
@@ -278,25 +277,27 @@ export const Form: React.FC = () => {
             <label className="">Project Description:</label>
             <textarea
               name="project-description"
-              className="w-full h-[9rem] bg-formInput hover:bg-slate-800 pl-5 pt-5 focus:outline-none resize-none"
+              className="w-full h-[9rem] bg-formInput hover:bg-slate-800 pl-5 pt-5 focus:outline-none resize-none z-10"
               placeholder="Besides converting visitors into clients what else would you like your website to have/do?"
             ></textarea>
           </div>
         </div>
 
         <div className="min-h-[10rem] flex flex-col gap-2 max-w-[40rem] mb-3 sm:mb-0 sm:mt-0 row-start-2 col-start-1 2xl:justify-end relative">
-          <div className="absolute -top-[145px] -left-[20px] 2xl:-left-[35px]">
+          <div className="absolute -top-[55px] sm:-top-[145px] -left-[20px] 2xl:-left-[35px]">
             <div className="relative">
               <FormLine />
             </div>
           </div>
-          <label className="text-[1.25rem] lg:text-[1.5rem] font-light pb-2">Please select the services you are interested in:</label>
+          <label className="text-[1.25rem] lg:text-[1.5rem] font-light pb-2">
+            Please select the services you are interested in:
+          </label>
           <div className="flex flex-row flex-wrap gap-2 max-w-[35rem] relative">
-          <div className="absolute -top-[60px] sm:-top-[45px] -left-[20px] 2xl:-left-[35px]">
-            <div className="relative">
-              <FormCircle />
+            <div className="absolute -top-[60px] sm:-top-[45px] -left-[20px] 2xl:-left-[35px]">
+              <div className="relative">
+                <FormCircle />
+              </div>
             </div>
-          </div>
             <input
               name="web-design-button"
               type="button"
@@ -420,6 +421,8 @@ export const Form: React.FC = () => {
               ? "Loading..."
               : formFailed
               ? "Failed to submit"
+              : success
+              ? "Success!"
               : "SUBMIT REQUEST"}
             <div className="absolute top-[15px] -left-[20px] 2xl:-left-[35px]">
               <div className="relative">

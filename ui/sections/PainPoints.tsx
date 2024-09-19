@@ -2,6 +2,8 @@ import react from "react";
 import { CTA } from "../buttons";
 import { PainPoint } from "../containers/PaintPoint";
 import { HeroSupportContainer } from "../containers/HeroSupportContainer";
+import { H2Container } from "../containers/H2Container";
+import Link from 'next/link'
 
 export const PainPoints: React.FC = () => {
   return (
@@ -59,7 +61,9 @@ export const PainPoints: React.FC = () => {
             </svg>
           </div>
           <h4 className="font-gunterz">Bi-Weekly PROJECT SNAPSHOTS</h4>
-          <p className="">Frequent check-in schedule keeps our vision aligned</p>
+          <p className="">
+            Frequent check-in schedule keeps our vision aligned
+          </p>
         </HeroSupportContainer>
         <HeroSupportContainer>
           <div className="max-w-[6rem] h-[100px]">
@@ -115,10 +119,10 @@ export const PainPoints: React.FC = () => {
           <p>We work fast so you can launch sooner</p>
         </HeroSupportContainer>
       </div>
-      <div className="flex flex-col justify-start w-full max-w-[100rem] min-h-[30rem] items-center mt-0 lg1/2:mt-[36rem] xl3/4:mt-[13.5rem]">
-        <h2 className="font-gunterz w-full text-left mb-3 mt-10">
+      <div className="flex flex-col justify-start w-full max-w-[100rem] min-h-[30rem] items-center mt-0 xl1/2:mt-[13.5rem]">
+        <H2Container topString="Your Problem" color="#CB5246">
           does this hit <span className="text-painPointAccent">home?</span>
-        </h2>
+        </H2Container>
         <div className="w-full max-w-[86.375rem] flex flex-row justify-center flex-wrap gap-8">
           <PainPoint>
             <div className="w-full max-w-[100px] h-[60px] mt-7 mb-9">
@@ -433,7 +437,7 @@ export const PainPoints: React.FC = () => {
             <p>Having trouble with the direction of your brand?</p>
           </PainPoint>
           <div className="w-full max-w-[19rem] min-h-[21rem] bg-painPointAccent flex flex-col items-center px-5 pt-10 text-center gap-1 relative hover:bg-red-500/60 transition-all">
-            <button className="w-full h-full bg-transparent flex flex-col pt-8">
+            <Link href="/#AwesomeWebsite" className="w-full h-full bg-transparent flex flex-col pt-8">
               <p className="text-[1.25rem] font-gunterz text-left max-w-[15rem] leading-[30px] ml-5">
                 If you have had enough, let's fix this!
               </p>
@@ -480,7 +484,7 @@ export const PainPoints: React.FC = () => {
                   </g>
                 </svg>
               </div>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

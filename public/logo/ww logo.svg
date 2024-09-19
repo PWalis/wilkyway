@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.86 226.86">
+  <defs>
+    <style>
+      .cls-1WWLogo {
+        fill: #5c8fff;
+      }
+
+      .cls-2WWLogo {
+        fill: #fefefe;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <g>
+      <path className="cls-1WWLogo" d="M188.37,101.5v125.36h-45.46v-113.92c0-16.03-13-29.03-29.02-29.03H0v-45.46h125.32c34.81,0,63.04,28.23,63.04,63.05Z"/>
+      <path className="cls-2WWLogo" d="M226.86,142.87v45.46h-125.32c-34.82,0-63.05-28.22-63.05-63.04V0h45.46v113.85c0,16.03,13,29.02,29.03,29.02h113.88Z"/>
+    </g>
+  </g>
+</svg>

@@ -9,10 +9,6 @@ import { OurValues } from "@/ui/sections/OurValues";
 import { FAQ } from "@/ui/sections/FAQ";
 import { StarMethod } from "@/ui/sections/StarMethod";
 
-const charcoalDance = localFont({
-  src: "../public/fonts/Charcoal Dance-SVG.otf",
-  variable: "--font-charcoal-dance",
-});
 const gunterz = localFont({
   src: "../public/fonts/Gunterz-Regular.otf",
   variable: "--font-gunterz",
@@ -29,7 +25,7 @@ const gunterzBold = localFont({
 export default function Home() {
   return (
     <main
-      className={`${charcoalDance.variable} ${gunterz.variable} ${gunterzBold.variable} ${gunterzBoldItalic.variable}`}
+      className={` ${gunterz.variable} ${gunterzBold.variable} ${gunterzBoldItalic.variable}`}
     >
       <Hero />
       <PainPoints />
@@ -39,7 +35,6 @@ export default function Home() {
       <StarMethod />
       <Process />
       <OurValues />
-      {/* <FAQ /> */}
     </main>
   );
 }
