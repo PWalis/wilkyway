@@ -365,7 +365,7 @@ export const Header = () => {
                 </Link>
               </div>
               <div className="lg1/2:hidden">
-                <CTA>Get A Quote</CTA>
+                <CTA>GET YOUR QUOTE</CTA>
               </div>
             </nav>
           </AnimatePresence>
@@ -415,7 +415,7 @@ export const Header = () => {
         </motion.div>
         <div className="flex items-center">
           <div className="hidden lg1/2:block">
-            <CTA>Get A Quote</CTA>
+            <CTA>GET YOUR QUOTE</CTA>
           </div>
           <div className="lg1/2:hidden">
             <Hamburger onToggle={handleToggle} toggled={menuIsOpen} />

@@ -436,7 +436,7 @@ export const PainPoints: React.FC = () => {
             <h4 className="font-gunterz">Brand Nomad</h4>
             <p>Having trouble with the direction of your brand?</p>
           </PainPoint>
-          <div className="w-full max-w-[19rem] min-h-[21rem] bg-painPointAccent flex flex-col items-center px-5 pt-10 text-center gap-1 relative">
+          <div className="w-full max-w-[19rem] min-h-[21rem] bg-painPointAccent flex flex-col items-center px-5 pt-10 text-center gap-1 relative hover:bg-red-500/60 transition-all">
             <Link href="/#AwesomeWebsite" className="w-full h-full bg-transparent flex flex-col pt-8">
               <p className="text-[1.25rem] font-gunterz text-left max-w-[15rem] leading-[30px] ml-5">
                 If you have had enough, let's fix this!

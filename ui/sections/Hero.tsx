@@ -52,7 +52,7 @@ export const Hero = () => {
           </p>
           <div className="flex-col items-center sm:flex-row flex gap-5 mt-4">
             <div className="w-full sm:max-w-64 shadow-CTA shadow-[0px_0px_10px_-2px]">
-              <CTA>Get A Quote</CTA>{" "}
+              <CTA>GET YOUR QUOTE</CTA>{" "}
             </div>
             {/* <SecondaryCTA>FREE GROWTH KIT</SecondaryCTA> */}
           </div>
