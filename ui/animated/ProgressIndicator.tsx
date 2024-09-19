@@ -8,7 +8,6 @@ interface ProgressIndicatorProps {
 export const ProgressIndicator: React.FC<ProgressIndicatorProps> = ({
   progress,
 }) => {
-  console.log(progress, 'this is the current frame PI1')
 
   return (
     <div

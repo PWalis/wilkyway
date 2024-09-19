@@ -3,8 +3,6 @@ import react, { FormEvent, useState } from "react";
 import clsx from "clsx";
 import { z } from "zod";
 import { FormCircle, FormLine } from "../animated/FormLine";
-import { FormLine2 } from "../animated/FormLine2";
-import { Calendar } from "@/components/ui/calendar";
 import { H2Container } from "../containers/H2Container";
 
 export const Form: React.FC = () => {
@@ -108,7 +106,6 @@ export const Form: React.FC = () => {
     });
     // console log issues
     if (!result.success) {
-      console.log(result.error.issues)
       for (let issue of result.error.issues) {
         const field = issue.path[0];
         setErrors((prevState) => ({ ...prevState, [field]: true }));
