@@ -79,7 +79,7 @@ export const Header = () => {
     <motion.header
       variants={{ visible: { y: 0 }, hidden: { y: "-100%" } }}
       animate={hidden ? "hidden" : "visible"}
-      className="w-full flex-col flex items-center z-30 px-5 fixed top-40"
+      className="w-full flex-col flex items-center z-40 px-5 fixed top-0"
       >
       <div className="w-full flex justify-between max-w-[110rem] h-24 transparent text-white relative">
         <Link href="/" className="max-w-[20rem] flex items-center">
