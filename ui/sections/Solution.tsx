@@ -135,7 +135,7 @@ export const Solution: React.FC = () => {
             </SolutionContainer>
             <SolutionContainer id="title5">
               <h3 className="font-gunterz">
-                So <span className="text-hero-color2">fast</span> your
+                So <span className="text-hero-color2">fast</span> you
                 won&apos;t miss it.
               </h3>
               <p className="max-w-[26.25rem]">

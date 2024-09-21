@@ -140,7 +140,7 @@ export const Form: React.FC = () => {
         </H2Container>
       </div>
       <form
-        className="h-full w-full 2xl:grid grid-cols-2 grid-rows-2 px-5 relative max-w-[45rem] 2xl:max-w-[100rem] z-10"
+        className="h-full w-full 2xl:grid grid-cols-2 grid-rows-2 px-5 relative max-w-[45rem] 2xl:ml-[5rem] 2xl:max-w-[100rem] z-10"
         name="website-request"
         onSubmit={handleFormSubmit}
       >
