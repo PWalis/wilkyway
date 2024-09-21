@@ -90,7 +90,7 @@ export const PainPoints: React.FC = () => {
             </svg>
           </div>
           <h4 className="font-gunterz">response within 24 hours</h4>
-          <p>Quick clear communication is out top priority</p>
+          <p>Quick clear communication is our top priority</p>
         </HeroSupportContainer>
         <HeroSupportContainer>
           <div className="max-w-[6rem]  h-[100px]">
