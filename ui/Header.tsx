@@ -80,7 +80,7 @@ export const Header = () => {
       variants={{ visible: { y: 0 }, hidden: { y: "-100%" } }}
       animate={hidden ? "hidden" : "visible"}
       className="w-full flex-col flex items-center z-40 px-5 fixed top-0"
-      >
+    >
       <div className="w-full flex justify-between max-w-[110rem] h-24 transparent text-white relative">
         <Link href="/" className="max-w-[20rem] flex items-center">
           <svg
@@ -310,12 +310,13 @@ export const Header = () => {
             >
               Testimonials
             </Link>
-            <button
+            <Link
               onClick={handleToggle}
-              className="text-[#151E28] font-bold tracking-wider antialiased text-[1.25rem] w-full sm:max-w-64 bg-CTA shadow-CTA shadow-[0px_0px_10px_-2px] px-5 py-4 border-transparent"
+              href="/#AwesomeWebsite"
+              className="text-[#151E28] font-bold tracking-wider antialiased text-[1.25rem] w-full text-center sm:max-w-64 bg-CTA shadow-CTA shadow-[0px_0px_10px_-2px] px-5 py-4 border-transparent"
             >
-              <Link href="/#AwesomeWebsite">Get A Quote</Link>
-            </button>
+              Get A Quote
+            </Link>
           </nav>
         </motion.div>
         <div className="flex items-center">
