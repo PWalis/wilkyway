@@ -106,7 +106,7 @@ export const Footer: React.FC = () => {
           </p>
         </div>
         <div className="flex flex-row gap-10 justify-center md:justify-end w-full max-w-[30rem]">
-          <div className="max-w-[4rem]">
+          <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/wilkywayllc/#/" className="max-w-[4rem]">
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -138,8 +138,8 @@ export const Footer: React.FC = () => {
                 </g>
               </g>
             </svg>
-          </div>
-          <div className="max-w-[4rem]">
+          </a>
+          <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=61559376764783" className="max-w-[4rem]">
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -167,8 +167,8 @@ export const Footer: React.FC = () => {
                 </g>
               </g>
             </svg>
-          </div>
-          <div className="max-w-[4rem]">
+          </a>
+          <a rel="noopener noreferrer" target="_blank" href="https://x.com/wilkywayllc" className="max-w-[4rem]">
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -204,7 +204,7 @@ export const Footer: React.FC = () => {
                 </g>
               </g>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
       <FooterStars />
