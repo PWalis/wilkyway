@@ -447,7 +447,7 @@ export default function OutValues() {
                 brainer for me. When I met Patrick (my husband and Co-Founder)
                 It felt like a match made in heaven, both in business and in
                 life. My goal is to make as many people win in their business
-                the best way I can!h
+                the best way I can!
               </p>
             </div>
             <div className="flex flex-col items-center mb-10 lg:mb-0 lg:items-end justify-center gap-3">
