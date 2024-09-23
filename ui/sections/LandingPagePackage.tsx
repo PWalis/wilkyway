@@ -905,7 +905,7 @@ export const LandingPagePackage: React.FC = () => {
             </svg>
           </div>
         </LandingPagePackageContainer>
-        <div className="w-[17rem] h-[14.45rem] bg-landingPagePackageAccent relative">
+        <div className="w-[17rem] h-[14.45rem] bg-landingPagePackageAccent relative  hover:bg-green-500/60 transition-all">
           <Link href="/WebsitePackage" className="w-full h-full bg-transparent flex flex-col pt-8">
             <p className="text-[1.25rem] font-gunterz text-left flex max-w-[15rem] leading-[30px] ml-5 text-crystal-white uppercase ">
               View our full landing page package!
