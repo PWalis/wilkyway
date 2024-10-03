@@ -23,10 +23,10 @@ By signing up for our SMS service, you consent to receive text messages related 
 You will receive approximately 5 messages per week/month, based on your activity with our company. Message and data rates may apply. For questions about your text plan, please contact your wireless provider.</p>
 <br />
 <p className="">4. Opting Out<br/>
-You can cancel the SMS service at any time by texting "STOP" to our shortcode. Upon receiving your request, we will send you a confirmation SMS to acknowledge your unsubscription. After confirmation, you will no longer receive messages from us.</p>
+You can cancel the SMS service at any time by texting &quot;STOP&quot; to our shortcode. Upon receiving your request, we will send you a confirmation SMS to acknowledge your unsubscription. After confirmation, you will no longer receive messages from us.</p>
 <br />
 <p className="">5. Assistance<br/>
-If you experience any issues with our messaging program, reply with the keyword "HELP" for assistance, or contact us directly at <a className="font-semibold" href="mailto:contact@mail.wilkyway.co">contact@mail.wilkyway.com</a>.</p>
+If you experience any issues with our messaging program, reply with the keyword &quot;HELP&quot; for assistance, or contact us directly at <a className="font-semibold" href="mailto:contact@mail.wilkyway.co">contact@mail.wilkyway.com</a>.</p>
 <br />
 <p className="">6. Liability Disclaimer<br/>
 Carriers are not liable for any delayed or undelivered messages.</p>
@@ -85,7 +85,7 @@ You have the right to:</p>
 <ul>
     <li>- Access the personal information we hold about you.</li>
     <li>- Request corrections to your information if it is inaccurate or incomplete.</li>
-    <li>- Opt-out of our SMS messaging program at any time by texting "STOP" or contacting us directly.</li>
+    <li>- Opt-out of our SMS messaging program at any time by texting &quot;STOP&quot; or contacting us directly.</li>
 </ul>
 <br />
 
