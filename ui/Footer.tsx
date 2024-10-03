@@ -83,6 +83,10 @@ export const Footer: React.FC = () => {
             <Link href="/AboutUs/#OurTeam" className="text-[1.25rem]">
               Our Team
             </Link>
+            <Link href="/policy/#terms-and-conditions" className="text-[1.25rem]">
+            Terms & Conditions</Link>
+            <Link href="/policy/#privacy-policy" className="text-[1.25rem]">
+            Privacy Policy</Link>
           </div>
           <div className="flex flex-col w-full max-w-[9rem]">
             <Link
