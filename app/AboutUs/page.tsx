@@ -1,8 +1,14 @@
 import react from "react";
+import Image from "next/image";
+import daisy from "@/public/daisy.webp";
+import patrick from "@/public/patrick.webp";
 
 export default function OutValues() {
   return (
-    <main id="OurValues" className="flex min-h-[60rem] bg-section-background flex-col  items-center py-[10rem] w-full px-5">
+    <main
+      id="OurValues"
+      className="flex min-h-[60rem] bg-section-background flex-col  items-center py-[10rem] w-full px-5"
+    >
       <h1 className="font-gunterz text-[3rem] w-full text-center">
         OUR <span className="text-[#8CAC48">VALUES</span>
       </h1>
@@ -405,23 +411,27 @@ export default function OutValues() {
               <h4 className="font-gunterz max-w-[30rem] text-center">
                 COFOUNDER, SALES EXPERT, SOFTWARE DEVELOPER
               </h4>
-              <img className="rounded-[50px]" src="https://placehold.co/500" />
+              <Image
+                className="rounded-[50px]"
+                alt="cofounder-patrick"
+                width={500}
+                height={500}
+                src={patrick}
+              />
             </div>
             <div className="flex flex-col items-end justify-center max-w-[40rem] lg:p-24 gap-5">
               <h4 className="w-full text-left font-gunterz">PATRICK WILKY</h4>
               <p className="max-w-[30rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                similique ipsum. Sed unde necessitatibus, est omnis repellat
-                facilis quaerat ipsum dolorem reprehenderit debitis itaque aut
-                blanditiis sit officiis rem tenetur hic amet iste, a labore
-                beatae? Consequuntur numquam incidunt recusandae ipsam autem
-                iusto corrupti fugit sit eius ratione voluptate magni enim
-                assumenda totam libero, officia, quibusdam cum dolores
-                laudantium quam dicta alias! Quis iure eveniet, fugit inventore
-                illum nihil impedit eligendi veniam beatae iste nemo magnam
-                aspernatur, itaque nostrum facere consequuntur ea, architecto
-                odit nobis illo error porro! Unde tenetur iusto sunt sint
-                possimus soluta iure blanditiis quos voluptatem libero!
+                My goal is to support the most people I can through business and
+                create value for as many people as possible. Not only to those
+                who can benefit from what we offer but to those who wish to
+                contribute to our mission as well. As well as to my family,
+                friends, and strangers who want to lead a life of continuous
+                growth and reflection. I believe this is the best thing I could
+                possible do with my time while I&apos;m here on earth. So I will
+                do my best everyday for those around me and for myself, so that
+                one day I may look back and know deep in my heart I&apos;ve done
+                everything in my power to make the world a better place.
               </p>
             </div>
           </div>
@@ -429,26 +439,30 @@ export default function OutValues() {
             <div className="flex flex-col items-end justify-center max-w-[40rem] lg:p-24 gap-5">
               <h4 className="w-full text-left font-gunterz">DAISY WILKY</h4>
               <p className="max-w-[30rem]">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Aperiam, atque corporis necessitatibus, enim quae dolorem nihil
-                libero repudiandae, provident facilis saepe! Vitae pariatur
-                quisquam eos nisi labore quia, quidem facilis saepe? Culpa animi
-                fuga, placeat nesciunt officia, deserunt ex nemo corporis minus
-                magnam sunt voluptatem dolores, minima deleniti incidunt itaque
-                eos. Eius porro harum minus, aperiam veniam eos facere sed
-                debitis dicta illo, pariatur totam fugiat quaerat nesciunt
-                blanditiis, voluptate quis excepturi. Dolorem recusandae,
-                accusantium natus saepe quas maxime corporis optio repudiandae
-                aspernatur odit harum alias enim architecto eaque? Quidem,
-                asperiores dignissimos modi commodi accusantium similique?
-                Obcaecati voluptates suscipit fugit.
+                I have always been an entrepreneur, a “do things my own way”
+                type of person, and someone who believes in quality to the
+                highest degree. I grew up an artist, so naturally I was driven
+                towards design. I graduated with my BS in Computer Science in
+                2024. All of those factors together made website design a no
+                brainer for me. When I met Patrick (my husband and Co-Founder)
+                It felt like a match made in heaven, both in business and in
+                life. My goal is to make as many people win in their business
+                the best way I can!
               </p>
             </div>
             <div className="flex flex-col items-center mb-10 lg:mb-0 lg:items-end justify-center gap-3">
               <h4 className="font-gunterz max-w-[30rem] text-center">
                 COFOUNDER, UX/UI DESIGNER, BRANDING EXPERT
               </h4>
-              <img className="rounded-[50px]" src="http://placehold.co/500" />
+              <div className="min-h-[527px] max-h-[584px] overflow-hidden rounded-[50px]">
+                <Image
+                  className="rounded-[50px]"
+                  alt="cofounder-daisy"
+                  height={450}
+                  width={500}
+                  src={daisy}
+                />
+              </div>
             </div>
           </div>
         </div>

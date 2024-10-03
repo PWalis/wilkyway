@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 470.95 183.44"
+              viewBox="0 0 471.01 183.44"
               className="w-full h-full"
             >
               <defs>
@@ -23,38 +23,23 @@ export const Footer: React.FC = () => {
       }
 
       .cls-2HalfLogo {
-        fill: #d2d6db;
+        fill: #fefefe;
       }`}
                 </style>
               </defs>
               <g id="Layer_1-2" data-name="Layer_1">
-                <g>
-                  <g>
-                    <path
-                      className="cls-2HalfLogo"
-                      d="M152.31,82.07v101.36h-36.76v-92.11c0-12.96-10.51-23.48-23.47-23.48H0V31.09h101.34c28.15,0,50.98,22.83,50.98,50.98Z"
-                    />
-                    <path
-                      className="cls-1HalfLogo"
-                      d="M204.44,115.52v36.76h-122.34c-28.16,0-50.98-22.82-50.98-50.98V0h36.76v92.05c0,12.96,10.51,23.47,23.48,23.47h113.09Z"
-                    />
-                  </g>
-                  <path
-                    className="cls-1HalfLogo"
-                    d="M282.51,47.17l-15.34,64.74-15.56-64.74h-31.8l-15.57,64.74-15.34-64.74h-32.03l22.16,73.23,9.64,31.88h31.13l15.78-54.81,16.02,54.81h31.13l22.8-75.35,6.56-21.68,2.45-8.08h0s-32.03,0-32.03,0Z"
-                  />
-                  <path
-                    className="cls-2HalfLogo"
-                    d="M408.16,47.17l-15.34,64.74-15.56-64.74h-31.8l-15.57,64.74-15.34-64.74h-32.03l22.16,73.23,9.64,31.88h31.13l15.78-54.81,16.02,54.81h31.13l22.8-75.35,6.56-21.68,2.45-8.08h0s-32.03,0-32.03,0Z"
-                  />
-                  <rect
-                    className="cls-2HalfLogo"
-                    x="405.47"
-                    y="115.88"
-                    width="65.47"
-                    height="36.4"
-                  />
-                </g>
+                <path
+                  className="cls-1HalfLogo"
+                  d="M152.31,82.07v101.36h-36.76v-92.11c0-12.96-10.51-23.48-23.47-23.48H0V31.09h101.34c28.15,0,50.98,22.83,50.98,50.98Z"
+                />
+                <path
+                  className="cls-2HalfLogo"
+                  d="M282.51,47.15l-15.34,64.74-15.56-64.74h-31.8l-15.57,64.74-15.34-64.74h-32.03l20.69,68.37h-86.2c-12.96,0-23.48-10.5-23.48-23.47V0H31.12v101.31c0,28.16,22.83,50.98,50.98,50.98h122.34v-.02h15.36l15.78-54.81,16.02,54.81h31.13l22.8-75.35,6.56-21.68,2.45-8.08h0s-32.03,0-32.03,0Z"
+                />
+                <polygon
+                  className="cls-1HalfLogo"
+                  points="471.01 115.71 471.01 152.11 377.33 152.11 361.31 97.3 345.52 152.11 314.39 152.11 304.74 120.23 282.58 47 314.62 47 329.96 111.74 345.52 47 377.33 47 392.89 111.74 408.22 47 440.26 47 440.26 47.01 437.81 55.09 431.25 76.77 419.47 115.71 471.01 115.71"
+                />
               </g>
             </svg>
           </div>
@@ -64,24 +49,51 @@ export const Footer: React.FC = () => {
         </div>
         <div className="flex lg:justify-center flex-row flex-wrap gap-y-4 lg:gap-10 w-full">
           <div className="flex flex-col w-full max-w-[9rem]">
-            <Link href="/" className="font-semibold uppercase  text-[1.25rem]">Home</Link>
-            <Link href="/#Process" className="text-[1.25rem]">Our Process</Link>
-            <Link href="/#Solution" className="text-[1.25rem]">Our Solution</Link>
-            <Link href="/#Testimonial" className="text-[1.25rem]">Testimonials</Link>
-            <Link href="/#StarMethod" className="text-[1.25rem]">S.T.A.R Method</Link>
+            <Link href="/" className="font-semibold uppercase  text-[1.25rem]">
+              Home
+            </Link>
+            <Link href="/#Process" className="text-[1.25rem]">
+              Our Process
+            </Link>
+            <Link href="/#Solution" className="text-[1.25rem]">
+              Our Solution
+            </Link>
+            <Link href="/#Testimonial" className="text-[1.25rem]">
+              Testimonials
+            </Link>
+            <Link href="/#StarMethod" className="text-[1.25rem]">
+              S.T.A.R Method
+            </Link>
           </div>
           <div className="flex flex-col w-full max-w-[9rem]">
-            <Link href="/WebsitePackage" className="font-semibold uppercase text-[1.25rem]">
+            <Link
+              href="/WebsitePackage"
+              className="font-semibold uppercase text-[1.25rem]"
+            >
               Our Services
             </Link>
           </div>
           <div className="flex flex-col w-full max-w-[9rem]">
-            <Link href="/AboutUs" className="font-semibold uppercase text-[1.25rem]">About Us</Link>
-            <Link href="/AboutUs/#OurTeam" className="text-[1.25rem]">Our Team</Link>
+            <Link
+              href="/AboutUs"
+              className="font-semibold uppercase text-[1.25rem]"
+            >
+              About Us
+            </Link>
+            <Link href="/AboutUs/#OurTeam" className="text-[1.25rem]">
+              Our Team
+            </Link>
           </div>
           <div className="flex flex-col w-full max-w-[9rem]">
-            <Link href="/#AwesomeWebsite" className="font-semibold uppercase text-[1.25rem]">Contact Us</Link>
-            <Link href="/#AwesomeWebsite" className="text-[1.25rem]">Get a Quote</Link>
+            <Link
+              href="/#AwesomeWebsite"
+              className="font-semibold uppercase text-[1.25rem]"
+            >
+              Contact Us
+            </Link>
+            <Link href="/#AwesomeWebsite" className="text-[1.25rem]">
+              Get a Quote
+            </Link>
           </div>
         </div>
       </div>
@@ -94,7 +106,7 @@ export const Footer: React.FC = () => {
           </p>
         </div>
         <div className="flex flex-row gap-10 justify-center md:justify-end w-full max-w-[30rem]">
-          <div className="max-w-[4rem]">
+          <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/wilkywayllc/#/" className="max-w-[4rem]">
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -126,8 +138,8 @@ export const Footer: React.FC = () => {
                 </g>
               </g>
             </svg>
-          </div>
-          <div className="max-w-[4rem]">
+          </a>
+          <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=61559376764783" className="max-w-[4rem]">
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -155,8 +167,8 @@ export const Footer: React.FC = () => {
                 </g>
               </g>
             </svg>
-          </div>
-          <div className="max-w-[4rem]">
+          </a>
+          <a rel="noopener noreferrer" target="_blank" href="https://x.com/wilkywayllc" className="max-w-[4rem]">
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -192,7 +204,7 @@ export const Footer: React.FC = () => {
                 </g>
               </g>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
       <FooterStars />
