@@ -90,12 +90,12 @@ export const Footer: React.FC = () => {
           </div>
           <div className="flex flex-col w-full max-w-[9rem]">
             <Link
-              href="/#AwesomeWebsite"
+              href="/#SubmitForm"
               className="font-semibold uppercase text-[1.25rem]"
             >
               Contact Us
             </Link>
-            <Link href="/#AwesomeWebsite" className="text-[1.25rem]">
+            <Link href="/#SubmitForm" className="text-[1.25rem]">
               Get a Quote
             </Link>
           </div>
