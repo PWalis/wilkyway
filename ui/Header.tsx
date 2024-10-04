@@ -312,7 +312,7 @@ export const Header = () => {
             </Link>
             <Link
               onClick={handleToggle}
-              href="/#AwesomeWebsite"
+              href="/#SubmitForm"
               className="text-[#151E28] font-bold tracking-wider antialiased text-[1.25rem] w-full text-center sm:max-w-64 bg-CTA shadow-CTA shadow-[0px_0px_10px_-2px] px-5 py-4 border-transparent"
             >
               Get A Quote
