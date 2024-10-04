@@ -83,10 +83,15 @@ export const Footer: React.FC = () => {
             <Link href="/AboutUs/#OurTeam" className="text-[1.25rem]">
               Our Team
             </Link>
-            <Link href="/policy/#terms-and-conditions" className="text-[1.25rem]">
-            Terms & Conditions</Link>
+            <Link
+              href="/policy/#terms-and-conditions"
+              className="text-[1.25rem]"
+            >
+              Terms & Conditions
+            </Link>
             <Link href="/policy/#privacy-policy" className="text-[1.25rem]">
-            Privacy Policy</Link>
+              Privacy Policy
+            </Link>
           </div>
           <div className="flex flex-col w-full max-w-[9rem]">
             <Link
@@ -110,7 +115,12 @@ export const Footer: React.FC = () => {
           </p>
         </div>
         <div className="flex flex-row gap-10 justify-center md:justify-end w-full max-w-[30rem]">
-          <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/wilkywayllc/#/" className="max-w-[4rem]">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.instagram.com/wilkywayllc/#/"
+            className="max-w-[4rem]"
+          >
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +153,12 @@ export const Footer: React.FC = () => {
               </g>
             </svg>
           </a>
-          <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=61559376764783" className="max-w-[4rem]">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=61559376764783"
+            className="max-w-[4rem]"
+          >
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +187,12 @@ export const Footer: React.FC = () => {
               </g>
             </svg>
           </a>
-          <a rel="noopener noreferrer" target="_blank" href="https://x.com/wilkywayllc" className="max-w-[4rem]">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://x.com/wilkywayllc"
+            className="max-w-[4rem]"
+          >
             <svg
               id="Layer_2"
               xmlns="http://www.w3.org/2000/svg"

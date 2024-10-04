@@ -4,6 +4,7 @@ import clsx from "clsx";
 import { z } from "zod";
 import { FormCircle, FormLine } from "../animated/FormLine";
 import { H2Container } from "../containers/H2Container";
+import Link from "next/link"
 
 export const Form: React.FC = () => {
   // state for button toggles
@@ -14,8 +15,12 @@ export const Form: React.FC = () => {
   const [abTestingToggle, setAbTestingToggle] = useState(false);
   const [seoToggle, setSeoToggle] = useState(false);
   const [otherToggle, setOtherToggle] = useState(false);
+  const [smsConsent, setSmsConsent] = useState(false);
 
-  // sets form to be in view or not
+  // Handles checkbox state
+  const handleCheckbox = () => {
+    setSmsConsent(!smsConsent);
+  };
 
   // Form submission state
   const [success, setSuccess] = useState(false);
@@ -29,6 +34,7 @@ export const Form: React.FC = () => {
     email: false,
     phoneNumber: false,
     projectDescription: false,
+    smsConsent: false,
   });
 
   // services form data
@@ -41,12 +47,6 @@ export const Form: React.FC = () => {
     seo: "",
     other: "",
   });
-
-  // form position variants
-  const variants = {
-    hidden: { x: "-100%" },
-    visible: { x: "0%" },
-  };
 
   // validation object
   const zodObject = z.object({
@@ -73,6 +73,7 @@ export const Form: React.FC = () => {
       .min(10),
     description: z.string({ invalid_type_error: "Must be a string" }),
     services: z.string({ invalid_type_error: "Must be a string" }),
+    smsConsent: z.literal(true),
   });
 
   const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -84,6 +85,7 @@ export const Form: React.FC = () => {
       email: false,
       phoneNumber: false,
       projectDescription: false,
+      smsConsent: false,
     });
     // set loading state
     setIsLoading(true);
@@ -103,6 +105,7 @@ export const Form: React.FC = () => {
       businessName: formData.get("business-name"),
       description: formData.get("project-description"),
       services: formData.get("services"),
+      smsConsent: smsConsent,
     });
     // console log issues
     if (!result.success) {
@@ -277,7 +280,7 @@ export const Form: React.FC = () => {
             <label className="">Project Description:</label>
             <textarea
               name="project-description"
-              className="w-full h-[9rem] bg-formInput hover:bg-slate-800 pl-5 pt-5 focus:outline-none resize-none z-10"
+              className="w-full 2xl:h-[5rem] h-[10rem] bg-formInput hover:bg-slate-800 pl-5 pt-5 focus:outline-none resize-none z-10"
               placeholder="Besides converting visitors into clients what else would you like your website to have/do?"
             ></textarea>
           </div>
@@ -412,24 +415,45 @@ export const Form: React.FC = () => {
           </div>
         </div>
 
-        <div className="max-w-[42rem] row-start-2 col-start-2 flex items-end ">
-          <button
-            type="submit"
-            className="bg-formBlue hover:bg-[#466DFD] transition-all formBlue/40 text-white tracking-wider font-semibold py-5 px-5 w-full relative"
-          >
-            {isLoading
-              ? "Loading..."
-              : formFailed
-              ? "Failed to submit"
-              : success
-              ? "Success!"
-              : "SUBMIT REQUEST"}
-            <div className="absolute top-[15px] -left-[20px] 2xl:-left-[35px]">
-              <div className="relative">
-                <FormCircle />
+        <div className="max-w-[42rem] row-start-2 col-start-2 flex items-end relative">
+          <div className="flex-col">
+            <button
+              type="submit"
+              className="bg-formBlue hover:bg-[#466DFD] transition-all formBlue/40 text-white tracking-wider font-semibold py-5 px-5 w-full relative"
+            >
+              {isLoading
+                ? "Loading..."
+                : formFailed
+                ? "Failed to submit"
+                : success
+                ? "Success!"
+                : "SUBMIT REQUEST"}
+              <div className="absolute top-[15px] -left-[20px] 2xl:-left-[35px]">
+                <div className="relative">
+                  <FormCircle />
+                </div>
               </div>
+            </button>
+            <div className="flex items-center justify-center h-[4rem]">
+              <input
+                checked={smsConsent}
+                onClick={handleCheckbox}
+                id="sms-consent"
+                name="sms-consent"
+                type="checkbox"
+                className="z-30 rounded w-[25px] h-[25px]"
+              />
+              <p className="text-[1rem] ml-2 leading-5 tracking-normal">
+                By providing my phone number, I agree to receive text messages
+                and agree to the <Link href="/policy/#terms-and-conditions" className="text-blue-400">Terms and Conditions</Link>.
+              </p>
             </div>
-          </button>
+            {errors.smsConsent === true && (
+              <p className="absolute -bottom-3 text-red-500 tracking-widest text-[0.75rem] font-bold">
+                Please agree to receive sms messages from wilkywayllc
+              </p>
+            )}
+          </div>
         </div>
       </form>
     </section>
